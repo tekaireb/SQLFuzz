@@ -1,5 +1,9 @@
 import re, random
-from grammar import Grammar
+from typing import Dict, Union, Any, Tuple, List
+
+Option = Dict[str, Any]
+Expansion = Union[str, Tuple[str, Option]]
+Grammar = Dict[str, List[Expansion]]
 
 START_SYMBOL = "<start>"
 RE_NONTERMINAL = re.compile(r'(<[^<> ]*>)')
