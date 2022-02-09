@@ -5,7 +5,7 @@ Option = Dict[str, Any]
 Expansion = Union[str, Tuple[str, Option]]
 Grammar = Dict[str, List[Expansion]]
 
-START_SYMBOL = "<start>"
+START_SYMBOL = "<Query>"
 RE_NONTERMINAL = re.compile(r'(<[^<> ]*>)')
 
 class ExpansionError(Exception):

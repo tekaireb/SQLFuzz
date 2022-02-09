@@ -1,29 +1,33 @@
 from simple_fuzzer import *
 
+ # https://stackoverflow.com/questions/3538225/how-does-select-from-two-tables-separated-by-a-comma-work-select-from-t1-t2/3538232
+ # "<Relation> , <FromList>"],
+
+# http://www.mathcs.emory.edu/~cheung/Courses/554/Syllabus/5-query-opt/SQL-grammar.html
 EXPR_GRAMMAR: Grammar = {
-    "<start>":
-        ["<expr>"],
+    "<Query>":
+        ["SELECT <SelList> FROM <FromList> WHERE <Condition>",
+        "SELECT <SelList> FROM <FromList>"],
 
-    "<expr>":
-        ["<term> + <expr>", "<term> - <expr>", "<term>"],
+    "<SelList>":
+        ["<Attribute>", "<Attribute>, <SelList>", "*"],
 
-    "<term>":
-        ["<factor> * <term>", "<factor> / <term>", "<factor>"],
+    "<FromList>":
+        ["<Relation>"],
 
-    "<factor>":
-        ["+<factor>",
-         "-<factor>",
-         "(<expr>)",
-         "<integer>.<integer>",
-         "<integer>"],
+    # add seperate values for each attribute
+    "<Condition>":
+        ["<Int_Attribute> = <Int_Value>",
+        "<String_Attribute> = <String_Value>"],
 
-    "<integer>":
-        ["<digit><integer>", "<digit>"],
+    "<Relation>": ["Users_DB"],
 
-    "<digit>":
-        ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    "<Attribute>":
+        ["ssn", "name", "age", "email", "address", "phone_number"]
+
+    "Int_Value":
+        ["0", "1", "... TODO ..."]
 }
-
 
 for i in range(10):
     print("input number: {}".format(i))
