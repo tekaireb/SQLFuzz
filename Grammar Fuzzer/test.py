@@ -1,0 +1,56 @@
+from fuzzingbook.GrammarFuzzer import GrammarFuzzer
+from typing import Dict, Union, Any, Tuple, List
+import string
+
+Option = Dict[str, Any]
+Expansion = Union[str, Tuple[str, Option]]
+Grammar = Dict[str, List[Expansion]]
+
+dbs = {
+    'Users_DB': {
+        'fields': ['name', 'age', 'email_address', 'phone_number'],
+        # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
+        'types': ['<String>', '<Integer>', '<Email>', '<Phone>'],
+    }
+}
+
+DB = 'Users_DB'
+
+SQL_GRAMMAR: Grammar = {
+    '<Query>':
+        ['SELECT <SelList> FROM <FromList> WHERE <Condition>',
+         'SELECT <SelList> FROM <FromList>',
+         'SELECT * FROM <FromList>'],
+
+    '<SelList>':
+        ['<Attribute>', '<SelList>, <Attribute>'],
+
+    '<FromList>':
+        ['<Relation>'],
+
+    '<Condition>':
+        [f'{f} <Comparator> {t}' for f, t in zip(
+            dbs[DB]['fields'], dbs[DB]['types'])],
+
+    '<Comparator>':
+        ['<', '<=', '=', '>=', '>'],
+
+    '<Relation>': [DB],
+
+    '<Attribute>':
+        dbs[DB]['fields'],
+
+    # Types:
+    '<String>': ['<Char>', '<String><Char>'],
+    '<Char>': list(string.ascii_lowercase),
+    '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
+    '<Digit>': [str(i) for i in range(10)],
+    '<Email>': ['<String>@<String>.com', '<String>@<String>.org', '<String>@<String>.edu'],
+    '<Phone>': ['1']
+}
+
+fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
+                       start_symbol='<Query>', max_nonterminals=5)
+
+for i in range(15):
+    print(f'#{i}: \t{fuzzer.fuzz()}')
