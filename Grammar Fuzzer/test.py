@@ -20,7 +20,8 @@ SQL_GRAMMAR: Grammar = {
     '<Query>':
         ['SELECT <SelList> FROM <FromList> WHERE <Condition>',
          'SELECT <SelList> FROM <FromList>',
-         'SELECT * FROM <FromList>'],
+         'SELECT * FROM <FromList>',
+         'INSERT INTO <FromList> VALUES ("' + '", "'.join(dbs[DB]["types"]) + '")'],
 
     '<SelList>':
         ['<Attribute>', '<SelList>, <Attribute>'],
