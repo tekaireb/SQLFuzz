@@ -29,7 +29,11 @@ SQL_GRAMMAR: Grammar = {
         ['<Relation>'],
 
     '<Condition>':
-        [f'{f} <Comparator> {t}' for f, t in zip(
+        ['<Comparison>', '<Condition> AND <Comparison>',
+            '<Condition> OR <Comparison>'],
+
+    '<Comparison>':
+        [f'{f} <Comparator> "{t}"' for f, t in zip(
             dbs[DB]['fields'], dbs[DB]['types'])],
 
     '<Comparator>':
@@ -46,7 +50,11 @@ SQL_GRAMMAR: Grammar = {
     '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
     '<Digit>': [str(i) for i in range(10)],
     '<Email>': ['<String>@<String>.com', '<String>@<String>.org', '<String>@<String>.edu'],
-    '<Phone>': ['1']
+    '<Phone>': ['(<Area>) <Exchange>-<Line>'],
+    '<Lead-Digit>': [str(i) for i in range(2, 10)],
+    '<Area>': ['<Lead-Digit><Digit><Digit>'],
+    '<Exchange>': ['<Lead-Digit><Digit><Digit>'],
+    '<Line>': ['<Digit><Digit><Digit><Digit>']
 }
 
 fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
