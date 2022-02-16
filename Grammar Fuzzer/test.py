@@ -57,7 +57,8 @@ SQL_GRAMMAR: Grammar = {
     # Types:
     '<String>': ['<Char>', '<String><Char>'],
     '<Char>': list(string.ascii_lowercase),
-    '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
+    # '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
+    '<Integer>': ['<Digit>', '<Integer><Digit>'],  # Only positive numbers
     '<Digit>': [str(i) for i in range(10)],
     '<Email>': ['<String>@<String>.com', '<String>@<String>.org', '<String>@<String>.edu'],
     '<Phone>': ['(<Area>) <Exchange>-<Line>'],
@@ -69,6 +70,11 @@ SQL_GRAMMAR: Grammar = {
 
 fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
                        start_symbol='<Query>', max_nonterminals=5)
+
+
+def random_string(length):
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for i in range(length))
 
 
 def extract_type(sql):
@@ -94,6 +100,7 @@ def generate_constraints_from_conditions(conditions):
                              for field, comp in zip(fields, comparators)])
 
     condition = random.choice(conditions)
+    print('Selected condition:', condition)
 
     for terms in condition.split('AND'):
         # print('Terms:', terms)
@@ -139,13 +146,40 @@ def generate_constraints_from_conditions(conditions):
                 if val not in constraint_table[field]['neq']:
                     constraint_table[field]['neq'].append(val)
 
-    # print(constraint_table)
+    print(constraint_table)
     return constraint_table
 
 
 def generate_values_from_constraints(constraints):
-    # TODO
-    return
+    values = {}
+
+    for field, constraint in constraints.items():
+        # If there is an `equals` constraint, set the value to it
+        if constraint['eq']:
+            values[field] = constraint['eq']
+            continue
+
+        if comparators[fields.index(field)] == '<Comparator>':  # Integer
+            max_val = constraint['max'] if constraint['max'] else 100
+            min_val = constraint['min'] if constraint['min'] else 0
+            val = random.randrange(min_val, max_val + 1)
+
+            # Find new random value if value is specified under `not equals`
+            while val in constraint['neq']:
+                val = random.randrange(min_val, max_val + 1)
+
+            values[field] = val
+            continue
+
+        else:
+            val = random_string(10)
+
+            while val in constraint['neq']:
+                val = random_string(10)
+
+            values[field] = val
+
+    return values
 
 
 def generate_values(sql):
@@ -158,3 +192,5 @@ for i in range(3):
     sql = fuzzer.fuzz()
     print(f'#{i}: \t{sql}')
     c = generate_constraints_from_conditions(extract_conditions(sql))
+    vals = generate_values_from_constraints(c)
+    print(vals)
