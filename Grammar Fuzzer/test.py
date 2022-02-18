@@ -9,7 +9,7 @@ import sys
 db = 'Users_DB'
 fields = ['name', 'age', 'email_address', 'phone_number']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
-types = ['<String>', '<Integer>', '<Email>', '<Phone>']
+types = ['<Name>', '<Integer>', '<Email>', '<Phone>']
 comparators = ['<StringComparator>', '<Comparator>',
                '<StringComparator>', '<StringComparator>']
 
@@ -55,6 +55,7 @@ SQL_GRAMMAR: Grammar = {
         fields,
 
     # Types:
+    '<Name>': ['<String>'],
     '<String>': ['<Char>', '<String><Char>'],
     '<Char>': list(string.ascii_lowercase),
     # '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
@@ -72,10 +73,44 @@ fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
                        start_symbol='<Query>', max_nonterminals=5)
 
 
+# Generate random values
+
 def random_string(length):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
 
+
+def random_phone():
+    def ld(): return random.randrange(2, 10)  # Lead digit
+    def d(): return random.randrange(0, 10)  # Digit
+    return '({}{}{}) {}{}{}-{}{}{}{}'.format(ld(), d(), d(), ld(), *[d() for _ in range(6)])
+
+
+def random_email():
+    domains = ['com', 'org', 'net', 'edu']
+    email_len = random.randrange(5, 12)
+    site_len = random.randrange(4, 8)
+    return '{}@{}.{}'.format(random_string(email_len), random_string(site_len), random.choice(domains))
+
+
+def random_name():
+    vowels = 'aeiou'
+    consonants = 'bcdfghjklmnprstvxyz'
+
+    def c(): return random.choice(consonants)
+    def v(): return random.choice(vowels)
+
+    def cv(): return c() + v()
+    def vc(): return v() + c()
+    def cvc(): return c() + vc()
+    def cvvc(): return cv() + "'" + vc()
+
+    morphemes = [cv, vc, cvc, cvvc]
+
+    return ''.join([random.choice(morphemes)() for _ in range(random.randrange(2, 5))])
+
+
+# Create values that satisfy search constraints specified in SQL query
 
 def extract_type(sql):
     return sql[:sql.find(' ')]
@@ -153,6 +188,23 @@ def generate_constraints_from_conditions(conditions):
 def generate_values_from_constraints(constraints):
     values = {}
 
+    def generate_value_of_type(field):
+        t = types[fields.index(field)]
+
+        # if t == '<String>':
+        #     return random_string(10)
+        # if t == '<Name>':
+        #     return random_name()
+        # if t == '<Email>':
+        #     return random_email()
+        # if t == '<Phone>':
+        #     return random_phone()
+
+        return (random_name() if t == '<Name>' else
+                random_email() if t == '<Email>' else
+                random_phone() if t == '<Phone>' else
+                random_string(10))
+
     for field, constraint in constraints.items():
         # If there is an `equals` constraint, set the value to it
         if constraint['eq']:
@@ -172,10 +224,10 @@ def generate_values_from_constraints(constraints):
             continue
 
         else:
-            val = random_string(10)
+            val = generate_value_of_type(field)
 
             while val in constraint['neq']:
-                val = random_string(10)
+                val = generate_value_of_type(field)
 
             values[field] = val
 
@@ -190,7 +242,7 @@ def generate_values(sql):
 
 for i in range(3):
     sql = fuzzer.fuzz()
-    print(f'#{i}: \t{sql}')
+    print(f'\n#{i}: \t{sql}')
     c = generate_constraints_from_conditions(extract_conditions(sql))
     vals = generate_values_from_constraints(c)
     print(vals)
