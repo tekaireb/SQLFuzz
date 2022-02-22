@@ -181,7 +181,7 @@ def generate_constraints_from_conditions(conditions):
                 if val not in constraint_table[field]['neq']:
                     constraint_table[field]['neq'].append(val)
 
-    print(constraint_table)
+    # print(constraint_table)
     return constraint_table
 
 
@@ -240,9 +240,8 @@ def generate_values(sql):
     return generate_values_from_constraints(constraints)
 
 
-for i in range(3):
+for i in range(6):
     sql = fuzzer.fuzz()
     print(f'\n#{i}: \t{sql}')
-    c = generate_constraints_from_conditions(extract_conditions(sql))
-    vals = generate_values_from_constraints(c)
+    vals = generate_values(sql)
     print(vals)
