@@ -109,6 +109,25 @@ def random_name():
 
     return ''.join([random.choice(morphemes)() for _ in range(random.randrange(2, 5))])
 
+def random_ssn():
+    f = open('./ssn.txt', 'r+') 
+    generated_distinct_ssn = False
+    ssn = ''
+    while generated_distinct_ssn == False:
+        ssn = '{}-{}-{}'.format(random_num_with_N_digits(3), random_num_with_N_digits(2), random_num_with_N_digits(4))
+        if(ssn not in f.read()):
+            f.write(ssn + '\n')
+            generated_distinct_ssn = True
+        else: 
+            print('found duplicate! {}'.format(ssn))
+
+    f.close()
+    return ssn
+    
+def random_num_with_N_digits(n):
+    range_start = 10**(n-1)
+    range_end = (10**n)-1
+    return random.randint(range_start, range_end)
 
 # Create values that satisfy search constraints specified in SQL query
 
