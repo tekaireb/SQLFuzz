@@ -12,15 +12,15 @@ class Person():
         self.phone_number = phone_number
     
     def __eq__(self, rhs):
-        return self.name == rhs.name and self.age == rhs.age and self.email_address == rhs.email_address and self.phone_number == phone_number
+        return self.ssn == rhs.ssn and self.name == rhs.name and self.age == rhs.age and self.email_address == rhs.email_address and self.phone_number == phone_number
 
     def toString(self):
-        return "name: {} age: {}, email address: {}, phone number: {}".format(self.name, self.age, self.email_address, self.phone_number)
+        return "ssn: {} name: {} age: {}, email address: {}, phone number: {}".format(self.ssn, self.name, self.age, self.email_address, self.phone_number)
 
 class Query:
     INSERT_PERSON = "INSERT INTO Persons VALUES('{}','{}', {}, '{}', '{}')"
     SELECT_ALL = "SELECT * FROM Persons"
-    CREATE_PERSON_TABLE = "create table if not exists Persons (ssn VARCHAR(11) PRIMARY KEY, name VARCHAR(64), age INT, email_address VARCHAR(64), phone_number VARCHAR(64))"
+    CREATE_PERSON_TABLE = "CREATE TABLE if not exists Persons (ssn VARCHAR(11) PRIMARY KEY, name VARCHAR(64), age INT, email_address VARCHAR(64), phone_number VARCHAR(64))"
 
     def __init__(self):
         self.db_name = DB_NAME
@@ -43,7 +43,7 @@ class Query:
         return Person(p[0], p[1], p[2], p[3], p[4])
 
 
-p = Person("gautam", 21, "gautam@ucsb.edu", "(408) 823-1234")
+p = Person("123-12-1234", "gautam", 21, "gautam@ucsb.edu", "(408) 823-1234")
 q = Query()
-# q.insertPerson(p)
+q.insertPerson(p)
 result = q.getAll()
