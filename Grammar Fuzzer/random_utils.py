@@ -3,6 +3,8 @@ import random
 
 # Generate random values
 
+random.seed(42)
+
 
 def random_string(length):
     letters = string.ascii_lowercase
