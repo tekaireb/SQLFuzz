@@ -4,14 +4,16 @@ import string
 import random
 import sys
 
+from random_utils import *
+
 # Specify database configuration
 
 db = 'Users_DB'
-fields = ['name', 'age', 'email_address', 'phone_number']
+fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
-types = ['<Name>', '<Integer>', '<Email>', '<Phone>']
+types = ['<Name>', '<Integer>', '<Email>', '<Phone>', '<SSN>']
 comparators = ['<StringComparator>', '<Comparator>',
-               '<StringComparator>', '<StringComparator>']
+               '<StringComparator>', '<StringComparator>', '<StringComparator>']
 
 # Specify SQL Grammar for grammar-based fuzzer to generate SQL queries
 
@@ -40,7 +42,7 @@ SQL_GRAMMAR: Grammar = {
         [f'{f} {c} "{t}"' for f, c, t in zip(fields, comparators, types)],
 
     '<Comparator>':
-        ['<', '<=', '=', '<LAngle><RAngle>' '>=', '>'],
+        ['<', '<=', '=', '<LAngle><RAngle>', '>=', '>'],
 
     '<StringComparator>':
         ['=', '<LAngle><RAngle>'],
@@ -62,74 +64,20 @@ SQL_GRAMMAR: Grammar = {
     '<Integer>': ['<Digit>', '<Integer><Digit>'],  # Only positive numbers
     '<Digit>': [str(i) for i in range(10)],
     '<Email>': ['<String>@<String>.com', '<String>@<String>.org', '<String>@<String>.edu'],
-    '<Phone>': ['(<Area>) <Exchange>-<Line>'],
+    '<Phone>': ['(<Area>)<Exchange>-<Line>'],
     '<Lead-Digit>': [str(i) for i in range(2, 10)],
     '<Area>': ['<Lead-Digit><Digit><Digit>'],
     '<Exchange>': ['<Lead-Digit><Digit><Digit>'],
-    '<Line>': ['<Digit><Digit><Digit><Digit>']
+    '<Line>': ['<Digit><Digit><Digit><Digit>'],
+    '<SSN>': ['<Digit><Digit><Digit>-<Digit><Digit>-<Digit><Digit><Digit><Digit>']
 }
 
 fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
                        start_symbol='<Query>', max_nonterminals=5)
 
 
-# Generate random values
-
-def random_string(length):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(length))
-
-
-def random_phone():
-    def ld(): return random.randrange(2, 10)  # Lead digit
-    def d(): return random.randrange(0, 10)  # Digit
-    return '({}{}{}) {}{}{}-{}{}{}{}'.format(ld(), d(), d(), ld(), *[d() for _ in range(6)])
-
-
-def random_email():
-    domains = ['com', 'org', 'net', 'edu']
-    email_len = random.randrange(5, 12)
-    site_len = random.randrange(4, 8)
-    return '{}@{}.{}'.format(random_string(email_len), random_string(site_len), random.choice(domains))
-
-
-def random_name():
-    vowels = 'aeiou'
-    consonants = 'bcdfghjklmnprstvxyz'
-
-    def c(): return random.choice(consonants)
-    def v(): return random.choice(vowels)
-
-    def cv(): return c() + v()
-    def vc(): return v() + c()
-    def cvc(): return c() + vc()
-    def cvvc(): return cv() + "'" + vc()
-
-    morphemes = [cv, vc, cvc, cvvc]
-
-    return ''.join([random.choice(morphemes)() for _ in range(random.randrange(2, 5))])
-
-def random_ssn():
-    f = open('./ssn.txt', 'r+') 
-    generated_distinct_ssn = False
-    ssn = ''
-    while generated_distinct_ssn == False:
-        ssn = '{}-{}-{}'.format(random_num_with_N_digits(3), random_num_with_N_digits(2), random_num_with_N_digits(4))
-        if(ssn not in f.read()):
-            f.write(ssn + '\n')
-            generated_distinct_ssn = True
-        else: 
-            print('found duplicate! {}'.format(ssn))
-
-    f.close()
-    return ssn
-    
-def random_num_with_N_digits(n):
-    range_start = 10**(n-1)
-    range_end = (10**n)-1
-    return random.randint(range_start, range_end)
-
 # Create values that satisfy search constraints specified in SQL query
+
 
 def extract_type(sql):
     return sql[:sql.find(' ')]
@@ -222,6 +170,7 @@ def generate_values_from_constraints(constraints):
         return (random_name() if t == '<Name>' else
                 random_email() if t == '<Email>' else
                 random_phone() if t == '<Phone>' else
+                random_ssn() if t == '<SSN>' else
                 random_string(10))
 
     for field, constraint in constraints.items():
