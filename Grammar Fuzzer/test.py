@@ -212,11 +212,20 @@ def insert_from_values(vals):
     insert = f'INSERT INTO {db} (' + ', '.join(vals.keys()) + ')\n'
     insert += 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
     return insert
-    
+
+
+def insert_from_query(sql):
+    return insert_from_values(generate_values(sql))
+
 
 for i in range(6):
-    sql = fuzzer.fuzz()
-    print(f'\n#{i}: \t{sql}')
-    vals = generate_values(sql)
-    # print(vals)
-    print(insert_from_values(vals))
+    print(f'\n#{i}:\n')
+    select = fuzzer.fuzz()
+    insert = insert_from_query(select)
+
+    print(select)
+    # TODO: execute query on database, save results
+    print(insert)
+    # TODO: execute insert on database
+    print(select)
+    # TODO: execute query again, perform set subtraction and verify that properties hold
