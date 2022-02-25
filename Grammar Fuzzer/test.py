@@ -102,7 +102,7 @@ def generate_constraints_from_conditions(conditions):
                              for field, comp in zip(fields, comparators)])
 
     condition = random.choice(conditions)
-    print('Selected condition:', condition)
+    # print('Selected condition:', condition)
 
     for terms in condition.split('AND'):
         # print('Terms:', terms)
@@ -208,8 +208,15 @@ def generate_values(sql):
     return generate_values_from_constraints(constraints)
 
 
+def insert_from_values(vals):
+    insert = f'INSERT INTO {db} (' + ', '.join(vals.keys()) + ')\n'
+    insert += 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
+    return insert
+    
+
 for i in range(6):
     sql = fuzzer.fuzz()
     print(f'\n#{i}: \t{sql}')
     vals = generate_values(sql)
-    print(vals)
+    # print(vals)
+    print(insert_from_values(vals))
