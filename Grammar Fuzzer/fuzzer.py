@@ -1,5 +1,6 @@
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from typing import Dict, Union, Any, Tuple, List
+from database import Query, Person
 import string
 import random
 import sys
@@ -9,6 +10,7 @@ from random_utils import *
 # Specify database configuration
 
 db = 'Users_DB'
+dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
 types = ['<Name>', '<Integer>', '<Email>', '<Phone>', '<SSN>']
@@ -82,6 +84,12 @@ fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
 def extract_type(sql):
     return sql[:sql.find(' ')]
 
+
+
+def extract_column_names(selectSqlStatement):
+    start = selectSqlStatement.find('SELECT')
+    end = selectSqlStatement.find('FROM')
+    return selectSqlStatement[start + 7:end-1].replace(',', '').split(' ')
 
 def extract_conditions(sql):
     # Get full condition (everything after 'WHERE')
@@ -207,25 +215,64 @@ def generate_values(sql):
     constraints = generate_constraints_from_conditions(conds)
     return generate_values_from_constraints(constraints)
 
+def generate_target(selectSqlStatement, vals):
+    keys = extract_column_names(selectSqlStatement)
+    #
+    return [tuple([vals[k] for k in keys])]
 
 def insert_from_values(vals):
-    insert = f'INSERT INTO {db} (' + ', '.join(vals.keys()) + ')\n'
-    insert += 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
+    values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
+    insert = 'INSERT INTO {} {}'.format(db, values)
     return insert
 
 
 def insert_from_query(sql):
     return insert_from_values(generate_values(sql))
 
+def consistency_checker_insert(before, after, target):
+    bLen = len(before)
+    aLen = len(after)
+    if(before == [] and after == []):
+        print('Successful Insert \u2713')
+        return True
 
-for i in range(6):
-    print(f'\n#{i}:\n')
-    select = fuzzer.fuzz()
-    insert = insert_from_query(select)
+    if(aLen != bLen and aLen - bLen != 1): 
+        print('Failed Insert \u274c')
+        return False
+    
+    difference = list(set(after) - set(before))
+    isConsistent = difference == target
 
-    print(select)
-    # TODO: execute query on database, save results
-    print(insert)
-    # TODO: execute insert on database
-    print(select)
-    # TODO: execute query again, perform set subtraction and verify that properties hold
+    if(isConsistent):
+        print('Successful Insert \u2713')
+        return True
+    else:
+        print('Failed Insert \u274c')
+        print('actual difference: {} vs expected difference: {}'.format(difference, target))
+        return False
+
+def runner(numTests):
+    for i in range(numTests):
+        print(f'\n#{i+1}:\n')
+        select = fuzzer.fuzz()
+        vals = generate_values(select)
+        insert = insert_from_values(vals)
+
+        print(select)
+        print(insert)
+
+        before = dbInterface.executeSelectStatement(select)
+        dbInterface.executeSqlStatement(insert)
+        after = dbInterface.executeSelectStatement(select)
+        
+        target = generate_target(select, vals)
+        consistency_checker_insert(before, after, target)
+        
+
+if(len(sys.argv) != 2):
+    print('USAGE: python3 fuzzer.py <number of tests>')
+    exit(0)
+
+numTests = int(sys.argv[1])
+runner(numTests)
+        

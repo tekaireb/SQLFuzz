@@ -1,10 +1,10 @@
 import string
 import random
+from datetime import datetime
 
 # Generate random values
-
-random.seed(42)
-
+now = datetime.now()
+random.seed(now)
 
 def random_string(length):
     letters = string.ascii_lowercase
