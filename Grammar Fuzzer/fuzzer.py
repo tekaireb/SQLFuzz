@@ -229,7 +229,7 @@ def insert_from_values(vals):
 def insert_from_query(sql):
     return insert_from_values(generate_values(sql))
 
-def consistency_checker_insert(before, after, target):
+def consistency_checker_insert(select, insert, before, after, target):
     bLen = len(before)
     aLen = len(after)
     if(before == [] and after == []):
@@ -247,8 +247,11 @@ def consistency_checker_insert(before, after, target):
         print('Successful Insert \u2713')
         return True
     else:
-        print('Failed Insert \u274c')
-        print('actual difference: {} vs expected difference: {}'.format(difference, target))
+        outputToFailureTxt = '{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(select, insert, difference, target)
+        outputToTerminal = 'Failed Insert \u274c\nactual difference: {} vs expected difference: {}\n'.format(difference, target)
+        print(outputToTerminal)
+        writer = open('./failures.txt', 'a')
+        writer.write(outputToFailureTxt)
         return False
 
 def runner(numTests):
@@ -266,7 +269,7 @@ def runner(numTests):
         after = dbInterface.executeSelectStatement(select)
         
         target = generate_target(select, vals)
-        consistency_checker_insert(before, after, target)
+        consistency_checker_insert(select, insert, before, after, target)
         
 
 if(len(sys.argv) != 2):

@@ -1,0 +1,20 @@
+SELECT age, age FROM Users_DB WHERE age < "9" AND age <= "0"
+INSERT INTO Users_DB VALUES ("raliphe'in", "5", "dyqsvsr@jkbdh.edu", "(201)686-9041", "950-30-3594")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(5, 5)]
+
+SELECT age FROM Users_DB WHERE age > "9" AND age >= "7"
+INSERT INTO Users_DB VALUES ("xu'albi'ic", "12", "vorwva@pusw.edu", "(767)925-1225", "367-93-5382")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(12,)]
+
+SELECT age FROM Users_DB WHERE age >= "5" AND age <= "5" OR age = "6" OR phone_number = "(660)585-6873"
+INSERT INTO Users_DB VALUES ("he'amgom", "5", "qjdicg@agmviz.net", "(652)787-4671", "866-21-7426")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(5,)]
+
+SELECT age FROM Users_DB WHERE age = "0"
+INSERT INTO Users_DB VALUES ("yige", "70", "xukwleu@ohye.net", "(752)537-8781", "716-80-3945")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(70,)]
+
