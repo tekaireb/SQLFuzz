@@ -16,7 +16,7 @@ from random_utils import *
 db = 'Users_DB'
 generatedSSNs = set()
 numFailures = 0
-numSuccesses = 0 
+numSuccesses = 0
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
@@ -148,7 +148,7 @@ def generate_constraints_from_conditions(conditions):
                 constraint_table[field]['min'] = max(
                     constraint_table[field]['min'], val) if constraint_table[field]['min'] else val
             elif comp == '>':
-                constraint_table[field]['min'] = min(
+                constraint_table[field]['min'] = max(
                     constraint_table[field]['min'], val + 1) if constraint_table[field]['min'] else val + 1
 
         elif comparators[fields.index(field)] == '<StringComparator>':  # String
@@ -211,7 +211,7 @@ def generate_values_from_constraints(constraints):
                 random_string(10))
 
     for field, constraint in constraints.items():
-        # print(f'field: {field} - constraint: {constraint}')
+        print(f'field: {field} - constraint: {constraint}')
 
         # If there is an `equals` constraint, set the value to it
         if constraint['eq']:
@@ -276,19 +276,22 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
 
     difference = list_diff(after, before)
     isConsistent = difference == target
-    
-    outputToSuccessTxt = '\n#{}:\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(testNum, select, insert)
-    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(testNum, before, after, select, insert, difference, target)
-    
+
+    outputToSuccessTxt = '\n#{}:\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(
+        testNum, select, insert)
+    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
+        testNum, before, after, select, insert, difference, target)
+
     if(isConsistent):
         print('Successful Insert \u2713')
         successWriter = open('./output/successes.txt', 'a')
         successWriter.write(outputToSuccessTxt)
-        numSuccesses+=1
+        numSuccesses += 1
         return True
     else:
-        numFailures+=1
-        print(f'Failed Insert \u274c\nactual difference: {difference} vs expected difference: {target}\n')
+        numFailures += 1
+        print(
+            f'Failed Insert \u274c\nactual difference: {difference} vs expected difference: {target}\n')
         failureWriter = open('./output/failures.txt', 'a')
         failureWriter.write(outputToFailureTxt)
         return False
