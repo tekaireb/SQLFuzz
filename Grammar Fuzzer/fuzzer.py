@@ -1,11 +1,14 @@
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from typing import Dict, Union, Any, Tuple, List
-from database import Query, Person
+from database import Query
 import string
 import random
 import sys
+import os
+import time
 
 from random_utils import *
+
 
 # Specify database configuration
 
@@ -13,7 +16,7 @@ db = 'Users_DB'
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
-types = ['<Name>', '<Integer>', '<Email>', '<Phone>', '<SSN>']
+types = ['<Name>', '<Age>', '<Email>', '<Phone>', '<SSN>']
 comparators = ['<StringComparator>', '<Comparator>',
                '<StringComparator>', '<StringComparator>', '<StringComparator>']
 
@@ -62,8 +65,9 @@ SQL_GRAMMAR: Grammar = {
     '<Name>': ['<String>'],
     '<String>': ['<Char>', '<String><Char>'],
     '<Char>': list(string.ascii_lowercase),
+    '<Age>': [str(i) for i in range(2, 100)],
     # '<Integer>': ['<Digit>', '-<Integer>', '<Integer><Digit>'],
-    '<Integer>': ['<Digit>', '<Integer><Digit>'],  # Only positive numbers
+    # '<Integer>': ['<Digit>', '<Integer><Digit>'],  # Only positive numbers
     '<Digit>': [str(i) for i in range(10)],
     '<Email>': ['<String>@<String>.com', '<String>@<String>.org', '<String>@<String>.edu'],
     '<Phone>': ['(<Area>)<Exchange>-<Line>'],
@@ -121,7 +125,6 @@ def generate_constraints_from_conditions(conditions):
         if comparators[fields.index(field)] == '<Comparator>':  # Integer
             val = int(val)
             if comp == '<':
-                # TODO: Add validity checking (e.g., warn/terminate if less than and greater than values have no overlapping range)
                 constraint_table[field]['max'] = min(
                     constraint_table[field]['max'], val - 1) if constraint_table[field]['max'] else val - 1
             elif comp == '<=':
@@ -167,12 +170,12 @@ def generate_constraints_from_conditions(conditions):
     for c in constraint_table.values():
         # Check min/max constraints (if they exist)
         if 'min' in c:
-            if c['min'] and c['max'] and c['min'] > c['max']:
+            if c['min'] != None and c['max'] != None and c['min'] > c['max']:
                 print(
                     'INVALID CONSTRAINTS: specified minimum greater than maximum')
                 return None
             # If equals is defined, ensure that it is between the min and max bounds (if each are also defined)
-            if c['eq'] and ((c['min'] and c['eq'] < c['min']) or (c['max'] and c['eq'] > c['max'])):
+            if c['eq'] != None and ((c['min'] and c['eq'] < c['min']) or (c['max'] and c['eq'] > c['max'])):
                 print(
                     'INVALID CONSTRAINTS: specified equals that exceeds min/max bounds')
                 return None
@@ -203,6 +206,8 @@ def generate_values_from_constraints(constraints):
                 random_string(10))
 
     for field, constraint in constraints.items():
+        # print(f'field: {field} - constraint: {constraint}')
+
         # If there is an `equals` constraint, set the value to it
         if constraint['eq']:
             values[field] = constraint['eq']
@@ -247,7 +252,6 @@ def generate_values(sql):
 
 def generate_target(selectSqlStatement, vals):
     keys = extract_column_names(selectSqlStatement)
-    #
     return [tuple([vals[k] for k in keys])]
 
 
@@ -273,15 +277,15 @@ def consistency_checker_insert(select, insert, before, after, target):
         print('Failed Insert \u274c')
         return False
 
-    difference = list(set(after) - set(before))
+    difference = list_diff(after, before)
     isConsistent = difference == target
 
     if(isConsistent):
         print('Successful Insert \u2713')
         return True
     else:
-        outputToFailureTxt = '{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
-            select, insert, difference, target)
+        outputToFailureTxt = '{}\n\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
+            before, after, select, insert, difference, target)
         outputToTerminal = 'Failed Insert \u274c\nactual difference: {} vs expected difference: {}\n'.format(
             difference, target)
         print(outputToTerminal)
@@ -317,4 +321,11 @@ if(len(sys.argv) != 2):
     exit(0)
 
 numTests = int(sys.argv[1])
+
+# block_print()
+tic = time.perf_counter()
 runner(numTests)
+toc = time.perf_counter()
+# enable_print()
+
+print(f'\n\nRan {numTests} tests in {toc - tic:0.4f} seconds')

@@ -1,6 +1,9 @@
 import string
 import random
 from datetime import datetime
+from collections import Counter
+import os
+import sys
 
 # Generate random values
 now = datetime.now()
@@ -64,3 +67,31 @@ def random_num_with_N_digits(n):
     range_start = 10**(n-1)
     range_end = (10**n)-1
     return random.randint(range_start, range_end)
+
+
+def list_diff(minuend, subtrahend):
+    result = []
+
+    counts = Counter(minuend)
+
+    for i in subtrahend:
+        counts[i] -= 1
+
+    for entry, count in counts.items():
+        if count <= 0:
+            continue
+
+        for i in range(count):
+            result.append(entry)
+
+    return result
+
+
+# Disable
+def block_print():
+    sys.stdout = open(os.devnull, 'w')
+
+
+# Restore
+def enable_print():
+    sys.stdout = sys.__stdout__
