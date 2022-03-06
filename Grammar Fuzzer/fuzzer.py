@@ -14,6 +14,8 @@ from random_utils import *
 
 db = 'Users_DB'
 generatedSSNs = set()
+numFailures = 0
+numSuccesses = 0 
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
@@ -269,6 +271,7 @@ def insert_from_query(sql):
 
 
 def consistency_checker_insert(select, insert, before, after, target):
+    global numFailures, numSuccesses
     bLen = len(before)
     aLen = len(after)
     if(before == [] and after == []):
@@ -284,6 +287,7 @@ def consistency_checker_insert(select, insert, before, after, target):
 
     if(isConsistent):
         print('Successful Insert \u2713')
+        numSuccesses+=1
         return True
     else:
         outputToFailureTxt = '{}\n\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
@@ -291,6 +295,7 @@ def consistency_checker_insert(select, insert, before, after, target):
         outputToTerminal = 'Failed Insert \u274c\nactual difference: {} vs expected difference: {}\n'.format(
             difference, target)
         print(outputToTerminal)
+        numFailures+=1
         writer = open('./failures.txt', 'a')
         writer.write(outputToFailureTxt)
         return False
@@ -330,4 +335,7 @@ runner(numTests)
 toc = time.perf_counter()
 # enable_print()
 
-print(f'\n\nRan {numTests} tests in {toc - tic:0.4f} seconds')
+print('\n-------- SQLFUZZ RESULTS -----------\n')
+print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
+print(f'{numSuccesses} Successes\n{numFailures} Failures')
+print('\n------------------------------------')
