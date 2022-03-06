@@ -271,34 +271,26 @@ def insert_from_query(sql):
     return insert_from_values(v) if v else None
 
 
-def consistency_checker_insert(select, insert, before, after, target):
+def consistency_checker_insert(testNum, select, insert, before, after, target):
     global numFailures, numSuccesses
-    bLen = len(before)
-    aLen = len(after)
-    if(before == [] and after == []):
-        print('Successful Insert \u2713')
-        return True
-
-    if(aLen != bLen and aLen - bLen != 1):
-        print('Failed Insert \u274c')
-        return False
 
     difference = list_diff(after, before)
     isConsistent = difference == target
-
+    
+    outputToSuccessTxt = '\n#{}:\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(testNum, select, insert)
+    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(testNum, before, after, select, insert, difference, target)
+    
     if(isConsistent):
         print('Successful Insert \u2713')
+        successWriter = open('./output/successes.txt', 'a')
+        successWriter.write(outputToSuccessTxt)
         numSuccesses+=1
         return True
     else:
-        outputToFailureTxt = '{}\n\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
-            before, after, select, insert, difference, target)
-        outputToTerminal = 'Failed Insert \u274c\nactual difference: {} vs expected difference: {}\n'.format(
-            difference, target)
-        print(outputToTerminal)
         numFailures+=1
-        writer = open('./failures.txt', 'a')
-        writer.write(outputToFailureTxt)
+        print(f'Failed Insert \u274c\nactual difference: {difference} vs expected difference: {target}\n')
+        failureWriter = open('./output/failures.txt', 'a')
+        failureWriter.write(outputToFailureTxt)
         return False
 
 
@@ -321,7 +313,7 @@ def runner(numTests):
         after = dbInterface.executeSelectStatement(select)
 
         target = generate_target(select, vals)
-        consistency_checker_insert(select, insert, before, after, target)
+        consistency_checker_insert(i, select, insert, before, after, target)
 
 
 if(len(sys.argv) != 2):
@@ -329,7 +321,7 @@ if(len(sys.argv) != 2):
     exit(0)
 
 numTests = int(sys.argv[1])
-
+print('\n')
 block_print()
 tic = time.perf_counter()
 runner(numTests)

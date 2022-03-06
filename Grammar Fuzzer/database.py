@@ -30,8 +30,10 @@ class Query:
         self.conn = apsw.Connection(self.db_name, statementcachesize=0)
         self.conn.cursor().execute(self.DROP_USERDB_TABLE)
 
-        # Clear saved failures between runs
-        with open('./failures.txt', 'w') as f:
+        # Clear saved successes failures between runs
+        with open('./output/failures.txt', 'w') as f:
+            pass
+        with open('./output/successes.txt', 'w') as f:
             pass
 
         self.conn.cursor().execute(self.CREATE_USERDB_TABLE)
