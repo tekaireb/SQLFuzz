@@ -1,6 +1,7 @@
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from typing import Dict, Union, Any, Tuple, List
 from database import Query
+from tqdm import tqdm
 import string
 import random
 import sys
@@ -302,7 +303,7 @@ def consistency_checker_insert(select, insert, before, after, target):
 
 
 def runner(numTests):
-    for i in range(numTests):
+    for i in tqdm(range(numTests)):
         print(f'\n#{i+1}:\n')
 
         vals = None
@@ -329,11 +330,11 @@ if(len(sys.argv) != 2):
 
 numTests = int(sys.argv[1])
 
-# block_print()
+block_print()
 tic = time.perf_counter()
 runner(numTests)
 toc = time.perf_counter()
-# enable_print()
+enable_print()
 
 print('\n-------- SQLFUZZ RESULTS -----------\n')
 print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
