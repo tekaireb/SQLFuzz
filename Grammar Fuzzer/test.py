@@ -1,6 +1,5 @@
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from typing import Dict, Union, Any, Tuple, List
-from database import Query, Person
 import string
 import random
 import sys
@@ -10,7 +9,6 @@ from random_utils import *
 # Specify database configuration
 
 db = 'Users_DB'
-dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
 types = ['<Name>', '<Integer>', '<Email>', '<Phone>', '<SSN>']
@@ -83,12 +81,6 @@ fuzzer = GrammarFuzzer(grammar=SQL_GRAMMAR,
 
 def extract_type(sql):
     return sql[:sql.find(' ')]
-
-
-def extract_column_names(selectSqlStatement):
-    start = selectSqlStatement.find('SELECT')
-    end = selectSqlStatement.find('FROM')
-    return selectSqlStatement[start + 7:end-1].replace(',', '').split(' ')
 
 
 def extract_conditions(sql):
@@ -165,17 +157,14 @@ def generate_constraints_from_conditions(conditions):
                     constraint_table[field]['neq'].append(val)
 
     for c in constraint_table.values():
-        # Check min/max constraints (if they exist)
-        if 'min' in c:
-            if c['min'] and c['max'] and c['min'] > c['max']:
-                print(
-                    'INVALID CONSTRAINTS: specified minimum greater than maximum')
-                return None
-            # If equals is defined, ensure that it is between the min and max bounds (if each are also defined)
-            if c['eq'] and ((c['min'] and c['eq'] < c['min']) or (c['max'] and c['eq'] > c['max'])):
-                print(
-                    'INVALID CONSTRAINTS: specified equals that exceeds min/max bounds')
-                return None
+        if c['min'] > c['max']:
+            print(
+                'INVALID CONSTRAINTS: specified minimum greater than maximum')
+            return None
+        if c['eq'] < c['min'] or c['eq'] > c['max']:
+            print(
+                'INVALID CONSTRAINTS: specified equals that exceeds min/max bounds')
+            return None
 
     # print(constraint_table)
     return constraint_table
@@ -211,19 +200,11 @@ def generate_values_from_constraints(constraints):
         if comparators[fields.index(field)] == '<Comparator>':  # Integer
             max_val = constraint['max'] if constraint['max'] else 100
             min_val = constraint['min'] if constraint['min'] else 0
-            if min_val == max_val + 1:
-                val = min_val
-            else:
-                # print('min:', min_val, '- max:', max_val)
-                val = random.randrange(min_val, max_val + 1)
+            val = random.randrange(min_val, max_val + 1)
 
             # Find new random value if value is specified under `not equals`
             while val in constraint['neq']:
-                if min_val == max_val + 1:
-                    val = min_val
-                else:
-                    # print('min:', min_val, '- max:', max_val)
-                    val = random.randrange(min_val, max_val + 1)
+                val = random.randrange(min_val, max_val + 1)
 
             values[field] = val
             continue
@@ -245,15 +226,9 @@ def generate_values(sql):
     return generate_values_from_constraints(constraints) if constraints else None
 
 
-def generate_target(selectSqlStatement, vals):
-    keys = extract_column_names(selectSqlStatement)
-    #
-    return [tuple([vals[k] for k in keys])]
-
-
 def insert_from_values(vals):
-    values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
-    insert = 'INSERT INTO {} {}'.format(db, values)
+    insert = f'INSERT INTO {db} (' + ', '.join(vals.keys()) + ')\n'
+    insert += 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
     return insert
 
 
@@ -262,59 +237,16 @@ def insert_from_query(sql):
     return insert_from_values(v) if v else None
 
 
-def consistency_checker_insert(select, insert, before, after, target):
-    bLen = len(before)
-    aLen = len(after)
-    if(before == [] and after == []):
-        print('Successful Insert \u2713')
-        return True
+for i in range(6):
+    print(f'\n#{i}:\n')
+    insert = None
+    while not insert:
+        select = fuzzer.fuzz()
+        insert = insert_from_query(select)
 
-    if(aLen != bLen and aLen - bLen != 1):
-        print('Failed Insert \u274c')
-        return False
-
-    difference = list(set(after) - set(before))
-    isConsistent = difference == target
-
-    if(isConsistent):
-        print('Successful Insert \u2713')
-        return True
-    else:
-        outputToFailureTxt = '{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
-            select, insert, difference, target)
-        outputToTerminal = 'Failed Insert \u274c\nactual difference: {} vs expected difference: {}\n'.format(
-            difference, target)
-        print(outputToTerminal)
-        writer = open('./failures.txt', 'a')
-        writer.write(outputToFailureTxt)
-        return False
-
-
-def runner(numTests):
-    for i in range(numTests):
-        print(f'\n#{i+1}:\n')
-
-        vals = None
-        while not vals:
-            select = fuzzer.fuzz()
-            vals = generate_values(select)
-
-        insert = insert_from_values(vals)
-
-        print(select)
-        print(insert)
-
-        before = dbInterface.executeSelectStatement(select)
-        dbInterface.executeSqlStatement(insert)
-        after = dbInterface.executeSelectStatement(select)
-
-        target = generate_target(select, vals)
-        consistency_checker_insert(select, insert, before, after, target)
-
-
-if(len(sys.argv) != 2):
-    print('USAGE: python3 fuzzer.py <number of tests>')
-    exit(0)
-
-numTests = int(sys.argv[1])
-runner(numTests)
+    print(select)
+    # TODO: execute query on database, save results
+    print(insert)
+    # TODO: execute insert on database
+    print(select)
+    # TODO: execute query again, perform set subtraction and verify that properties hold

@@ -4,7 +4,9 @@ from datetime import datetime
 
 # Generate random values
 now = datetime.now()
-random.seed(now)
+# random.seed(now)
+random.seed(42)
+
 
 def random_string(length):
     letters = string.ascii_lowercase
