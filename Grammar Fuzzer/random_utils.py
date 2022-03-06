@@ -46,20 +46,16 @@ def random_name():
     return ''.join([random.choice(morphemes)() for _ in range(random.randrange(2, 5))])
 
 
-def random_ssn():
-    f = open('./ssn.txt', 'r+')
+def random_ssn(generatedSSNs):
     generated_distinct_ssn = False
     ssn = ''
     while generated_distinct_ssn == False:
         ssn = '{}-{}-{}'.format(random_num_with_N_digits(3),
                                 random_num_with_N_digits(2), random_num_with_N_digits(4))
-        if(ssn not in f.read()):
-            f.write(ssn + '\n')
+        if(ssn not in generatedSSNs):
+            generatedSSNs.add(ssn)
             generated_distinct_ssn = True
-        else:
-            print('found duplicate! {}'.format(ssn))
 
-    f.close()
     return ssn
 
 

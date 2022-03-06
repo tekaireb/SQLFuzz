@@ -30,10 +30,6 @@ class Query:
         self.conn = apsw.Connection(self.db_name, statementcachesize=0)
         self.conn.cursor().execute(self.DROP_USERDB_TABLE)
 
-        # Clear SSNs between runs
-        with open('./ssn.txt', 'w') as f:
-            pass
-
         # Clear saved failures between runs
         with open('./failures.txt', 'w') as f:
             pass

@@ -13,6 +13,7 @@ from random_utils import *
 # Specify database configuration
 
 db = 'Users_DB'
+generatedSSNs = set()
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
@@ -188,6 +189,7 @@ def generate_values_from_constraints(constraints):
     values = {}
 
     def generate_value_of_type(field):
+        global generatedSSNs
         t = types[fields.index(field)]
 
         # if t == '<String>':
@@ -202,7 +204,7 @@ def generate_values_from_constraints(constraints):
         return (random_name() if t == '<Name>' else
                 random_email() if t == '<Email>' else
                 random_phone() if t == '<Phone>' else
-                random_ssn() if t == '<SSN>' else
+                random_ssn(generatedSSNs) if t == '<SSN>' else
                 random_string(10))
 
     for field, constraint in constraints.items():
