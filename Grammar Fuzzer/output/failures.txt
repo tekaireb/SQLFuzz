@@ -1,0 +1,200 @@
+
+#0:
+[]
+[]
+
+SELECT age, ssn FROM Users_DB WHERE ssn = "834-57-0051"
+INSERT INTO Users_DB VALUES ("ridun", "86", "muoeiehxrr@ixsnsml.org", "834-57-0051", "(487)301-2269")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(86, '(487)301-2269')]
+
+
+#2:
+[]
+[]
+
+SELECT name, email_address FROM Users_DB WHERE ssn = "164-31-4824" OR age = "3"
+INSERT INTO Users_DB VALUES ("cijapge'eh", "94", "164-31-4824", "(360)933-7543", "xkznz@vxzhi.org")
+Failed Insert ❌
+actual difference: [] vs expected difference: [("cijapge'eh", '164-31-4824')]
+
+
+#5:
+[]
+[]
+
+SELECT phone_number FROM Users_DB WHERE ssn = "715-16-8747"
+INSERT INTO Users_DB VALUES ("715-16-8747", "37", "jawreib@brjwe.edu", "(309)677-7520", "lu'umji")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(309)677-7520',)]
+
+
+#11:
+[('zdhggroenf@iohcoz.com',), ('vcjqvutkcyh@vjhzg.org',), ('jawreib@brjwe.edu',), ('txsjodowjwm@iqrpoc.com',), ('nudptnibwl@goohl.com',), ('uuyrxgnohnk@omnx.com',)]
+[('zdhggroenf@iohcoz.com',), ('vcjqvutkcyh@vjhzg.org',), ('jawreib@brjwe.edu',), ('txsjodowjwm@iqrpoc.com',), ('nudptnibwl@goohl.com',), ('uuyrxgnohnk@omnx.com',)]
+
+SELECT email_address FROM Users_DB WHERE age <= "55" OR name = "z"
+INSERT INTO Users_DB VALUES ("jxkyst@cbefyt.com", "129", "z", "(347)879-7643", "873-75-2864")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('z',)]
+
+
+#13:
+[]
+[]
+
+SELECT phone_number, phone_number, phone_number FROM Users_DB WHERE age <= "18" AND name = "s"
+INSERT INTO Users_DB VALUES ("s", "105", "aljfgkypg@heecjz.com", "928-31-8170", "(259)496-2229")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('928-31-8170', '928-31-8170', '928-31-8170')]
+
+
+#17:
+[('883-09-1058',), ('835-99-7291',), ("lu'umji",), ('883-96-5415',), ('765-20-6383',), ('778-37-1349',), ('195-65-2582',), ('559-97-6295',), ('547-61-8204',), ('774-89-6531',)]
+[('883-09-1058',), ('835-99-7291',), ("lu'umji",), ('883-96-5415',), ('765-20-6383',), ('778-37-1349',), ('195-65-2582',), ('559-97-6295',), ('547-61-8204',), ('774-89-6531',)]
+
+SELECT ssn FROM Users_DB WHERE age < "68" OR name = "m"
+INSERT INTO Users_DB VALUES ("ducvaseg", "150", "(500)678-6863", "ommcvvr@euldfrm.org", "353-68-6671")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('353-68-6671',)]
+
+
+#21:
+[]
+[]
+
+SELECT age, name, email_address FROM Users_DB WHERE phone_number = "(207)910-5133"
+INSERT INTO Users_DB VALUES ("(207)910-5133", "81", "maxtgosnma@wggiywz.com", "heuhyotoh", "691-23-9796")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(81, '(207)910-5133', 'maxtgosnma@wggiywz.com')]
+
+
+#25:
+[]
+[]
+
+SELECT age FROM Users_DB WHERE age <= "18" AND age <= "5" AND name = "b"
+INSERT INTO Users_DB VALUES ("b", "36", "(826)583-8065", "ebttthu@jpnrpbc.net", "591-79-8940")
+Failed Insert ❌
+actual difference: [] vs expected difference: [(36,)]
+
+
+#27:
+[]
+[]
+
+SELECT name FROM Users_DB WHERE age = "34" AND age > "23"
+INSERT INTO Users_DB VALUES ("(381)799-7062", "58", "jakid@ckfm.org", "cose'ovpu'ofze'et", "721-65-3573")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(381)799-7062',)]
+
+
+#42:
+[]
+[]
+
+SELECT name, name FROM Users_DB WHERE name = "l"
+INSERT INTO Users_DB VALUES ("nyunxkt@hsrgmy.net", "110", "l", "(777)800-4908", "238-48-1107")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('nyunxkt@hsrgmy.net', 'nyunxkt@hsrgmy.net')]
+
+
+#45:
+[('(309)677-7520',), ('(859)601-3990',), ('(765)652-7111',), ('(911)411-1000',), ('(449)382-9922',), ('(432)736-7294',), ('(817)242-1020',), ('ebttthu@jpnrpbc.net',), ('(657)810-3579',), ('(824)931-4986',), ('(482)996-8845',), ('(424)418-8004',), ('(420)517-3109',), ('(467)922-3306',)]
+[('(309)677-7520',), ('(859)601-3990',), ('(765)652-7111',), ('(911)411-1000',), ('(449)382-9922',), ('(432)736-7294',), ('(817)242-1020',), ('ebttthu@jpnrpbc.net',), ('(657)810-3579',), ('(824)931-4986',), ('(482)996-8845',), ('(424)418-8004',), ('(420)517-3109',), ('(467)922-3306',)]
+
+SELECT phone_number FROM Users_DB WHERE age <= "12" OR age <= "43" OR phone_number = "(207)778-3216"
+INSERT INTO Users_DB VALUES ("(207)778-3216", "145", "tbdsxu@qcpxw.net", "vefnus", "537-87-6185")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('vefnus',)]
+
+
+#49:
+[("da'iggiruxtus",)]
+[("da'iggiruxtus",)]
+
+SELECT name FROM Users_DB WHERE age < "13"
+INSERT INTO Users_DB VALUES ("(471)486-3917", "95", "iybmmkbiifo@cpgt.edu", "ahmodlo'il", "832-43-2692")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(471)486-3917',)]
+
+
+#55:
+[('(360)933-7543',), ('(640)840-9097',), ('(347)879-7643',), ('928-31-8170',), ('ommcvvr@euldfrm.org',), ('(666)383-9826',), ("nama'exovgi",), ('(889)325-6802',), ('(478)365-8039',), ('(777)800-4908',), ('(983)969-3898',), ('vefnus',), ("ahmodlo'il",), ('ilfgrw@bvklelo.org',), ('(526)687-0494',)]
+[('(360)933-7543',), ('(640)840-9097',), ('(347)879-7643',), ('928-31-8170',), ('ommcvvr@euldfrm.org',), ('(666)383-9826',), ("nama'exovgi",), ('(889)325-6802',), ('(478)365-8039',), ('(777)800-4908',), ('(983)969-3898',), ('vefnus',), ("ahmodlo'il",), ('ilfgrw@bvklelo.org',), ('(526)687-0494',)]
+
+SELECT phone_number FROM Users_DB WHERE age > "90" OR phone_number = "(461)222-8330"
+INSERT INTO Users_DB VALUES ("(461)222-8330", "53", "fvlacexis@llfqy.org", "mafu", "617-82-2119")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('mafu',)]
+
+
+#68:
+[]
+[]
+
+SELECT phone_number, name FROM Users_DB WHERE age <= "3" AND age < "28"
+INSERT INTO Users_DB VALUES ("kevcivajfi'ux", "89", "vxsvvt@sfcse.com", "358-97-8437", "(449)584-3089")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('358-97-8437', "kevcivajfi'ux")]
+
+
+#74:
+[]
+[]
+
+SELECT phone_number FROM Users_DB WHERE phone_number = "(706)283-6959"
+INSERT INTO Users_DB VALUES ("ru'apfatga'ufkit", "168", "qnvgaukaul@bzxkvoh.edu", "509-88-2333", "(706)283-6959")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('509-88-2333',)]
+
+
+#79:
+[]
+[]
+
+SELECT email_address, age FROM Users_DB WHERE name = "i" AND age > "93"
+INSERT INTO Users_DB VALUES ("plkjdd@vavrye.net", "187", "i", "(759)734-3961", "208-26-2971")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('i', 187)]
+
+
+#81:
+[]
+[]
+
+SELECT phone_number, name, age FROM Users_DB WHERE email_address = "a@x.com"
+INSERT INTO Users_DB VALUES ("a@x.com", "87", "gele", "(201)713-2797", "935-30-6036")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(201)713-2797', 'a@x.com', 87)]
+
+
+#90:
+[]
+[]
+
+SELECT email_address FROM Users_DB WHERE age >= "80" AND phone_number = "(951)731-7444"
+INSERT INTO Users_DB VALUES ("igye'immuye'os", "121", "(951)731-7444", "wkqvwl@olnonno.com", "672-13-7896")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(951)731-7444',)]
+
+
+#91:
+[('b',)]
+[('b',)]
+
+SELECT name FROM Users_DB WHERE age <= "2" OR name = "b"
+INSERT INTO Users_DB VALUES ("(861)966-2047", "84", "fqxwrgppjj@vdspl.net", "ve'eytufga'eg", "223-82-7380")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(861)966-2047',)]
+
+
+#98:
+[]
+[]
+
+SELECT phone_number FROM Users_DB WHERE phone_number = "(261)466-1304" AND age = "73"
+INSERT INTO Users_DB VALUES ("samyholp@sdujk.org", "135", "viyobri'uf", "(261)466-1304", "929-90-2370")
+Failed Insert ❌
+actual difference: [] vs expected difference: [('(261)466-1304',)]
+

@@ -15,7 +15,12 @@ from random_utils import *
 
 db = 'Users_DB'
 generatedSSNs = set()
+
 numFailures = 0
+totalInsertFaults = 0
+numSwappedInsertFaults = 0
+numDoubleInsertFaults = 0
+
 numSuccesses = 0
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
@@ -195,15 +200,6 @@ def generate_values_from_constraints(constraints):
         global generatedSSNs
         t = types[fields.index(field)]
 
-        # if t == '<String>':
-        #     return random_string(10)
-        # if t == '<Name>':
-        #     return random_name()
-        # if t == '<Email>':
-        #     return random_email()
-        # if t == '<Phone>':
-        #     return random_phone()
-
         return (random_name() if t == '<Name>' else
                 random_email() if t == '<Email>' else
                 random_phone() if t == '<Phone>' else
@@ -260,11 +256,35 @@ def generate_target(selectSqlStatement, vals):
     return [tuple([vals[k] for k in keys])]
 
 
+def generate_insert_from_values(vals, probablityOfFault):
+    global totalInsertFaults
+    global numDoubleInsertFaults
+    global numSwappedInsertFaults
+    insert = ''    
+    shouldGenerateFaultyInsert = 0 < random.uniform(0,1) < probablityOfFault
+    if(shouldGenerateFaultyInsert):
+        totalInsertFaults+=1
+        # selectedFailure = random.sample(['double_insert', 'swapped_values'], 1)[0]
+        selectedFailure = 'swapped_values'
+        if(selectedFailure == 'swapped_values'):
+            numSwappedInsertFaults+=1
+            insert = insert_from_swapped_values(vals)            
+    else: 
+        insert = insert_from_values(vals)
+    return insert
+
+def insert_from_swapped_values(vals):
+    choices = ['name', 'email_address', 'phone_number', 'ssn']
+    s = random.sample(choices, 2)
+    # perform swaps
+    vals[s[0]], vals[s[1]] = vals[s[1]], vals[s[0]]
+    vals['age'] += random.randrange(100)
+    return insert_from_values(vals)
+
 def insert_from_values(vals):
     values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
     insert = 'INSERT INTO {} {}'.format(db, values)
     return insert
-
 
 def insert_from_query(sql):
     v = generate_values(sql)
@@ -297,7 +317,7 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
         return False
 
 
-def runner(numTests):
+def insert_runner(numTests, probablityOfFaults):
     for i in tqdm(range(numTests)):
         print(f'\n#{i+1}:\n')
 
@@ -306,10 +326,7 @@ def runner(numTests):
             select = fuzzer.fuzz()
             vals = generate_values(select)
 
-        insert = insert_from_values(vals)
-
-        print(select)
-        print(insert)
+        insert = generate_insert_from_values(vals, probablityOfFaults)
 
         before = dbInterface.executeSelectStatement(select)
         dbInterface.executeSqlStatement(insert)
@@ -319,19 +336,28 @@ def runner(numTests):
         consistency_checker_insert(i, select, insert, before, after, target)
 
 
-if(len(sys.argv) != 2):
-    print('USAGE: python3 fuzzer.py <number of tests>')
+if(len(sys.argv) != 3):
+    print('USAGE: python3 fuzzer.py <number of tests> <probablity (0-1) of fault being injected>')
     exit(0)
 
 numTests = int(sys.argv[1])
+probablityOfFaults = float(sys.argv[2])
 print('\n')
 block_print()
 tic = time.perf_counter()
-runner(numTests)
+insert_runner(numTests, probablityOfFaults)
 toc = time.perf_counter()
 enable_print()
 
-print('\n-------- SQLFUZZ RESULTS -----------\n')
+print('\n---------- SQLFUZZ RESULTS -------------\n')
 print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
-print(f'{numSuccesses} Successes\n{numFailures} Failures')
-print('\n------------------------------------')
+print(f'{numSuccesses} Successes\n{numFailures} Failures\n')
+print('\n--- INJECTED INSERT FAULTS RESULTS ---\n')
+print(f'Probablity of Failure: {probablityOfFaults}')
+print(f'Number of double inserts injected: {numDoubleInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
+try: 
+    print('Caught {}/{} -- {:.2f}%'.format(numFailures,totalInsertFaults,numFailures/totalInsertFaults * 100))
+except ZeroDivisionError: 
+    print('No inserts injected, either increase number of tests or probablity of injected fault')
+print('\n----------------------------------------')
+

@@ -20,7 +20,7 @@ DB_NAME = "persons.db"
 
 
 class Query:
-    # INSERT_PERSON = "INSERT INTO Users_DB (name, age, email_address, phone_number, ssn) VALUES('{}', '{}', '{}', '{}', '{}')"
+    INSERT_PERSON = "INSERT INTO Users_DB (name, age, email_address, phone_number, ssn) VALUES('{}', '{}', '{}', '{}', '{}')"
     SELECT_ALL = "SELECT * FROM Users_DB"
     CREATE_USERDB_TABLE = "CREATE TABLE if not exists Users_DB (name VARCHAR(64), age INT, email_address VARCHAR(128), phone_number VARCHAR(64), ssn VARCHAR(11) PRIMARY KEY)"
     DROP_USERDB_TABLE = "DROP TABLE IF EXISTS Users_DB"
@@ -50,6 +50,10 @@ class Query:
 
     def executeSqlStatement(self, sqlStatement):
         self.conn.cursor().execute(sqlStatement)
+        
+    def failure_executeInsertStatementTwice(self, sqlInsert):
+        self.executeSqlStatement(sqlInsert)
+        self.executeSqlStatement(sqlInsert)
 
     # def getAll(self):
     #     return [self.objectify(p) for p in self.conn.cursor().execute(self.SELECT_ALL).fetchall()]
