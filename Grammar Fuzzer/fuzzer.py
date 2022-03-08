@@ -260,32 +260,36 @@ def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
     global numDoubleInsertFaults
     global numSwappedInsertFaults
-    shouldGenerateFaultyInsert = 0 < random.uniform(0,1) < probablityOfFault
+    shouldGenerateFaultyInsert = 0 < random.uniform(0, 1) < probablityOfFault
     if(shouldGenerateFaultyInsert):
-        totalInsertFaults+=1
+        totalInsertFaults += 1
         # selectedFailure = random.sample(['double_insert', 'swapped_values'], 1)[0]
         selectedFailure = 'swapped_values'
         if(selectedFailure == 'swapped_values'):
-            numSwappedInsertFaults+=1
-            insert = insert_from_swapped_values(keys, vals)            
-    else: 
+            numSwappedInsertFaults += 1
+            insert = insert_from_swapped_values(keys, vals)
+    else:
         insert = insert_from_values(vals)
-        
+
     return insert
+
 
 def insert_from_swapped_values(keys, vals):
     attributeToInjectFault = random.choice(keys)
     if(attributeToInjectFault == 'age'):
-        vals[attributeToInjectFault] += random.randrange(1,10)
+        vals[attributeToInjectFault] += random.randrange(1, 10)
     else:
-        vals[attributeToInjectFault] = random_flip_char(vals[attributeToInjectFault])
+        vals[attributeToInjectFault] = random_flip_char(
+            vals[attributeToInjectFault])
     result = insert_from_values(vals)
     return result
+
 
 def insert_from_values(vals):
     values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
     insert = 'INSERT INTO {} {}'.format(db, values)
     return insert
+
 
 def insert_from_query(sql):
     v = generate_values(sql)
@@ -297,10 +301,23 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
     difference = list_diff(after, before)
     isConsistent = difference == target
 
-    outputToSuccessTxt = '\n#{}:\n\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(
-        testNum, select, insert)
-    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
-        testNum, before, after, select, insert, difference, target)
+    outputToSuccessTxt = f'''
+    #{testNum}:
+        {select}
+        {insert}
+        Successful Insert \u2713\n
+    '''
+    outputToFailureTxt = f'''
+    #{testNum}:
+        Initial query result: {before}
+        Final query result: {after}
+        
+        {select}
+        {insert}
+        Failed Insert \u274c
+        Actual difference: {difference}
+        Expected difference: {target}\n
+    '''
 
     if(isConsistent):
         print('Successful Insert \u2713')
@@ -327,7 +344,8 @@ def insert_runner(numTests, probablityOfFaults):
             vals = generate_values(select)
 
         keys = extract_column_names(select)
-        insert = generate_insert_from_values(keys, vals.copy(), probablityOfFaults)
+        insert = generate_insert_from_values(
+            keys, vals.copy(), probablityOfFaults)
 
         before = dbInterface.executeSelectStatement(select)
         dbInterface.executeSqlStatement(insert)
@@ -344,7 +362,7 @@ if(len(sys.argv) != 3):
 numTests = int(sys.argv[1])
 probablityOfFaults = float(sys.argv[2])
 print('\n')
-# block_print()
+block_print()
 tic = time.perf_counter()
 insert_runner(numTests, probablityOfFaults)
 toc = time.perf_counter()
@@ -355,10 +373,11 @@ print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
 print(f'{numSuccesses} Successes\n{numFailures} Failures\n')
 print('\n--- INJECTED INSERT FAULTS RESULTS ---\n')
 print(f'Probablity of Failure: {probablityOfFaults}')
-print(f'Number of double inserts injected: {numDoubleInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
-try: 
-    print('Caught {}/{} -- {:.2f}%'.format(numFailures,totalInsertFaults,numFailures/totalInsertFaults * 100))
-except ZeroDivisionError: 
+print(
+    f'Number of double inserts injected: {numDoubleInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
+try:
+    print('Caught {}/{} -- {:.2f}%'.format(numFailures,
+          totalInsertFaults, numFailures/totalInsertFaults * 100))
+except ZeroDivisionError:
     print('No inserts injected, either increase number of tests or probablity of injected fault')
 print('\n----------------------------------------')
-

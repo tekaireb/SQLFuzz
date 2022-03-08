@@ -1,530 +1,78 @@
 
-#1:
-[]
-[]
-
-SELECT age, ssn FROM Users_DB WHERE ssn = "834-57-0051"
-INSERT INTO Users_DB VALUES ("ridun", "27", "muoeiehxrr@ixsnsml.org", "(487)301-2269", "834-57-00D1")
-Failed Insert ❌
-actual difference: [] vs expected difference: [(27, '834-57-0051')]
-
-
-#3:
-[]
-[("cijapgv'eh", 'xkznz@vxzhi.org')]
-
-SELECT name, email_address FROM Users_DB WHERE ssn = "164-31-4824" OR age = "3"
-INSERT INTO Users_DB VALUES ("cijapgv'eh", "52", "xkznz@vxzhi.org", "(360)933-7543", "164-31-4824")
-Failed Insert ❌
-actual difference: [("cijapgv'eh", 'xkznz@vxzhi.org')] vs expected difference: [("cijapge'eh", 'xkznz@vxzhi.org')]
-
-
-#4:
-[('(487)301-2269', '834-57-00D1'), ('(280)332-6773', '883-09-1058'), ('(360)933-7543', '164-31-4824')]
-[('(487)301-2269', '834-57-00D1'), ('(280)332-6773', '883-09-1058'), ('(360)933-7543', '164-31-4824'), ('(2P3)991-7693', '835-99-7291')]
-
-SELECT phone_number, ssn FROM Users_DB WHERE age <= "53" OR age >= "86"
-INSERT INTO Users_DB VALUES ("joztotuv", "50", "vcjqvutkcyh@vjhzg.org", "(2P3)991-7693", "835-99-7291")
-Failed Insert ❌
-actual difference: [('(2P3)991-7693', '835-99-7291')] vs expected difference: [('(203)991-7693', '835-99-7291')]
-
-
-#5:
-[]
-[]
-
-SELECT age, age, ssn FROM Users_DB WHERE age = "35"
-INSERT INTO Users_DB VALUES ("edsi'utce'orzo", "36", "ljymnrxx@rzth.edu", "(546)906-5627", "230-89-9751")
-Failed Insert ❌
-actual difference: [] vs expected difference: [(35, 35, '230-89-9751')]
-
-
-#6:
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',)]
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',)]
-
-SELECT ssn FROM Users_DB WHERE email_address <> "jil@vt.org"
-INSERT INTO Users_DB VALUES ("icyiofzi", "60", "kfbipdcm@pcsuvbe.org", "(613)386-9993", "894-L6-7232")
-Failed Insert ❌
-actual difference: [('894-L6-7232',)] vs expected difference: [('894-76-7232',)]
-
-
-#8:
-[('(487)301-2269', 27, 'ridun'), ('(280)332-6773', 51, "ko'ojfosotfa"), ('(360)933-7543', 52, "cijapgv'eh"), ('(2P3)991-7693', 50, 'joztotuv'), ('(546)906-5627', 36, "edsi'utce'orzo"), ('(613)386-9993', 60, 'icyiofzi'), ('(354)716-8087', 72, "xo'ihva'op")]
-[('(487)301-2269', 27, 'ridun'), ('(280)332-6773', 51, "ko'ojfosotfa"), ('(360)933-7543', 52, "cijapgv'eh"), ('(2P3)991-7693', 50, 'joztotuv'), ('(546)906-5627', 36, "edsi'utce'orzo"), ('(613)386-9993', 60, 'icyiofzi'), ('(354)716-8087', 72, "xo'ihva'op"), ('(943)733-9421', 50, 'atzistij')]
-
-SELECT phone_number, age, name FROM Users_DB WHERE age < "83"
-INSERT INTO Users_DB VALUES ("atzistij", "50", "dhmslsjwjav@miasvyx.com", "(943)733-9421", "742-92-1645")
-Failed Insert ❌
-actual difference: [('(943)733-9421', 50, 'atzistij')] vs expected difference: [('(943)733-9421', 49, 'atzistij')]
-
-
-#10:
-[]
-[]
-
-SELECT ssn FROM Users_DB WHERE age >= "60" AND ssn = "677-69-7161"
-INSERT INTO Users_DB VALUES ("fizoylaim", "81", "fesvmce@xuac.org", "(867)725-4599", "67k-69-7161")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('677-69-7161',)]
-
-
-#11:
-[]
-[]
-
-SELECT phone_number FROM Users_DB WHERE phone_number = "(505)896-5178"
-INSERT INTO Users_DB VALUES ("lucxamta'ap", "36", "ttqmo@srzx.com", "(505)896j5178", "560-83-4084")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('(505)896-5178',)]
-
-
-#13:
-[]
-[]
-
-SELECT email_address, email_address FROM Users_DB WHERE age = "6" AND email_address = "t@l.org"
-INSERT INTO Users_DB VALUES ("gopodupni'ef", "6", "t@l.ore", "(227)881-4473", "726-46-9047")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('t@l.org', 't@l.org')]
-
-
-#14:
-[]
-[('k24-97-7653', 'uzenbazi', 't@f.com')]
-
-SELECT ssn, name, email_address FROM Users_DB WHERE email_address = "t@f.com"
-INSERT INTO Users_DB VALUES ("uzenbazi", "83", "t@f.com", "(596)278-4473", "k24-97-7653")
-Failed Insert ❌
-actual difference: [('k24-97-7653', 'uzenbazi', 't@f.com')] vs expected difference: [('924-97-7653', 'uzenbazi', 't@f.com')]
-
-
-#17:
-[]
-[('(430m247-8686', "ro'ayifur", 'o@b.edu')]
-
-SELECT phone_number, name, email_address FROM Users_DB WHERE email_address = "o@b.edu"
-INSERT INTO Users_DB VALUES ("ro'ayifur", "67", "o@b.edu", "(430m247-8686", "943-39-5055")
-Failed Insert ❌
-actual difference: [('(430m247-8686', "ro'ayifur", 'o@b.edu')] vs expected difference: [('(430)247-8686', "ro'ayifur", 'o@b.edu')]
-
-
-#20:
-[('834-57-00D1', '(487)301-2269'), ('883-09-1058', '(280)332-6773'), ('164-31-4824', '(360)933-7543'), ('835-99-7291', '(2P3)991-7693'), ('230-89-9751', '(546)906-5627'), ('894-L6-7232', '(613)386-9993'), ('523-16-4073', '(354)716-8087'), ('742-92-1645', '(943)733-9421'), ('251-75-4117', '(622)621-0205'), ('67k-69-7161', '(867)725-4599'), ('560-83-4084', '(505)896j5178'), ('930-27-2033', '(720)785-2772'), ('726-46-9047', '(227)881-4473'), ('k24-97-7653', '(596)278-4473'), ('716-75-7576', '(321)855-8523'), ('414-30-7642', '(699)245-3017'), ('943-39-5055', '(430m247-8686'), ('560-57-2514', '(888)463-4351'), ('677-40-7375', '(450)592-6142')]
-[('834-57-00D1', '(487)301-2269'), ('883-09-1058', '(280)332-6773'), ('164-31-4824', '(360)933-7543'), ('835-99-7291', '(2P3)991-7693'), ('230-89-9751', '(546)906-5627'), ('894-L6-7232', '(613)386-9993'), ('523-16-4073', '(354)716-8087'), ('742-92-1645', '(943)733-9421'), ('251-75-4117', '(622)621-0205'), ('67k-69-7161', '(867)725-4599'), ('560-83-4084', '(505)896j5178'), ('930-27-2033', '(720)785-2772'), ('726-46-9047', '(227)881-4473'), ('k24-97-7653', '(596)278-4473'), ('716-75-7576', '(321)855-8523'), ('414-30-7642', '(699)245-3017'), ('943-39-5055', '(430m247-8686'), ('560-57-2514', '(888)463-4351'), ('677-40-7375', '(450)592-6142'), ('273-27-5405', '(6e6)383-9826')]
-
-SELECT ssn, phone_number FROM Users_DB WHERE age < "99" OR age > "96"
-INSERT INTO Users_DB VALUES ("ahtu'ux", "100", "clrct@tzkm.com", "(6e6)383-9826", "273-27-5405")
-Failed Insert ❌
-actual difference: [('273-27-5405', '(6e6)383-9826')] vs expected difference: [('273-27-5405', '(666)383-9826')]
-
-
-#21:
-[]
-[(23, 'heuDyotoh', 'maxtgosnma@wggiywz.com')]
-
-SELECT age, name, email_address FROM Users_DB WHERE phone_number = "(207)910-5133"
-INSERT INTO Users_DB VALUES ("heuDyotoh", "23", "maxtgosnma@wggiywz.com", "(207)910-5133", "691-23-9796")
-Failed Insert ❌
-actual difference: [(23, 'heuDyotoh', 'maxtgosnma@wggiywz.com')] vs expected difference: [(23, 'heuhyotoh', 'maxtgosnma@wggiywz.com')]
-
-
-#22:
-[('ridun', '834-57-00D1'), ("ko'ojfosotfa", '883-09-1058'), ("cijapgv'eh", '164-31-4824'), ('joztotuv', '835-99-7291'), ("edsi'utce'orzo", '230-89-9751'), ('icyiofzi', '894-L6-7232'), ('atzistij', '742-92-1645'), ("yicle'atjuci", '251-75-4117'), ("lucxamta'ap", '560-83-4084'), ("ispeha'upxu", '930-27-2033'), ("gopodupni'ef", '726-46-9047'), ("vi'ubsepop", '716-75-7576'), ('xn', '414-30-7642'), ("ro'ayifur", '943-39-5055'), ("doru'ochasi'uf", '677-40-7375'), ('heuDyotoh', '691-23-9796')]
-[('ridun', '834-57-00D1'), ("ko'ojfosotfa", '883-09-1058'), ("cijapgv'eh", '164-31-4824'), ('joztotuv', '835-99-7291'), ("edsi'utce'orzo", '230-89-9751'), ('icyiofzi', '894-L6-7232'), ('atzistij', '742-92-1645'), ("yicle'atjuci", '251-75-4117'), ("lucxamta'ap", '560-83-4084'), ("ispeha'upxu", '930-27-2033'), ("gopodupni'ef", '726-46-9047'), ("vi'ubsepop", '716-75-7576'), ('xn', '414-30-7642'), ("ro'ayifur", '943-39-5055'), ("doru'ochasi'uf", '677-40-7375'), ('heuDyotoh', '691-23-9796'), ('azyGy', '742-63-7146')]
-
-SELECT name, ssn FROM Users_DB WHERE age <= "70" OR ssn = "534-96-7175"
-INSERT INTO Users_DB VALUES ("azyGy", "21", "jsiqvde@yznbiu.org", "(432)736-7294", "742-63-7146")
-Failed Insert ❌
-actual difference: [('azyGy', '742-63-7146')] vs expected difference: [('azyiy', '742-63-7146')]
-
-
-#23:
-[]
-[('myyeuve@cqYat.org',)]
-
-SELECT email_address FROM Users_DB WHERE age < "11" AND age < "63" AND name = "u"
-INSERT INTO Users_DB VALUES ("u", "5", "myyeuve@cqYat.org", "(953)469-7311", "243-25-7291")
-Failed Insert ❌
-actual difference: [('myyeuve@cqYat.org',)] vs expected difference: [('myyeuve@cqsat.org',)]
-
-
-#24:
-[('ridun', 'ridun'), ("ko'ojfosotfa", "ko'ojfosotfa"), ("cijapgv'eh", "cijapgv'eh"), ('joztotuv', 'joztotuv'), ("edsi'utce'orzo", "edsi'utce'orzo"), ('icyiofzi', 'icyiofzi'), ("xo'ihva'op", "xo'ihva'op"), ('atzistij', 'atzistij'), ("yicle'atjuci", "yicle'atjuci"), ('fizoylaim', 'fizoylaim'), ("lucxamta'ap", "lucxamta'ap"), ("ispeha'upxu", "ispeha'upxu"), ("gopodupni'ef", "gopodupni'ef"), ('uzenbazi', 'uzenbazi'), ("vi'ubsepop", "vi'ubsepop"), ('xn', 'xn'), ("ro'ayifur", "ro'ayifur"), ("layoyci'ox", "layoyci'ox"), ("doru'ochasi'uf", "doru'ochasi'uf"), ("ahtu'ux", "ahtu'ux"), ('heuDyotoh', 'heuDyotoh'), ('azyGy', 'azyGy'), ('u', 'u')]
-[('ridun', 'ridun'), ("ko'ojfosotfa", "ko'ojfosotfa"), ("cijapgv'eh", "cijapgv'eh"), ('joztotuv', 'joztotuv'), ("edsi'utce'orzo", "edsi'utce'orzo"), ('icyiofzi', 'icyiofzi'), ("xo'ihva'op", "xo'ihva'op"), ('atzistij', 'atzistij'), ("yicle'atjuci", "yicle'atjuci"), ('fizoylaim', 'fizoylaim'), ("lucxamta'ap", "lucxamta'ap"), ("ispeha'upxu", "ispeha'upxu"), ("gopodupni'ef", "gopodupni'ef"), ('uzenbazi', 'uzenbazi'), ("vi'ubsepop", "vi'ubsepop"), ('xn', 'xn'), ("ro'ayifur", "ro'ayifur"), ("layoyci'ox", "layoyci'ox"), ("doru'ochasi'uf", "doru'ochasi'uf"), ("ahtu'ux", "ahtu'ux"), ('heuDyotoh', 'heuDyotoh'), ('azyGy', 'azyGy'), ('u', 'u'), ("kosdu'ugdid", "kosdu'ugdid")]
-
-SELECT name, name FROM Users_DB WHERE age <> "39"
-INSERT INTO Users_DB VALUES ("kosdu'ugdid", "65", "rkmsuy@uvucj.edu", "(503)361-7990", "416-95-3877")
-Failed Insert ❌
-actual difference: [("kosdu'ugdid", "kosdu'ugdid")] vs expected difference: [("xosdu'ugdid", "xosdu'ugdid")]
-
-
-#25:
-[(27, '834-57-00D1', 'ridun'), (51, '883-09-1058', "ko'ojfosotfa"), (52, '164-31-4824', "cijapgv'eh"), (50, '835-99-7291', 'joztotuv'), (36, '230-89-9751', "edsi'utce'orzo"), (60, '894-L6-7232', 'icyiofzi'), (72, '523-16-4073', "xo'ihva'op"), (50, '742-92-1645', 'atzistij'), (31, '251-75-4117', "yicle'atjuci"), (81, '67k-69-7161', 'fizoylaim'), (36, '560-83-4084', "lucxamta'ap"), (0, '930-27-2033', "ispeha'upxu"), (6, '726-46-9047', "gopodupni'ef"), (83, 'k24-97-7653', 'uzenbazi'), (5, '716-75-7576', "vi'ubsepop"), (11, '414-30-7642', 'xn'), (67, '943-39-5055', "ro'ayifur"), (79, '560-57-2514', "layoyci'ox"), (67, '677-40-7375', "doru'ochasi'uf"), (100, '273-27-5405', "ahtu'ux"), (23, '691-23-9796', 'heuDyotoh'), (21, '742-63-7146', 'azyGy'), (5, '243-25-7291', 'u'), (65, '416-95-3877', "kosdu'ugdid")]
-[(27, '834-57-00D1', 'ridun'), (51, '883-09-1058', "ko'ojfosotfa"), (52, '164-31-4824', "cijapgv'eh"), (50, '835-99-7291', 'joztotuv'), (36, '230-89-9751', "edsi'utce'orzo"), (60, '894-L6-7232', 'icyiofzi'), (72, '523-16-4073', "xo'ihva'op"), (50, '742-92-1645', 'atzistij'), (31, '251-75-4117', "yicle'atjuci"), (81, '67k-69-7161', 'fizoylaim'), (36, '560-83-4084', "lucxamta'ap"), (0, '930-27-2033', "ispeha'upxu"), (6, '726-46-9047', "gopodupni'ef"), (83, 'k24-97-7653', 'uzenbazi'), (5, '716-75-7576', "vi'ubsepop"), (11, '414-30-7642', 'xn'), (67, '943-39-5055', "ro'ayifur"), (79, '560-57-2514', "layoyci'ox"), (67, '677-40-7375', "doru'ochasi'uf"), (100, '273-27-5405', "ahtu'ux"), (23, '691-23-9796', 'heuDyotoh'), (21, '742-63-7146', 'azyGy'), (5, '243-25-7291', 'u'), (65, '416-95-3877', "kosdu'ugdid"), (30, '920e60-6345', "ebbe'upnama'ex")]
-
-SELECT age, ssn, name FROM Users_DB WHERE email_address <> "s@y.org"
-INSERT INTO Users_DB VALUES ("ebbe'upnama'ex", "30", "bewicbhq@nwloxcs.com", "(461)262-3445", "920e60-6345")
-Failed Insert ❌
-actual difference: [(30, '920e60-6345', "ebbe'upnama'ex")] vs expected difference: [(30, '920-60-6345', "ebbe'upnama'ex")]
-
-
-#26:
-[]
-[]
-
-SELECT age FROM Users_DB WHERE age <= "18" AND age <= "5" AND name = "b"
-INSERT INTO Users_DB VALUES ("b", "9", "ebttthu@jpnrpbc.net", "(826)583-8065", "591-79-8940")
-Failed Insert ❌
-actual difference: [] vs expected difference: [(2,)]
-
-
-#27:
-[("ispeha'upxu",), ("gopodupni'ef",), ("vi'ubsepop",), ('xn',), ('u',), ('b',)]
-[("ispeha'upxu",), ("gopodupni'ef",), ("vi'ubsepop",), ('xn',), ('u',), ('b',), ('taUedlabro',)]
-
-SELECT name FROM Users_DB WHERE ssn = "222-62-4094" OR age < "18"
-INSERT INTO Users_DB VALUES ("taUedlabro", "93", "npmlrmdp@zsuyv.org", "(471)240-5411", "222-62-4094")
-Failed Insert ❌
-actual difference: [('taUedlabro',)] vs expected difference: [('taledlabro',)]
-
-
-#30:
-[]
-[('(699)461-891q',)]
-
-SELECT phone_number FROM Users_DB WHERE age <= "50" AND name = "n" AND email_address = "r@f.com"
-INSERT INTO Users_DB VALUES ("n", "42", "r@f.com", "(699)461-891q", "216-23-9154")
-Failed Insert ❌
-actual difference: [('(699)461-891q',)] vs expected difference: [('(699)461-8914',)]
-
-
-#32:
-[('fizoylaim',), ('uzenbazi',), ("layoyci'ox",), ("ahtu'ux",), ('taUedlabro',), ("yo'unxob",), ('lochapis',)]
-[('fizoylaim',), ('uzenbazi',), ("layoyci'ox",), ("ahtu'ux",), ('taUedlabro',), ("yo'unxob",), ('lochapis',), ("reCi'as",)]
-
-SELECT name FROM Users_DB WHERE age > "75" OR age = "8" OR ssn = "871-70-4899"
-INSERT INTO Users_DB VALUES ("reCi'as", "77", "yoovsqepaq@xbrn.edu", "(492)416-9958", "493-63-5067")
-Failed Insert ❌
-actual difference: [("reCi'as",)] vs expected difference: [("reji'as",)]
-
-
-#34:
-[]
-[('jgxxxlgnguqef.org',)]
-
-SELECT email_address FROM Users_DB WHERE age = "71" OR phone_number = "(296)640-0510"
-INSERT INTO Users_DB VALUES ("buyaczu", "71", "jgxxxlgnguqef.org", "(594)512-9087", "760-80-2198")
-Failed Insert ❌
-actual difference: [('jgxxxlgnguqef.org',)] vs expected difference: [('jgxxxlgn@uqef.org',)]
-
-
-#36:
-[(27, 27), (51, 51), (52, 52), (50, 50), (36, 36), (60, 60), (72, 72), (50, 50), (31, 31), (81, 81), (36, 36), (0, 0), (6, 6), (83, 83), (5, 5), (11, 11), (67, 67), (79, 79), (67, 67), (100, 100), (23, 23), (21, 21), (5, 5), (65, 65), (30, 30), (9, 9), (93, 93), (100, 100), (28, 28), (42, 42), (87, 87), (77, 77), (84, 84), (71, 71), (64, 64)]
-[(27, 27), (51, 51), (52, 52), (50, 50), (36, 36), (60, 60), (72, 72), (50, 50), (31, 31), (81, 81), (36, 36), (0, 0), (6, 6), (83, 83), (5, 5), (11, 11), (67, 67), (79, 79), (67, 67), (100, 100), (23, 23), (21, 21), (5, 5), (65, 65), (30, 30), (9, 9), (93, 93), (100, 100), (28, 28), (42, 42), (87, 87), (77, 77), (84, 84), (71, 71), (64, 64), (62, 62)]
-
-SELECT age, age FROM Users_DB WHERE ssn <> "824-91-2823"
-INSERT INTO Users_DB VALUES ("uxgu'ah", "62", "zrqydcpve@tray.edu", "(850)837-6599", "200-64-3193")
-Failed Insert ❌
-actual difference: [(62, 62)] vs expected difference: [(60, 60)]
-
-
-#38:
-[('(487)301-2269',), ('(280)332-6773',), ('(360)933-7543',), ('(2P3)991-7693',), ('(546)906-5627',), ('(613)386-9993',), ('(354)716-8087',), ('(943)733-9421',), ('(622)621-0205',), ('(867)725-4599',), ('(505)896j5178',), ('(720)785-2772',), ('(227)881-4473',), ('(596)278-4473',), ('(321)855-8523',), ('(699)245-3017',), ('(430m247-8686',), ('(888)463-4351',), ('(450)592-6142',), ('(207)910-5133',), ('(432)736-7294',), ('(953)469-7311',), ('(503)361-7990',), ('(461)262-3445',), ('(826)583-8065',), ('(471)240-5411',), ('(243)541-9468',), ('(699)461-891q',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(594)512-9087',), ('(950)573-1453',), ('(850)837-6599',), ('(405)502-1465',)]
-[('(487)301-2269',), ('(280)332-6773',), ('(360)933-7543',), ('(2P3)991-7693',), ('(546)906-5627',), ('(613)386-9993',), ('(354)716-8087',), ('(943)733-9421',), ('(622)621-0205',), ('(867)725-4599',), ('(505)896j5178',), ('(720)785-2772',), ('(227)881-4473',), ('(596)278-4473',), ('(321)855-8523',), ('(699)245-3017',), ('(430m247-8686',), ('(888)463-4351',), ('(450)592-6142',), ('(207)910-5133',), ('(432)736-7294',), ('(953)469-7311',), ('(503)361-7990',), ('(461)262-3445',), ('(826)583-8065',), ('(471)240-5411',), ('(243)541-9468',), ('(699)461-891q',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(594)512-9087',), ('(950)573-1453',), ('(850)837-6599',), ('(405)502-1465',), ('(236)35N-9428',)]
-
-SELECT phone_number FROM Users_DB WHERE age <= "96" OR ssn = "798-51-9532"
-INSERT INTO Users_DB VALUES ("vexrezax", "54", "qlmvyfod@wqok.com", "(236)35N-9428", "798-51-9532")
-Failed Insert ❌
-actual difference: [('(236)35N-9428',)] vs expected difference: [('(236)355-9428',)]
-
-
-#40:
-[('(720)785-2772', "ispeha'upxu", 0, '930-27-2033'), ('(227)881-4473', "gopodupni'ef", 6, '726-46-9047'), ('(321)855-8523', "vi'ubsepop", 5, '716-75-7576'), ('(699)245-3017', 'xn', 11, '414-30-7642'), ('(6e6)383-9826', "ahtu'ux", 100, '273-27-5405'), ('(207)910-5133', 'heuDyotoh', 23, '691-23-9796'), ('(432)736-7294', 'azyGy', 21, '742-63-7146'), ('(953)469-7311', 'u', 5, '243-25-7291'), ('(826)583-8065', 'b', 9, '591-79-8940'), ('(471)240-5411', 'taUedlabro', 93, '222-62-4094'), ('(362)659-6157', "yo'unxob", 100, '370-59-8955'), ('(496)889-7997', "xu'ipye'atpol", 19, '406-11-8052')]
-[('(720)785-2772', "ispeha'upxu", 0, '930-27-2033'), ('(227)881-4473', "gopodupni'ef", 6, '726-46-9047'), ('(321)855-8523', "vi'ubsepop", 5, '716-75-7576'), ('(699)245-3017', 'xn', 11, '414-30-7642'), ('(6e6)383-9826', "ahtu'ux", 100, '273-27-5405'), ('(207)910-5133', 'heuDyotoh', 23, '691-23-9796'), ('(432)736-7294', 'azyGy', 21, '742-63-7146'), ('(953)469-7311', 'u', 5, '243-25-7291'), ('(826)583-8065', 'b', 9, '591-79-8940'), ('(471)240-5411', 'taUedlabro', 93, '222-62-4094'), ('(362)659-6157', "yo'unxob", 100, '370-59-8955'), ('(496)889-7997', "xu'ipye'atpol", 19, '406-11-8052'), ('(231)565-Y249', "ba'erka'etxe", 15, '222-60-4982')]
-
-SELECT phone_number, name, age, ssn FROM Users_DB WHERE age < "25" OR age >= "91"
-INSERT INTO Users_DB VALUES ("ba'erka'etxe", "15", "kfuxbxrq@dipujg.net", "(231)565-Y249", "222-60-4982")
-Failed Insert ❌
-actual difference: [('(231)565-Y249', "ba'erka'etxe", 15, '222-60-4982')] vs expected difference: [('(231)565-0249', "ba'erka'etxe", 15, '222-60-4982')]
-
-
-#41:
-[('834-57-00D1', 27), ('251-75-4117', 31), ('930-27-2033', 0), ('726-46-9047', 6), ('716-75-7576', 5), ('414-30-7642', 11), ('691-23-9796', 23), ('742-63-7146', 21), ('243-25-7291', 5), ('920e60-6345', 30), ('591-79-8940', 9), ('299-74-2963', 28), ('406-11-8052', 19), ('222-60-4982', 15)]
-[('834-57-00D1', 27), ('251-75-4117', 31), ('930-27-2033', 0), ('726-46-9047', 6), ('716-75-7576', 5), ('414-30-7642', 11), ('691-23-9796', 23), ('742-63-7146', 21), ('243-25-7291', 5), ('920e60-6345', 30), ('591-79-8940', 9), ('299-74-2963', 28), ('406-11-8052', 19), ('222-60-4982', 15), ('475-38-216F', 9)]
-
-SELECT ssn, age FROM Users_DB WHERE age = "78" OR age < "34"
-INSERT INTO Users_DB VALUES ("taxha'upidju'oy", "9", "knukddqvc@befbgd.edu", "(510)878-9940", "475-38-216F")
-Failed Insert ❌
-actual difference: [('475-38-216F', 9)] vs expected difference: [('475-38-2161', 9)]
-
-
-#42:
-[('ridun', '834-57-00D1', 27), ("ko'ojfosotfa", '883-09-1058', 51), ("cijapgv'eh", '164-31-4824', 52), ('joztotuv', '835-99-7291', 50), ("edsi'utce'orzo", '230-89-9751', 36), ('icyiofzi', '894-L6-7232', 60), ('atzistij', '742-92-1645', 50), ("yicle'atjuci", '251-75-4117', 31), ("lucxamta'ap", '560-83-4084', 36), ("ispeha'upxu", '930-27-2033', 0), ("gopodupni'ef", '726-46-9047', 6), ("vi'ubsepop", '716-75-7576', 5), ('xn', '414-30-7642', 11), ('heuDyotoh', '691-23-9796', 23), ('azyGy', '742-63-7146', 21), ('u', '243-25-7291', 5), ("kosdu'ugdid", '416-95-3877', 65), ("ebbe'upnama'ex", '920e60-6345', 30), ('b', '591-79-8940', 9), ('gh', '299-74-2963', 28), ('n', '216-23-9154', 42), ('umoxri', '143-95-4387', 64), ("uxgu'ah", '200-64-3193', 62), ('vexrezax', '798-51-9532', 54), ("xu'ipye'atpol", '406-11-8052', 19), ("ba'erka'etxe", '222-60-4982', 15), ("taxha'upidju'oy", '475-38-216F', 9)]
-[('ridun', '834-57-00D1', 27), ("ko'ojfosotfa", '883-09-1058', 51), ("cijapgv'eh", '164-31-4824', 52), ('joztotuv', '835-99-7291', 50), ("edsi'utce'orzo", '230-89-9751', 36), ('icyiofzi', '894-L6-7232', 60), ('atzistij', '742-92-1645', 50), ("yicle'atjuci", '251-75-4117', 31), ("lucxamta'ap", '560-83-4084', 36), ("ispeha'upxu", '930-27-2033', 0), ("gopodupni'ef", '726-46-9047', 6), ("vi'ubsepop", '716-75-7576', 5), ('xn', '414-30-7642', 11), ('heuDyotoh', '691-23-9796', 23), ('azyGy', '742-63-7146', 21), ('u', '243-25-7291', 5), ("kosdu'ugdid", '416-95-3877', 65), ("ebbe'upnama'ex", '920e60-6345', 30), ('b', '591-79-8940', 9), ('gh', '299-74-2963', 28), ('n', '216-23-9154', 42), ('umoxri', '143-95-4387', 64), ("uxgu'ah", '200-64-3193', 62), ('vexrezax', '798-51-9532', 54), ("xu'ipye'atpol", '406-11-8052', 19), ("ba'erka'etxe", '222-60-4982', 15), ("taxha'upidju'oy", '475-38-216F', 9), ('c', '456-34-6254', 100)]
-
-SELECT name, ssn, age FROM Users_DB WHERE age <= "66" AND age <= "76" OR name = "c" OR name = "o"
-INSERT INTO Users_DB VALUES ("c", "100", "yeprgpmusg@rtxqh.org", "(346)791-1665", "456-34-6254")
-Failed Insert ❌
-actual difference: [('c', '456-34-6254', 100)] vs expected difference: [('c', '456-34-6254', 99)]
-
-
-#49:
-[]
-[('(S91)293-9111',)]
-
-SELECT phone_number FROM Users_DB WHERE age = "88" AND name = "z"
-INSERT INTO Users_DB VALUES ("z", "88", "candqdvolh@xjig.com", "(S91)293-9111", "976-87-3128")
-Failed Insert ❌
-actual difference: [('(S91)293-9111',)] vs expected difference: [('(291)293-9111',)]
-
-
-#50:
-[('clrct@tzkm.com', '(6e6)383-9826'), ('npmlrmdp@zsuyv.org', '(471)240-5411'), ('dneesssydd@sydzjrl.edu', '(362)659-6157'), ('aevuf@klot.net', '(355)416-6746'), ('gvzqjgbz@tqqw.org', '(405)502-1465'), ('yeprgpmusg@rtxqh.org', '(346)791-1665'), ('sxvkr@ragsvk.net', '(324)256-8299'), ('candqdvolh@xjig.com', '(S91)293-9111')]
-[('clrct@tzkm.com', '(6e6)383-9826'), ('npmlrmdp@zsuyv.org', '(471)240-5411'), ('dneesssydd@sydzjrl.edu', '(362)659-6157'), ('aevuf@klot.net', '(355)416-6746'), ('gvzqjgbz@tqqw.org', '(405)502-1465'), ('yeprgpmusg@rtxqh.org', '(346)791-1665'), ('sxvkr@ragsvk.net', '(324)256-8299'), ('candqdvolh@xjig.com', '(S91)293-9111'), ('wypds@rlkvjmb.com', '(O85)374-3280')]
-
-SELECT email_address, phone_number FROM Users_DB WHERE age >= "75" AND age >= "87"
-INSERT INTO Users_DB VALUES ("irxoso'ay", "90", "wypds@rlkvjmb.com", "(O85)374-3280", "493-94-4129")
-Failed Insert ❌
-actual difference: [('wypds@rlkvjmb.com', '(O85)374-3280')] vs expected difference: [('wypds@rlkvjmb.com', '(785)374-3280')]
-
-
-#51:
-[]
-[]
-
-SELECT phone_number FROM Users_DB WHERE phone_number = "(852)698-1560" AND age > "28"
-INSERT INTO Users_DB VALUES ("oltafye", "49", "pqdchxosskn@gxvk.org", "(852)698-15A0", "897-24-6343")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('(852)698-1560',)]
-
-
-#53:
-[('muoeiehxrr@ixsnsml.org', 'muoeiehxrr@ixsnsml.org', '(487)301-2269'), ('zdhggroenf@iohcoz.com', 'zdhggroenf@iohcoz.com', '(280)332-6773'), ('xkznz@vxzhi.org', 'xkznz@vxzhi.org', '(360)933-7543'), ('vcjqvutkcyh@vjhzg.org', 'vcjqvutkcyh@vjhzg.org', '(2P3)991-7693'), ('ljymnrxx@rzth.edu', 'ljymnrxx@rzth.edu', '(546)906-5627'), ('kfbipdcm@pcsuvbe.org', 'kfbipdcm@pcsuvbe.org', '(613)386-9993'), ('dhmslsjwjav@miasvyx.com', 'dhmslsjwjav@miasvyx.com', '(943)733-9421'), ('cyrgsg@hkyez.com', 'cyrgsg@hkyez.com', '(622)621-0205'), ('ttqmo@srzx.com', 'ttqmo@srzx.com', '(505)896j5178'), ('bumlixal@zclhxvu.com', 'bumlixal@zclhxvu.com', '(720)785-2772'), ('t@l.ore', 't@l.ore', '(227)881-4473'), ('srglrjcm@qoyr.net', 'srglrjcm@qoyr.net', '(321)855-8523'), ('fepkhaim@hoyi.net', 'fepkhaim@hoyi.net', '(699)245-3017'), ('clrct@tzkm.com', 'clrct@tzkm.com', '(6e6)383-9826'), ('maxtgosnma@wggiywz.com', 'maxtgosnma@wggiywz.com', '(207)910-5133'), ('jsiqvde@yznbiu.org', 'jsiqvde@yznbiu.org', '(432)736-7294'), ('myyeuve@cqYat.org', 'myyeuve@cqYat.org', '(953)469-7311'), ('bewicbhq@nwloxcs.com', 'bewicbhq@nwloxcs.com', '(461)262-3445'), ('ebttthu@jpnrpbc.net', 'ebttthu@jpnrpbc.net', '(826)583-8065'), ('dneesssydd@sydzjrl.edu', 'dneesssydd@sydzjrl.edu', '(362)659-6157'), ('nzklisjodp@busstc.edu', 'nzklisjodp@busstc.edu', '(243)541-9468'), ('r@f.com', 'r@f.com', '(699)461-891q'), ('zrqydcpve@tray.edu', 'zrqydcpve@tray.edu', '(850)837-6599'), ('qlmvyfod@wqok.com', 'qlmvyfod@wqok.com', '(236)35N-9428'), ('aqyeljp@rawp.edu', 'aqyeljp@rawp.edu', '(496)889-7997'), ('kfuxbxrq@dipujg.net', 'kfuxbxrq@dipujg.net', '(231)565-Y249'), ('knukddqvc@befbgd.edu', 'knukddqvc@befbgd.edu', '(510)878-9940'), ('yeprgpmusg@rtxqh.org', 'yeprgpmusg@rtxqh.org', '(346)791-1665'), ('oregues@rvzgej.org', 'oregues@rvzgej.org', '(829)451-8812'), ('shfcjt@krobea.edu', 'shfcjt@krobea.edu', '(216)216-6299'), ('uznoz@wtntf.edu', 'uznoz@wtntf.edu', '(887)853-2690'), ('iiaxdt@fsxevo.net', 'iiaxdt@fsxevo.net', '(443)928-0512'), ('pqdchxosskn@gxvk.org', 'pqdchxosskn@gxvk.org', '(852)698-15A0'), ('qmpzz@wdophcr.com', 'qmpzz@wdophcr.com', '(832)743-1074')]
-[('muoeiehxrr@ixsnsml.org', 'muoeiehxrr@ixsnsml.org', '(487)301-2269'), ('zdhggroenf@iohcoz.com', 'zdhggroenf@iohcoz.com', '(280)332-6773'), ('xkznz@vxzhi.org', 'xkznz@vxzhi.org', '(360)933-7543'), ('vcjqvutkcyh@vjhzg.org', 'vcjqvutkcyh@vjhzg.org', '(2P3)991-7693'), ('ljymnrxx@rzth.edu', 'ljymnrxx@rzth.edu', '(546)906-5627'), ('kfbipdcm@pcsuvbe.org', 'kfbipdcm@pcsuvbe.org', '(613)386-9993'), ('dhmslsjwjav@miasvyx.com', 'dhmslsjwjav@miasvyx.com', '(943)733-9421'), ('cyrgsg@hkyez.com', 'cyrgsg@hkyez.com', '(622)621-0205'), ('ttqmo@srzx.com', 'ttqmo@srzx.com', '(505)896j5178'), ('bumlixal@zclhxvu.com', 'bumlixal@zclhxvu.com', '(720)785-2772'), ('t@l.ore', 't@l.ore', '(227)881-4473'), ('srglrjcm@qoyr.net', 'srglrjcm@qoyr.net', '(321)855-8523'), ('fepkhaim@hoyi.net', 'fepkhaim@hoyi.net', '(699)245-3017'), ('clrct@tzkm.com', 'clrct@tzkm.com', '(6e6)383-9826'), ('maxtgosnma@wggiywz.com', 'maxtgosnma@wggiywz.com', '(207)910-5133'), ('jsiqvde@yznbiu.org', 'jsiqvde@yznbiu.org', '(432)736-7294'), ('myyeuve@cqYat.org', 'myyeuve@cqYat.org', '(953)469-7311'), ('bewicbhq@nwloxcs.com', 'bewicbhq@nwloxcs.com', '(461)262-3445'), ('ebttthu@jpnrpbc.net', 'ebttthu@jpnrpbc.net', '(826)583-8065'), ('dneesssydd@sydzjrl.edu', 'dneesssydd@sydzjrl.edu', '(362)659-6157'), ('nzklisjodp@busstc.edu', 'nzklisjodp@busstc.edu', '(243)541-9468'), ('r@f.com', 'r@f.com', '(699)461-891q'), ('zrqydcpve@tray.edu', 'zrqydcpve@tray.edu', '(850)837-6599'), ('qlmvyfod@wqok.com', 'qlmvyfod@wqok.com', '(236)35N-9428'), ('aqyeljp@rawp.edu', 'aqyeljp@rawp.edu', '(496)889-7997'), ('kfuxbxrq@dipujg.net', 'kfuxbxrq@dipujg.net', '(231)565-Y249'), ('knukddqvc@befbgd.edu', 'knukddqvc@befbgd.edu', '(510)878-9940'), ('yeprgpmusg@rtxqh.org', 'yeprgpmusg@rtxqh.org', '(346)791-1665'), ('oregues@rvzgej.org', 'oregues@rvzgej.org', '(829)451-8812'), ('shfcjt@krobea.edu', 'shfcjt@krobea.edu', '(216)216-6299'), ('uznoz@wtntf.edu', 'uznoz@wtntf.edu', '(887)853-2690'), ('iiaxdt@fsxevo.net', 'iiaxdt@fsxevo.net', '(443)928-0512'), ('pqdchxosskn@gxvk.org', 'pqdchxosskn@gxvk.org', '(852)698-15A0'), ('qmpzz@wdophcr.com', 'qmpzz@wdophcr.com', '(832)743-1074'), ('pegquajnvr@eplno.com', 'pegquajnvr@eplno.com', '(631)238-56H5')]
-
-SELECT email_address, email_address, phone_number FROM Users_DB WHERE age > "96" OR age < "64"
-INSERT INTO Users_DB VALUES ("jodoidhi", "14", "pegquajnvr@eplno.com", "(631)238-56H5", "771-92-6346")
-Failed Insert ❌
-actual difference: [('pegquajnvr@eplno.com', 'pegquajnvr@eplno.com', '(631)238-56H5')] vs expected difference: [('pegquajnvr@eplno.com', 'pegquajnvr@eplno.com', '(631)238-5695')]
-
-
-#56:
-[]
-[]
-
-SELECT email_address FROM Users_DB WHERE age <> "60" AND email_address = "j@f.com"
-INSERT INTO Users_DB VALUES ("gipex", "99", "jGf.com", "(589)319-0833", "388-31-9800")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('j@f.com',)]
-
-
-#57:
-[('(280)332-6773', "ko'ojfosotfa"), ('(360)933-7543', "cijapgv'eh"), ('(2P3)991-7693', 'joztotuv'), ('(613)386-9993', 'icyiofzi'), ('(354)716-8087', "xo'ihva'op"), ('(943)733-9421', 'atzistij'), ('(867)725-4599', 'fizoylaim'), ('(596)278-4473', 'uzenbazi'), ('(430m247-8686', "ro'ayifur"), ('(888)463-4351', "layoyci'ox"), ('(450)592-6142', "doru'ochasi'uf"), ('(6e6)383-9826', "ahtu'ux"), ('(503)361-7990', "kosdu'ugdid"), ('(471)240-5411', 'taUedlabro'), ('(362)659-6157', "yo'unxob"), ('(355)416-6746', 'lochapis'), ('(492)416-9958', "reCi'as"), ('(806)684-2294', "ku'icro'iybiut"), ('(594)512-9087', 'buyaczu'), ('(950)573-1453', 'umoxri'), ('(850)837-6599', "uxgu'ah"), ('(405)502-1465', "ru'umho"), ('(236)35N-9428', 'vexrezax'), ('(346)791-1665', 'c'), ('(829)451-8812', 'h'), ('(422)406-4474', "dapa'uroyce'iz"), ('(324)256-8299', 'a'), ('(S91)293-9111', 'z'), ('(O85)374-3280', "irxoso'ay"), ('(852)698-15A0', 'oltafye'), ('(832)743-1074', "ze'ugsavu"), ('(452)245-6504', "zo'ivpulegi"), ('(589)319-0833', 'gipex')]
-[('(280)332-6773', "ko'ojfosotfa"), ('(360)933-7543', "cijapgv'eh"), ('(2P3)991-7693', 'joztotuv'), ('(613)386-9993', 'icyiofzi'), ('(354)716-8087', "xo'ihva'op"), ('(943)733-9421', 'atzistij'), ('(867)725-4599', 'fizoylaim'), ('(596)278-4473', 'uzenbazi'), ('(430m247-8686', "ro'ayifur"), ('(888)463-4351', "layoyci'ox"), ('(450)592-6142', "doru'ochasi'uf"), ('(6e6)383-9826', "ahtu'ux"), ('(503)361-7990', "kosdu'ugdid"), ('(471)240-5411', 'taUedlabro'), ('(362)659-6157', "yo'unxob"), ('(355)416-6746', 'lochapis'), ('(492)416-9958', "reCi'as"), ('(806)684-2294', "ku'icro'iybiut"), ('(594)512-9087', 'buyaczu'), ('(950)573-1453', 'umoxri'), ('(850)837-6599', "uxgu'ah"), ('(405)502-1465', "ru'umho"), ('(236)35N-9428', 'vexrezax'), ('(346)791-1665', 'c'), ('(829)451-8812', 'h'), ('(422)406-4474', "dapa'uroyce'iz"), ('(324)256-8299', 'a'), ('(S91)293-9111', 'z'), ('(O85)374-3280', "irxoso'ay"), ('(852)698-15A0', 'oltafye'), ('(832)743-1074', "ze'ugsavu"), ('(452)245-6504', "zo'ivpulegi"), ('(589)319-0833', 'gipex'), ('(973)6h7-8485', "vu'igfa'ivke'afdo")]
-
-SELECT phone_number, name FROM Users_DB WHERE age = "90" OR age >= "47" AND age > "26"
-INSERT INTO Users_DB VALUES ("vu'igfa'ivke'afdo", "90", "mtvke@jttdy.com", "(973)6h7-8485", "928-79-9955")
-Failed Insert ❌
-actual difference: [('(973)6h7-8485', "vu'igfa'ivke'afdo")] vs expected difference: [('(973)677-8485', "vu'igfa'ivke'afdo")]
-
-
-#58:
-[]
-[]
-
-SELECT age FROM Users_DB WHERE age = "20" OR age < "74" AND phone_number = "(555)798-0335"
-INSERT INTO Users_DB VALUES ("olhikka'ejki", "24", "rnnubgfi@eaizziv.org", "(270)215-9416", "472-95-2479")
-Failed Insert ❌
-actual difference: [] vs expected difference: [(20,)]
-
-
-#59:
-[('ridun',), ("ko'ojfosotfa",), ("cijapgv'eh",), ('joztotuv',), ("edsi'utce'orzo",), ('icyiofzi',), ("xo'ihva'op",), ('atzistij',), ("yicle'atjuci",), ('fizoylaim',), ("lucxamta'ap",), ("ispeha'upxu",), ("gopodupni'ef",), ('uzenbazi',), ("vi'ubsepop",), ('xn',), ("ro'ayifur",), ("layoyci'ox",), ("doru'ochasi'uf",), ("ahtu'ux",), ('heuDyotoh',), ('azyGy',), ('u',), ("kosdu'ugdid",), ("ebbe'upnama'ex",), ('b',), ('taUedlabro',), ("yo'unxob",), ('gh',), ('n',), ('lochapis',), ("reCi'as",), ("ku'icro'iybiut",), ('buyaczu',), ('umoxri',), ("uxgu'ah",), ("ru'umho",), ('vexrezax',), ("xu'ipye'atpol",), ("ba'erka'etxe",), ("taxha'upidju'oy",), ('c',), ('h',), ("dapa'uroyce'iz",), ('a',), ('bujuyil',), ('daos',), ('b',), ('z',), ("irxoso'ay",), ('oltafye',), ("ze'ugsavu",), ('jodoidhi',), ('vizutfocuf',), ("zo'ivpulegi",), ('gipex',), ("vu'igfa'ivke'afdo",), ("olhikka'ejki",)]
-[('ridun',), ("ko'ojfosotfa",), ("cijapgv'eh",), ('joztotuv',), ("edsi'utce'orzo",), ('icyiofzi',), ("xo'ihva'op",), ('atzistij',), ("yicle'atjuci",), ('fizoylaim',), ("lucxamta'ap",), ("ispeha'upxu",), ("gopodupni'ef",), ('uzenbazi',), ("vi'ubsepop",), ('xn',), ("ro'ayifur",), ("layoyci'ox",), ("doru'ochasi'uf",), ("ahtu'ux",), ('heuDyotoh',), ('azyGy',), ('u',), ("kosdu'ugdid",), ("ebbe'upnama'ex",), ('b',), ('taUedlabro',), ("yo'unxob",), ('gh',), ('n',), ('lochapis',), ("reCi'as",), ("ku'icro'iybiut",), ('buyaczu',), ('umoxri',), ("uxgu'ah",), ("ru'umho",), ('vexrezax',), ("xu'ipye'atpol",), ("ba'erka'etxe",), ("taxha'upidju'oy",), ('c',), ('h',), ("dapa'uroyce'iz",), ('a',), ('bujuyil',), ('daos',), ('b',), ('z',), ("irxoso'ay",), ('oltafye',), ("ze'ugsavu",), ('jodoidhi',), ('vizutfocuf',), ("zo'ivpulegi",), ('gipex',), ("vu'igfa'ivke'afdo",), ("olhikka'ejki",), ("onci'aM",)]
-
-SELECT name FROM Users_DB WHERE age <= "51" OR age > "89" OR age >= "34"
-INSERT INTO Users_DB VALUES ("onci'aM", "97", "kwndfwiqcl@ntxrxko.com", "(227)406-3459", "184-24-3585")
-Failed Insert ❌
-actual difference: [("onci'aM",)] vs expected difference: [("onci'av",)]
-
-
-#60:
-[]
-[(74, '359-74-724x', 'capekwmvgw@mwnxtic.com')]
-
-SELECT age, ssn, email_address FROM Users_DB WHERE name = "hz"
-INSERT INTO Users_DB VALUES ("hz", "74", "capekwmvgw@mwnxtic.com", "(205)575-9900", "359-74-724x")
-Failed Insert ❌
-actual difference: [(74, '359-74-724x', 'capekwmvgw@mwnxtic.com')] vs expected difference: [(74, '359-74-7241', 'capekwmvgw@mwnxtic.com')]
-
-
-#61:
-[]
-[]
-
-SELECT email_address, name FROM Users_DB WHERE email_address = "e@l.edu"
-INSERT INTO Users_DB VALUES ("fe'apjiex", "34", "e@l.edj", "(590)461-3715", "126-46-2998")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('e@l.edu', "fe'apjiex")]
-
-
-#64:
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',), ('523-16-4073',), ('742-92-1645',), ('251-75-4117',), ('67k-69-7161',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('k24-97-7653',), ('716-75-7576',), ('414-30-7642',), ('943-39-5055',), ('560-57-2514',), ('677-40-7375',), ('273-27-5405',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('416-95-3877',), ('920e60-6345',), ('591-79-8940',), ('222-62-4094',), ('370-59-8955',), ('299-74-2963',), ('216-23-9154',), ('806-71-7909',), ('493-63-5067',), ('105-52-8640',), ('760-80-2198',), ('143-95-4387',), ('200-64-3193',), ('785-60-7642',), ('798-51-9532',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('456-34-6254',), ('425-28-1483',), ('741-33-2926',), ('498-33-2914',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('976-87-3128',), ('493-94-4129',), ('897-24-6343',), ('265-68-1399',), ('771-92-6346',), ('602-50-9381',), ('398-77-2258',), ('388-31-9800',), ('928-79-9955',), ('472-95-2479',), ('184-24-3585',), ('359-74-724x',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',)]
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',), ('523-16-4073',), ('742-92-1645',), ('251-75-4117',), ('67k-69-7161',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('k24-97-7653',), ('716-75-7576',), ('414-30-7642',), ('943-39-5055',), ('560-57-2514',), ('677-40-7375',), ('273-27-5405',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('416-95-3877',), ('920e60-6345',), ('591-79-8940',), ('222-62-4094',), ('370-59-8955',), ('299-74-2963',), ('216-23-9154',), ('806-71-7909',), ('493-63-5067',), ('105-52-8640',), ('760-80-2198',), ('143-95-4387',), ('200-64-3193',), ('785-60-7642',), ('798-51-9532',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('456-34-6254',), ('425-28-1483',), ('741-33-2926',), ('498-33-2914',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('976-87-3128',), ('493-94-4129',), ('897-24-6343',), ('265-68-1399',), ('771-92-6346',), ('602-50-9381',), ('398-77-2258',), ('388-31-9800',), ('928-79-9955',), ('472-95-2479',), ('184-24-3585',), ('359-74-724x',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',), ('148-93-v043',)]
-
-SELECT ssn FROM Users_DB WHERE email_address <> "z@qk.org" OR name = "z" AND age >= "88"
-INSERT INTO Users_DB VALUES ("te'utremcurex", "69", "cqrjqky@ufaaz.net", "(546)305-4851", "148-93-v043")
-Failed Insert ❌
-actual difference: [('148-93-v043',)] vs expected difference: [('148-93-3043',)]
-
-
-#68:
-[('834-57-00D1', '834-57-00D1', '834-57-00D1'), ('883-09-1058', '883-09-1058', '883-09-1058'), ('164-31-4824', '164-31-4824', '164-31-4824'), ('835-99-7291', '835-99-7291', '835-99-7291'), ('230-89-9751', '230-89-9751', '230-89-9751'), ('894-L6-7232', '894-L6-7232', '894-L6-7232'), ('523-16-4073', '523-16-4073', '523-16-4073'), ('742-92-1645', '742-92-1645', '742-92-1645'), ('251-75-4117', '251-75-4117', '251-75-4117'), ('67k-69-7161', '67k-69-7161', '67k-69-7161'), ('560-83-4084', '560-83-4084', '560-83-4084'), ('930-27-2033', '930-27-2033', '930-27-2033'), ('726-46-9047', '726-46-9047', '726-46-9047'), ('k24-97-7653', 'k24-97-7653', 'k24-97-7653'), ('716-75-7576', '716-75-7576', '716-75-7576'), ('414-30-7642', '414-30-7642', '414-30-7642'), ('943-39-5055', '943-39-5055', '943-39-5055'), ('560-57-2514', '560-57-2514', '560-57-2514'), ('677-40-7375', '677-40-7375', '677-40-7375'), ('273-27-5405', '273-27-5405', '273-27-5405'), ('691-23-9796', '691-23-9796', '691-23-9796'), ('742-63-7146', '742-63-7146', '742-63-7146'), ('243-25-7291', '243-25-7291', '243-25-7291'), ('416-95-3877', '416-95-3877', '416-95-3877'), ('920e60-6345', '920e60-6345', '920e60-6345'), ('591-79-8940', '591-79-8940', '591-79-8940'), ('222-62-4094', '222-62-4094', '222-62-4094'), ('370-59-8955', '370-59-8955', '370-59-8955'), ('299-74-2963', '299-74-2963', '299-74-2963'), ('216-23-9154', '216-23-9154', '216-23-9154'), ('806-71-7909', '806-71-7909', '806-71-7909'), ('493-63-5067', '493-63-5067', '493-63-5067'), ('105-52-8640', '105-52-8640', '105-52-8640'), ('760-80-2198', '760-80-2198', '760-80-2198'), ('143-95-4387', '143-95-4387', '143-95-4387'), ('200-64-3193', '200-64-3193', '200-64-3193'), ('785-60-7642', '785-60-7642', '785-60-7642'), ('798-51-9532', '798-51-9532', '798-51-9532'), ('406-11-8052', '406-11-8052', '406-11-8052'), ('222-60-4982', '222-60-4982', '222-60-4982'), ('475-38-216F', '475-38-216F', '475-38-216F'), ('456-34-6254', '456-34-6254', '456-34-6254'), ('425-28-1483', '425-28-1483', '425-28-1483'), ('741-33-2926', '741-33-2926', '741-33-2926'), ('498-33-2914', '498-33-2914', '498-33-2914'), ('744-98-8304', '744-98-8304', '744-98-8304'), ('691-73-4878', '691-73-4878', '691-73-4878'), ('709-29-9125', '709-29-9125', '709-29-9125'), ('976-87-3128', '976-87-3128', '976-87-3128'), ('493-94-4129', '493-94-4129', '493-94-4129'), ('897-24-6343', '897-24-6343', '897-24-6343'), ('265-68-1399', '265-68-1399', '265-68-1399'), ('771-92-6346', '771-92-6346', '771-92-6346'), ('602-50-9381', '602-50-9381', '602-50-9381'), ('398-77-2258', '398-77-2258', '398-77-2258'), ('388-31-9800', '388-31-9800', '388-31-9800'), ('928-79-9955', '928-79-9955', '928-79-9955'), ('472-95-2479', '472-95-2479', '472-95-2479'), ('184-24-3585', '184-24-3585', '184-24-3585'), ('359-74-724x', '359-74-724x', '359-74-724x'), ('126-46-2998', '126-46-2998', '126-46-2998'), ('635-64-5841', '635-64-5841', '635-64-5841'), ('584-24-9106', '584-24-9106', '584-24-9106'), ('148-93-v043', '148-93-v043', '148-93-v043'), ('987-51-2463', '987-51-2463', '987-51-2463'), ('901-28-7116', '901-28-7116', '901-28-7116'), ('192-88-5967', '192-88-5967', '192-88-5967')]
-[('834-57-00D1', '834-57-00D1', '834-57-00D1'), ('883-09-1058', '883-09-1058', '883-09-1058'), ('164-31-4824', '164-31-4824', '164-31-4824'), ('835-99-7291', '835-99-7291', '835-99-7291'), ('230-89-9751', '230-89-9751', '230-89-9751'), ('894-L6-7232', '894-L6-7232', '894-L6-7232'), ('523-16-4073', '523-16-4073', '523-16-4073'), ('742-92-1645', '742-92-1645', '742-92-1645'), ('251-75-4117', '251-75-4117', '251-75-4117'), ('67k-69-7161', '67k-69-7161', '67k-69-7161'), ('560-83-4084', '560-83-4084', '560-83-4084'), ('930-27-2033', '930-27-2033', '930-27-2033'), ('726-46-9047', '726-46-9047', '726-46-9047'), ('k24-97-7653', 'k24-97-7653', 'k24-97-7653'), ('716-75-7576', '716-75-7576', '716-75-7576'), ('414-30-7642', '414-30-7642', '414-30-7642'), ('943-39-5055', '943-39-5055', '943-39-5055'), ('560-57-2514', '560-57-2514', '560-57-2514'), ('677-40-7375', '677-40-7375', '677-40-7375'), ('273-27-5405', '273-27-5405', '273-27-5405'), ('691-23-9796', '691-23-9796', '691-23-9796'), ('742-63-7146', '742-63-7146', '742-63-7146'), ('243-25-7291', '243-25-7291', '243-25-7291'), ('416-95-3877', '416-95-3877', '416-95-3877'), ('920e60-6345', '920e60-6345', '920e60-6345'), ('591-79-8940', '591-79-8940', '591-79-8940'), ('222-62-4094', '222-62-4094', '222-62-4094'), ('370-59-8955', '370-59-8955', '370-59-8955'), ('299-74-2963', '299-74-2963', '299-74-2963'), ('216-23-9154', '216-23-9154', '216-23-9154'), ('806-71-7909', '806-71-7909', '806-71-7909'), ('493-63-5067', '493-63-5067', '493-63-5067'), ('105-52-8640', '105-52-8640', '105-52-8640'), ('760-80-2198', '760-80-2198', '760-80-2198'), ('143-95-4387', '143-95-4387', '143-95-4387'), ('200-64-3193', '200-64-3193', '200-64-3193'), ('785-60-7642', '785-60-7642', '785-60-7642'), ('798-51-9532', '798-51-9532', '798-51-9532'), ('406-11-8052', '406-11-8052', '406-11-8052'), ('222-60-4982', '222-60-4982', '222-60-4982'), ('475-38-216F', '475-38-216F', '475-38-216F'), ('456-34-6254', '456-34-6254', '456-34-6254'), ('425-28-1483', '425-28-1483', '425-28-1483'), ('741-33-2926', '741-33-2926', '741-33-2926'), ('498-33-2914', '498-33-2914', '498-33-2914'), ('744-98-8304', '744-98-8304', '744-98-8304'), ('691-73-4878', '691-73-4878', '691-73-4878'), ('709-29-9125', '709-29-9125', '709-29-9125'), ('976-87-3128', '976-87-3128', '976-87-3128'), ('493-94-4129', '493-94-4129', '493-94-4129'), ('897-24-6343', '897-24-6343', '897-24-6343'), ('265-68-1399', '265-68-1399', '265-68-1399'), ('771-92-6346', '771-92-6346', '771-92-6346'), ('602-50-9381', '602-50-9381', '602-50-9381'), ('398-77-2258', '398-77-2258', '398-77-2258'), ('388-31-9800', '388-31-9800', '388-31-9800'), ('928-79-9955', '928-79-9955', '928-79-9955'), ('472-95-2479', '472-95-2479', '472-95-2479'), ('184-24-3585', '184-24-3585', '184-24-3585'), ('359-74-724x', '359-74-724x', '359-74-724x'), ('126-46-2998', '126-46-2998', '126-46-2998'), ('635-64-5841', '635-64-5841', '635-64-5841'), ('584-24-9106', '584-24-9106', '584-24-9106'), ('148-93-v043', '148-93-v043', '148-93-v043'), ('987-51-2463', '987-51-2463', '987-51-2463'), ('901-28-7116', '901-28-7116', '901-28-7116'), ('192-88-5967', '192-88-5967', '192-88-5967'), ('J56-48-8075', 'J56-48-8075', 'J56-48-8075')]
-
-SELECT ssn, ssn, ssn FROM Users_DB WHERE name <> "x"
-INSERT INTO Users_DB VALUES ("dabsa'unkav", "30", "kqzhcyt@toyd.edu", "(310)265-1207", "J56-48-8075")
-Failed Insert ❌
-actual difference: [('J56-48-8075', 'J56-48-8075', 'J56-48-8075')] vs expected difference: [('156-48-8075', '156-48-8075', '156-48-8075')]
-
-
-#69:
-[("ko'ojfosotfa",), ("cijapgv'eh",), ('joztotuv',), ('icyiofzi',), ("xo'ihva'op",), ('atzistij',), ('fizoylaim',), ('uzenbazi',), ("ro'ayifur",), ("layoyci'ox",), ("doru'ochasi'uf",), ("ahtu'ux",), ("kosdu'ugdid",), ('taUedlabro',), ("yo'unxob",), ('lochapis',), ("reCi'as",), ("ku'icro'iybiut",), ('buyaczu',), ('umoxri',), ("uxgu'ah",), ("ru'umho",), ('vexrezax',), ('c',), ('h',), ("dapa'uroyce'iz",), ('a',), ('z',), ("irxoso'ay",), ('oltafye',), ("ze'ugsavu",), ("zo'ivpulegi",), ('gipex',), ("vu'igfa'ivke'afdo",), ("onci'aM",), ('hz',), ("te'utremcurex",), ('jeox',)]
-[("ko'ojfosotfa",), ("cijapgv'eh",), ('joztotuv',), ('icyiofzi',), ("xo'ihva'op",), ('atzistij',), ('fizoylaim',), ('uzenbazi',), ("ro'ayifur",), ("layoyci'ox",), ("doru'ochasi'uf",), ("ahtu'ux",), ("kosdu'ugdid",), ('taUedlabro',), ("yo'unxob",), ('lochapis',), ("reCi'as",), ("ku'icro'iybiut",), ('buyaczu',), ('umoxri',), ("uxgu'ah",), ("ru'umho",), ('vexrezax',), ('c',), ('h',), ("dapa'uroyce'iz",), ('a',), ('z',), ("irxoso'ay",), ('oltafye',), ("ze'ugsavu",), ("zo'ivpulegi",), ('gipex',), ("vu'igfa'ivke'afdo",), ("onci'aM",), ('hz',), ("te'utremcurex",), ('jeox',), ("eupi'us",)]
-
-SELECT name FROM Users_DB WHERE age >= "45" OR age = "45" OR age = "17" AND ssn = "737-57-4023"
-INSERT INTO Users_DB VALUES ("eupi'us", "85", "ytsgrj@zekh.com", "(628)931-7912", "620-59-9342")
-Failed Insert ❌
-actual difference: [("eupi'us",)] vs expected difference: [("eypi'us",)]
-
-
-#70:
-[('(487)301-2269',), ('(280)332-6773',), ('(360)933-7543',), ('(2P3)991-7693',), ('(546)906-5627',), ('(613)386-9993',), ('(354)716-8087',), ('(943)733-9421',), ('(622)621-0205',), ('(867)725-4599',), ('(505)896j5178',), ('(720)785-2772',), ('(227)881-4473',), ('(596)278-4473',), ('(321)855-8523',), ('(699)245-3017',), ('(430m247-8686',), ('(888)463-4351',), ('(450)592-6142',), ('(6e6)383-9826',), ('(207)910-5133',), ('(432)736-7294',), ('(953)469-7311',), ('(503)361-7990',), ('(461)262-3445',), ('(826)583-8065',), ('(471)240-5411',), ('(362)659-6157',), ('(243)541-9468',), ('(699)461-891q',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(594)512-9087',), ('(950)573-1453',), ('(850)837-6599',), ('(405)502-1465',), ('(236)35N-9428',), ('(496)889-7997',), ('(231)565-Y249',), ('(510)878-9940',), ('(346)791-1665',), ('(829)451-8812',), ('(422)406-4474',), ('(324)256-8299',), ('(216)216-6299',), ('(887)853-2690',), ('(443)928-0512',), ('(S91)293-9111',), ('(O85)374-3280',), ('(852)698-15A0',), ('(832)743-1074',), ('(631)238-56H5',), ('(630)387-1863',), ('(452)245-6504',), ('(589)319-0833',), ('(973)6h7-8485',), ('(270)215-9416',), ('(227)406-3459',), ('(205)575-9900',), ('(590)461-3715',), ('(676)374-2243',), ('(280)895-8146',), ('(546)305-4851',), ('(767)428-7772',), ('(582)696-7183',), ('(953)903-0453',), ('(310)265-1207',), ('(628)931-7912',)]
-[('(487)301-2269',), ('(280)332-6773',), ('(360)933-7543',), ('(2P3)991-7693',), ('(546)906-5627',), ('(613)386-9993',), ('(354)716-8087',), ('(943)733-9421',), ('(622)621-0205',), ('(867)725-4599',), ('(505)896j5178',), ('(720)785-2772',), ('(227)881-4473',), ('(596)278-4473',), ('(321)855-8523',), ('(699)245-3017',), ('(430m247-8686',), ('(888)463-4351',), ('(450)592-6142',), ('(6e6)383-9826',), ('(207)910-5133',), ('(432)736-7294',), ('(953)469-7311',), ('(503)361-7990',), ('(461)262-3445',), ('(826)583-8065',), ('(471)240-5411',), ('(362)659-6157',), ('(243)541-9468',), ('(699)461-891q',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(594)512-9087',), ('(950)573-1453',), ('(850)837-6599',), ('(405)502-1465',), ('(236)35N-9428',), ('(496)889-7997',), ('(231)565-Y249',), ('(510)878-9940',), ('(346)791-1665',), ('(829)451-8812',), ('(422)406-4474',), ('(324)256-8299',), ('(216)216-6299',), ('(887)853-2690',), ('(443)928-0512',), ('(S91)293-9111',), ('(O85)374-3280',), ('(852)698-15A0',), ('(832)743-1074',), ('(631)238-56H5',), ('(630)387-1863',), ('(452)245-6504',), ('(589)319-0833',), ('(973)6h7-8485',), ('(270)215-9416',), ('(227)406-3459',), ('(205)575-9900',), ('(590)461-3715',), ('(676)374-2243',), ('(280)895-8146',), ('(546)305-4851',), ('(767)428-7772',), ('(582)696-7183',), ('(953)903-0453',), ('(310)265-1207',), ('(628)931-7912',), ('(244)76o-9078',)]
-
-SELECT phone_number FROM Users_DB WHERE age <> "59" OR age >= "75"
-INSERT INTO Users_DB VALUES ("afpaij", "86", "jxyvigw@teywxr.net", "(244)76o-9078", "879-29-7512")
-Failed Insert ❌
-actual difference: [('(244)76o-9078',)] vs expected difference: [('(244)766-9078',)]
-
-
-#72:
-[]
-[(57, 'eikuzybqzn@ujyahx.net', 57)]
-
-SELECT age, email_address, age FROM Users_DB WHERE ssn = "193-02-7563"
-INSERT INTO Users_DB VALUES ("cevijojku", "57", "eikuzybqzn@ujyahx.net", "(733)233-9685", "193-02-7563")
-Failed Insert ❌
-actual difference: [(57, 'eikuzybqzn@ujyahx.net', 57)] vs expected difference: [(56, 'eikuzybqzn@ujyahx.net', 56)]
-
-
-#74:
-[]
-[('(710)962A0918',)]
-
-SELECT phone_number FROM Users_DB WHERE email_address = "c@ma.com"
-INSERT INTO Users_DB VALUES ("nu'onnikroc", "45", "c@ma.com", "(710)962A0918", "386-99-5072")
-Failed Insert ❌
-actual difference: [('(710)962A0918',)] vs expected difference: [('(710)962-0918',)]
-
-
-#79:
-[('835-99-7291', '835-99-7291'), ('742-92-1645', '742-92-1645'), ('584-24-9106', '584-24-9106')]
-[('835-99-7291', '835-99-7291'), ('742-92-1645', '742-92-1645'), ('584-24-9106', '584-24-9106'), ('211-66a8198', '211-66a8198')]
-
-SELECT ssn, ssn FROM Users_DB WHERE age = "50" OR age = "29"
-INSERT INTO Users_DB VALUES ("ci'atmifpe", "50", "adnpgcqq@endpae.net", "(576)745-6284", "211-66a8198")
-Failed Insert ❌
-actual difference: [('211-66a8198', '211-66a8198')] vs expected difference: [('211-66-8198', '211-66-8198')]
-
-
-#81:
-[(37, 'iiaxdt@fsxevo.net')]
-[(37, 'iiaxdt@fsxevo.net'), (37, 'jxpys@rxebeg.edu')]
-
-SELECT age, email_address FROM Users_DB WHERE age = "16" OR age = "37"
-INSERT INTO Users_DB VALUES ("kijda'efzeof", "37", "jxpys@rxebeg.edu", "(685)771-6176", "636-74-1358")
-Failed Insert ❌
-actual difference: [(37, 'jxpys@rxebeg.edu')] vs expected difference: [(37, 'jxpyg@rxebeg.edu')]
-
-
-#86:
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',), ('523-16-4073',), ('742-92-1645',), ('251-75-4117',), ('67k-69-7161',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('k24-97-7653',), ('716-75-7576',), ('414-30-7642',), ('943-39-5055',), ('560-57-2514',), ('677-40-7375',), ('273-27-5405',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('416-95-3877',), ('920e60-6345',), ('591-79-8940',), ('222-62-4094',), ('370-59-8955',), ('299-74-2963',), ('216-23-9154',), ('806-71-7909',), ('493-63-5067',), ('105-52-8640',), ('760-80-2198',), ('143-95-4387',), ('200-64-3193',), ('785-60-7642',), ('798-51-9532',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('456-34-6254',), ('425-28-1483',), ('741-33-2926',), ('498-33-2914',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('976-87-3128',), ('493-94-4129',), ('897-24-6343',), ('265-68-1399',), ('771-92-6346',), ('602-50-9381',), ('398-77-2258',), ('388-31-9800',), ('928-79-9955',), ('472-95-2479',), ('184-24-3585',), ('359-74-724x',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',), ('148-93-v043',), ('987-51-2463',), ('901-28-7116',), ('192-88-5967',), ('J56-48-8075',), ('620-59-9342',), ('879-29-7512',), ('552-99-1782',), ('193-02-7563',), ('211-91-6642',), ('386-99-5072',), ('986-32-8987',), ('591-45-2549',), ('941-29-6183',), ('158-20-5683',), ('211-66a8198',), ('249-64-1289',), ('636-74-1358',), ('307-27-8871',), ('592-98-7782',), ('292-17-0956',), ('976-65-1655',)]
-[('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',), ('523-16-4073',), ('742-92-1645',), ('251-75-4117',), ('67k-69-7161',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('k24-97-7653',), ('716-75-7576',), ('414-30-7642',), ('943-39-5055',), ('560-57-2514',), ('677-40-7375',), ('273-27-5405',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('416-95-3877',), ('920e60-6345',), ('591-79-8940',), ('222-62-4094',), ('370-59-8955',), ('299-74-2963',), ('216-23-9154',), ('806-71-7909',), ('493-63-5067',), ('105-52-8640',), ('760-80-2198',), ('143-95-4387',), ('200-64-3193',), ('785-60-7642',), ('798-51-9532',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('456-34-6254',), ('425-28-1483',), ('741-33-2926',), ('498-33-2914',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('976-87-3128',), ('493-94-4129',), ('897-24-6343',), ('265-68-1399',), ('771-92-6346',), ('602-50-9381',), ('398-77-2258',), ('388-31-9800',), ('928-79-9955',), ('472-95-2479',), ('184-24-3585',), ('359-74-724x',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',), ('148-93-v043',), ('987-51-2463',), ('901-28-7116',), ('192-88-5967',), ('J56-48-8075',), ('620-59-9342',), ('879-29-7512',), ('552-99-1782',), ('193-02-7563',), ('211-91-6642',), ('386-99-5072',), ('986-32-8987',), ('591-45-2549',), ('941-29-6183',), ('158-20-5683',), ('211-66a8198',), ('249-64-1289',), ('636-74-1358',), ('307-27-8871',), ('592-98-7782',), ('292-17-0956',), ('976-65-1655',), ('170-45H7636',)]
-
-SELECT ssn FROM Users_DB WHERE email_address <> "f@s.org" OR age < "62"
-INSERT INTO Users_DB VALUES ("vevloye", "60", "ksbtym@bzlzn.edu", "(503)264-4212", "170-45H7636")
-Failed Insert ❌
-actual difference: [('170-45H7636',)] vs expected difference: [('170-45-7636',)]
-
-
-#87:
-[]
-[]
-
-SELECT email_address FROM Users_DB WHERE email_address = "z@u.com" AND phone_number = "(938)453-6836"
-INSERT INTO Users_DB VALUES ("uflu'en", "26", "N@u.com", "(938)453-6836", "195-21-1420")
-Failed Insert ❌
-actual difference: [] vs expected difference: [('z@u.com',)]
-
-
-#88:
-[]
-[(25,)]
-
-SELECT age FROM Users_DB WHERE email_address = "f@g.org" OR age <= "27" AND name = "x"
-INSERT INTO Users_DB VALUES ("x", "25", "ngsll@ucofbqi.edu", "(698)760-1256", "909-33-6861")
-Failed Insert ❌
-actual difference: [(25,)] vs expected difference: [(19,)]
-
-
-#91:
-[]
-[('202-48-6q99',)]
-
-SELECT ssn FROM Users_DB WHERE name = "nx"
-INSERT INTO Users_DB VALUES ("nx", "2", "cfvyat@lpsaph.edu", "(300)638-8221", "202-48-6q99")
-Failed Insert ❌
-actual difference: [('202-48-6q99',)] vs expected difference: [('202-48-6499',)]
-
-
-#92:
-[]
-[('gesmtvios',)]
-
-SELECT name FROM Users_DB WHERE email_address = "a@b.org" OR name = "d"
-INSERT INTO Users_DB VALUES ("gesmtvios", "51", "a@b.org", "(344)629-6592", "799-35-5096")
-Failed Insert ❌
-actual difference: [('gesmtvios',)] vs expected difference: [('gesmevios',)]
-
-
-#93:
-[]
-[('bleoxoiafl@qqglwqm.com', 12)]
-
-SELECT email_address, age FROM Users_DB WHERE phone_number = "(322)973-3649"
-INSERT INTO Users_DB VALUES ("toga'itzozi", "12", "bleoxoiafl@qqglwqm.com", "(322)973-3649", "278-93-3480")
-Failed Insert ❌
-actual difference: [('bleoxoiafl@qqglwqm.com', 12)] vs expected difference: [('bleoxoiafl@qqglwqm.com', 4)]
-
-
-#96:
-[('834-57-00D1',), ('230-89-9751',), ('251-75-4117',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('716-75-7576',), ('414-30-7642',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('920e60-6345',), ('591-79-8940',), ('299-74-2963',), ('216-23-9154',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('771-92-6346',), ('602-50-9381',), ('472-95-2479',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',), ('987-51-2463',), ('192-88-5967',), ('J56-48-8075',), ('552-99-1782',), ('986-32-8987',), ('591-45-2549',), ('941-29-6183',), ('158-20-5683',), ('249-64-1289',), ('636-74-1358',), ('292-17-0956',), ('195-21-1420',), ('909-33-6861',), ('382-77-9087',), ('202-48-6q99',), ('278-93-3480',)]
-[('834-57-00D1',), ('230-89-9751',), ('251-75-4117',), ('560-83-4084',), ('930-27-2033',), ('726-46-9047',), ('716-75-7576',), ('414-30-7642',), ('691-23-9796',), ('742-63-7146',), ('243-25-7291',), ('920e60-6345',), ('591-79-8940',), ('299-74-2963',), ('216-23-9154',), ('406-11-8052',), ('222-60-4982',), ('475-38-216F',), ('744-98-8304',), ('691-73-4878',), ('709-29-9125',), ('771-92-6346',), ('602-50-9381',), ('472-95-2479',), ('126-46-2998',), ('635-64-5841',), ('584-24-9106',), ('987-51-2463',), ('192-88-5967',), ('J56-48-8075',), ('552-99-1782',), ('986-32-8987',), ('591-45-2549',), ('941-29-6183',), ('158-20-5683',), ('249-64-1289',), ('636-74-1358',), ('292-17-0956',), ('195-21-1420',), ('909-33-6861',), ('382-77-9087',), ('202-48-6q99',), ('278-93-3480',), ('449-50-2j32',)]
-
-SELECT ssn FROM Users_DB WHERE age = "70" OR age <= "44" AND age <= "86"
-INSERT INTO Users_DB VALUES ("kikna'et", "26", "lrqclup@thoz.edu", "(592)569-2944", "449-50-2j32")
-Failed Insert ❌
-actual difference: [('449-50-2j32',)] vs expected difference: [('449-50-2932',)]
-
-
-#100:
-[('(867)725-4599',), ('(596)278-4473',), ('(888)463-4351',), ('(6e6)383-9826',), ('(471)240-5411',), ('(362)659-6157',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(405)502-1465',), ('(346)791-1665',), ('(422)406-4474',), ('(324)256-8299',), ('(S91)293-9111',), ('(O85)374-3280',), ('(452)245-6504',), ('(589)319-0833',), ('(973)6h7-8485',), ('(227)406-3459',), ('(582)696-7183',), ('(628)931-7912',), ('(244)76o-9078',), ('(428)862-0354',), ('(415)426-5576',), ('(510)487-9508',), ('(857)489-4134',), ('(521)529-4906',)]
-[('(867)725-4599',), ('(596)278-4473',), ('(888)463-4351',), ('(6e6)383-9826',), ('(471)240-5411',), ('(362)659-6157',), ('(355)416-6746',), ('(492)416-9958',), ('(806)684-2294',), ('(405)502-1465',), ('(346)791-1665',), ('(422)406-4474',), ('(324)256-8299',), ('(S91)293-9111',), ('(O85)374-3280',), ('(452)245-6504',), ('(589)319-0833',), ('(973)6h7-8485',), ('(227)406-3459',), ('(582)696-7183',), ('(628)931-7912',), ('(244)76o-9078',), ('(428)862-0354',), ('(415)426-5576',), ('(510)487-9508',), ('(857)489-4134',), ('(521)529-4906',), ('(776)4f0-2324',)]
-
-SELECT phone_number FROM Users_DB WHERE age >= "77" OR phone_number = "(784)632-0214" OR name = "i"
-INSERT INTO Users_DB VALUES ("i", "21", "syeevkz@bcjzy.org", "(776)4f0-2324", "414-20-4024")
-Failed Insert ❌
-actual difference: [('(776)4f0-2324',)] vs expected difference: [('(776)470-2324',)]
-
+    #1:
+        Initial query result: []
+        Final query result: []
+        
+        SELECT age, ssn FROM Users_DB WHERE ssn = "834-57-0051"
+        INSERT INTO Users_DB VALUES ("ridun", "27", "muoeiehxrr@ixsnsml.org", "(487)301-2269", "834-57-00D1")
+        Failed Insert ❌
+        Actual difference: []
+        Expected difference: [(27, '834-57-0051')]
+
+    
+    #3:
+        Initial query result: []
+        Final query result: [("cijapgv'eh", 'xkznz@vxzhi.org')]
+        
+        SELECT name, email_address FROM Users_DB WHERE ssn = "164-31-4824" OR age = "3"
+        INSERT INTO Users_DB VALUES ("cijapgv'eh", "52", "xkznz@vxzhi.org", "(360)933-7543", "164-31-4824")
+        Failed Insert ❌
+        Actual difference: [("cijapgv'eh", 'xkznz@vxzhi.org')]
+        Expected difference: [("cijapge'eh", 'xkznz@vxzhi.org')]
+
+    
+    #4:
+        Initial query result: [('(487)301-2269', '834-57-00D1'), ('(280)332-6773', '883-09-1058'), ('(360)933-7543', '164-31-4824')]
+        Final query result: [('(487)301-2269', '834-57-00D1'), ('(280)332-6773', '883-09-1058'), ('(360)933-7543', '164-31-4824'), ('(2P3)991-7693', '835-99-7291')]
+        
+        SELECT phone_number, ssn FROM Users_DB WHERE age <= "53" OR age >= "86"
+        INSERT INTO Users_DB VALUES ("joztotuv", "50", "vcjqvutkcyh@vjhzg.org", "(2P3)991-7693", "835-99-7291")
+        Failed Insert ❌
+        Actual difference: [('(2P3)991-7693', '835-99-7291')]
+        Expected difference: [('(203)991-7693', '835-99-7291')]
+
+    
+    #5:
+        Initial query result: []
+        Final query result: []
+        
+        SELECT age, age, ssn FROM Users_DB WHERE age = "35"
+        INSERT INTO Users_DB VALUES ("edsi'utce'orzo", "36", "ljymnrxx@rzth.edu", "(546)906-5627", "230-89-9751")
+        Failed Insert ❌
+        Actual difference: []
+        Expected difference: [(35, 35, '230-89-9751')]
+
+    
+    #6:
+        Initial query result: [('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',)]
+        Final query result: [('834-57-00D1',), ('883-09-1058',), ('164-31-4824',), ('835-99-7291',), ('230-89-9751',), ('894-L6-7232',)]
+        
+        SELECT ssn FROM Users_DB WHERE email_address <> "jil@vt.org"
+        INSERT INTO Users_DB VALUES ("icyiofzi", "60", "kfbipdcm@pcsuvbe.org", "(613)386-9993", "894-L6-7232")
+        Failed Insert ❌
+        Actual difference: [('894-L6-7232',)]
+        Expected difference: [('894-76-7232',)]
+
+    
+    #8:
+        Initial query result: [('(487)301-2269', 27, 'ridun'), ('(280)332-6773', 51, "ko'ojfosotfa"), ('(360)933-7543', 52, "cijapgv'eh"), ('(2P3)991-7693', 50, 'joztotuv'), ('(546)906-5627', 36, "edsi'utce'orzo"), ('(613)386-9993', 60, 'icyiofzi'), ('(354)716-8087', 72, "xo'ihva'op")]
+        Final query result: [('(487)301-2269', 27, 'ridun'), ('(280)332-6773', 51, "ko'ojfosotfa"), ('(360)933-7543', 52, "cijapgv'eh"), ('(2P3)991-7693', 50, 'joztotuv'), ('(546)906-5627', 36, "edsi'utce'orzo"), ('(613)386-9993', 60, 'icyiofzi'), ('(354)716-8087', 72, "xo'ihva'op"), ('(943)733-9421', 50, 'atzistij')]
+        
+        SELECT phone_number, age, name FROM Users_DB WHERE age < "83"
+        INSERT INTO Users_DB VALUES ("atzistij", "50", "dhmslsjwjav@miasvyx.com", "(943)733-9421", "742-92-1645")
+        Failed Insert ❌
+        Actual difference: [('(943)733-9421', 50, 'atzistij')]
+        Expected difference: [('(943)733-9421', 49, 'atzistij')]
+
+    
+    #10:
+        Initial query result: []
+        Final query result: []
+        
+        SELECT ssn FROM Users_DB WHERE age >= "60" AND ssn = "677-69-7161"
+        INSERT INTO Users_DB VALUES ("fizoylaim", "81", "fesvmce@xuac.org", "(867)725-4599", "67k-69-7161")
+        Failed Insert ❌
+        Actual difference: []
+        Expected difference: [('677-69-7161',)]
+
+    
