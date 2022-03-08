@@ -276,7 +276,7 @@ def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
     global numNoopInsertFaults
     global numSwappedInsertFaults
-    shouldGenerateFaultyInsert = 0 < random.uniform(0,1) < probablityOfFault
+    shouldGenerateFaultyInsert = 0 < random.uniform(0, 1) < probablityOfFault
     if(shouldGenerateFaultyInsert):
         totalInsertFaults+=1
         selectedFailure = random.sample(['noop', 'swapped_values'], 1)[0]
@@ -288,22 +288,26 @@ def generate_insert_from_values(keys, vals, probablityOfFault):
             return ''         
     else: 
         insert = insert_from_values(vals)
-        
+
     return insert
+
 
 def insert_from_swapped_values(keys, vals):
     attributeToInjectFault = random.choice(keys)
     if(attributeToInjectFault == 'age'):
-        vals[attributeToInjectFault] += random.randrange(1,10)
+        vals[attributeToInjectFault] += random.randrange(1, 10)
     else:
-        vals[attributeToInjectFault] = random_flip_char(vals[attributeToInjectFault])
+        vals[attributeToInjectFault] = random_flip_char(
+            vals[attributeToInjectFault])
     result = insert_from_values(vals)
     return result
+
 
 def insert_from_values(vals):
     values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
     insert = 'INSERT INTO {} {}'.format(db, values)
     return insert
+
 
 def insert_from_query(sql):
     v = generate_values(sql)
@@ -315,10 +319,23 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
     difference = list_diff(after, before)
     isConsistent = difference == target
 
-    outputToSuccessTxt = '\n#{}:\n\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(
-        testNum, select, insert)
-    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
-        testNum, before, after, select, insert, difference, target)
+    outputToSuccessTxt = f'''
+    #{testNum}:
+        {select}
+        {insert}
+        Successful Insert \u2713\n
+    '''
+    outputToFailureTxt = f'''
+    #{testNum}:
+        Initial query result: {before}
+        Final query result: {after}
+        
+        {select}
+        {insert}
+        Failed Insert \u274c
+        Actual difference: {difference}
+        Expected difference: {target}\n
+    '''
 
     if(isConsistent):
         print('Successful Insert \u2713')
@@ -386,7 +403,6 @@ def delete_runner(testNum, probablityOfFaults):
 
     target = [random.choice(before)]
 
-    print(f'SSN: {target[-1]}')
     delete = generate_delete_from_ssn(target[0][-1], probablityOfFaults)
     dbInterface.executeSqlStatement(delete)
     after = dbInterface.executeSelectStatement(selectAll)
@@ -403,12 +419,11 @@ numTests = int(sys.argv[1])
 probablityOfFaultsInsert = float(sys.argv[2])
 probablityOfFaultsDelete = float(sys.argv[3])
 print('\n')
-
 tic = time.perf_counter()
 
+block_print()
 for i in tqdm(range(numTests)):
     print(f'\n#{i+1}:\n')
-    block_print()
     insertOrDelete = random.sample(['insert', 'delete'], 1)[0]
     forceInsert = False
 
@@ -421,8 +436,9 @@ for i in tqdm(range(numTests)):
     if insertOrDelete == 'insert' or forceInsert:
         insert_runner(i+1, probablityOfFaultsInsert)
         numInserts +=1
-    enable_print()
 toc = time.perf_counter()
+enable_print()
+
 
 print('\n---------- SQLFUZZ RESULTS -------------\n')
 print(f'{numTests} Total tests in {toc - tic:0.4f} seconds')
