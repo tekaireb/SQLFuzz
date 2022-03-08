@@ -22,7 +22,7 @@ DB_NAME = "persons.db"
 class Query:
     INSERT_PERSON = "INSERT INTO Users_DB (name, age, email_address, phone_number, ssn) VALUES('{}', '{}', '{}', '{}', '{}')"
     SELECT_ALL = "SELECT * FROM Users_DB"
-    CREATE_USERDB_TABLE = "CREATE TABLE if not exists Users_DB (name VARCHAR(64), age INT, email_address VARCHAR(128), phone_number VARCHAR(64), ssn VARCHAR(11) PRIMARY KEY)"
+    CREATE_USERDB_TABLE = "CREATE TABLE if not exists Users_DB (name VARCHAR(64), age INT, email_address VARCHAR(128), phone_number VARCHAR(64), ssn VARCHAR(11))"
     DROP_USERDB_TABLE = "DROP TABLE IF EXISTS Users_DB"
 
     def __init__(self):

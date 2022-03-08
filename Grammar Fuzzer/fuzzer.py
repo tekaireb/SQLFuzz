@@ -207,7 +207,7 @@ def generate_values_from_constraints(constraints):
                 random_string(10))
 
     for field, constraint in constraints.items():
-        print(f'field: {field} - constraint: {constraint}')
+        # print(f'field: {field} - constraint: {constraint}')
 
         # If there is an `equals` constraint, set the value to it
         if constraint['eq']:
@@ -256,11 +256,10 @@ def generate_target(selectSqlStatement, vals):
     return [tuple([vals[k] for k in keys])]
 
 
-def generate_insert_from_values(vals, probablityOfFault):
+def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
     global numDoubleInsertFaults
     global numSwappedInsertFaults
-    insert = ''    
     shouldGenerateFaultyInsert = 0 < random.uniform(0,1) < probablityOfFault
     if(shouldGenerateFaultyInsert):
         totalInsertFaults+=1
@@ -268,18 +267,20 @@ def generate_insert_from_values(vals, probablityOfFault):
         selectedFailure = 'swapped_values'
         if(selectedFailure == 'swapped_values'):
             numSwappedInsertFaults+=1
-            insert = insert_from_swapped_values(vals)            
+            insert = insert_from_swapped_values(keys, vals)            
     else: 
         insert = insert_from_values(vals)
+        
     return insert
 
-def insert_from_swapped_values(vals):
-    choices = ['name', 'email_address', 'phone_number', 'ssn']
-    s = random.sample(choices, 2)
-    # perform swaps
-    vals[s[0]], vals[s[1]] = vals[s[1]], vals[s[0]]
-    vals['age'] += random.randrange(100)
-    return insert_from_values(vals)
+def insert_from_swapped_values(keys, vals):
+    attributeToInjectFault = random.choice(keys)
+    if(attributeToInjectFault == 'age'):
+        vals[attributeToInjectFault] += random.randrange(1,10)
+    else:
+        vals[attributeToInjectFault] = random_flip_char(vals[attributeToInjectFault])
+    result = insert_from_values(vals)
+    return result
 
 def insert_from_values(vals):
     values = 'VALUES (' + ', '.join([f'"{v}"' for v in vals.values()]) + ')'
@@ -293,11 +294,10 @@ def insert_from_query(sql):
 
 def consistency_checker_insert(testNum, select, insert, before, after, target):
     global numFailures, numSuccesses
-
     difference = list_diff(after, before)
     isConsistent = difference == target
 
-    outputToSuccessTxt = '\n#{}:\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(
+    outputToSuccessTxt = '\n#{}:\n\n{}\n{}\nSuccessful Insert \u2713\n\n'.format(
         testNum, select, insert)
     outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Insert \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
         testNum, before, after, select, insert, difference, target)
@@ -326,14 +326,15 @@ def insert_runner(numTests, probablityOfFaults):
             select = fuzzer.fuzz()
             vals = generate_values(select)
 
-        insert = generate_insert_from_values(vals, probablityOfFaults)
+        keys = extract_column_names(select)
+        insert = generate_insert_from_values(keys, vals.copy(), probablityOfFaults)
 
         before = dbInterface.executeSelectStatement(select)
         dbInterface.executeSqlStatement(insert)
         after = dbInterface.executeSelectStatement(select)
 
         target = generate_target(select, vals)
-        consistency_checker_insert(i, select, insert, before, after, target)
+        consistency_checker_insert(i+1, select, insert, before, after, target)
 
 
 if(len(sys.argv) != 3):
@@ -343,7 +344,7 @@ if(len(sys.argv) != 3):
 numTests = int(sys.argv[1])
 probablityOfFaults = float(sys.argv[2])
 print('\n')
-block_print()
+# block_print()
 tic = time.perf_counter()
 insert_runner(numTests, probablityOfFaults)
 toc = time.perf_counter()

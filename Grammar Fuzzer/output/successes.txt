@@ -1,480 +1,329 @@
 
-#1:
+#2:
+
 SELECT age, ssn FROM Users_DB WHERE ssn = "883-09-1058"
 INSERT INTO Users_DB VALUES ("ko'ojfosotfa", "51", "zdhggroenf@iohcoz.com", "(280)332-6773", "883-09-1058")
 Successful Insert ✓
 
 
-#3:
-SELECT phone_number, ssn FROM Users_DB WHERE age <= "53" OR age >= "86"
-INSERT INTO Users_DB VALUES ("joztotuv", "50", "vcjqvutkcyh@vjhzg.org", "(203)991-7693", "835-99-7291")
-Successful Insert ✓
-
-
-#4:
-SELECT age FROM Users_DB WHERE phone_number <> "(222)750-8425"
-INSERT INTO Users_DB VALUES ("zeli'efifmu", "86", "wgcswuhd@wyjvtzd.com", "(786)718-5067", "208-65-6934")
-Successful Insert ✓
-
-
-#6:
-SELECT age, age FROM Users_DB WHERE age = "35" OR age > "58"
-INSERT INTO Users_DB VALUES ("yeigce", "35", "txsjodowjwm@iqrpoc.com", "(859)601-3990", "883-96-5415")
-Successful Insert ✓
-
-
 #7:
-SELECT age FROM Users_DB WHERE phone_number = "(485)362-7782"
-INSERT INTO Users_DB VALUES ("uzfof", "67", "xenuecpz@iktw.edu", "(485)362-7782", "765-20-6383")
-Successful Insert ✓
 
-
-#8:
-SELECT ssn, ssn, name FROM Users_DB WHERE age > "76"
-INSERT INTO Users_DB VALUES ("lo'ibmu'ed", "91", "unwiojg@mpdhms.net", "(640)840-9097", "952-46-4770")
+SELECT age FROM Users_DB WHERE age >= "20" AND age > "5" OR age >= "91"
+INSERT INTO Users_DB VALUES ("xo'ihva'op", "72", "vdfknwp@jvmyrb.edu", "(354)716-8087", "523-16-4073")
 Successful Insert ✓
 
 
 #9:
-SELECT email_address FROM Users_DB WHERE age < "91" OR age <= "39" AND age > "13"
-INSERT INTO Users_DB VALUES ("(785)264-3171", "53", "nudptnibwl@goohl.com", "feotyoz", "778-37-1349")
-Successful Insert ✓
 
-
-#10:
-SELECT age FROM Users_DB WHERE name <> "q"
-INSERT INTO Users_DB VALUES ("da'iggiruxtus", "12", "uuyrxgnohnk@omnx.com", "(765)652-7111", "195-65-2582")
+SELECT ssn, name FROM Users_DB WHERE ssn = "251-75-4117"
+INSERT INTO Users_DB VALUES ("yicle'atjuci", "31", "cyrgsg@hkyez.com", "(622)621-0205", "251-75-4117")
 Successful Insert ✓
 
 
 #12:
-SELECT ssn, age FROM Users_DB WHERE age = "57" OR age = "39"
-INSERT INTO Users_DB VALUES ("zo'udmi'en", "57", "cqudqqgyllx@uehde.net", "(529)412-7799", "559-97-6295")
-Successful Insert ✓
 
-
-#14:
-SELECT email_address FROM Users_DB WHERE age < "91" AND phone_number = "(911)411-1000"
-INSERT INTO Users_DB VALUES ("ci'ecan", "39", "rpibyugjl@ybukidz.net", "(911)411-1000", "547-61-8204")
+SELECT email_address FROM Users_DB WHERE age <= "7" OR name = "n" AND phone_number = "(613)884-5829"
+INSERT INTO Users_DB VALUES ("ispeha'upxu", "0", "bumlixal@zclhxvu.com", "(720)785-2772", "930-27-2033")
 Successful Insert ✓
 
 
 #15:
-SELECT email_address, email_address FROM Users_DB WHERE phone_number <> "(928)382-9467"
-INSERT INTO Users_DB VALUES ("guzesfu", "19", "fkwhlqj@cigur.net", "(449)382-9922", "774-89-6531")
+
+SELECT ssn, name FROM Users_DB WHERE age < "65" OR age <= "22"
+INSERT INTO Users_DB VALUES ("vi'ubsepop", "5", "srglrjcm@qoyr.net", "(321)855-8523", "716-75-7576")
 Successful Insert ✓
 
 
 #16:
-SELECT age FROM Users_DB WHERE age >= "94" OR phone_number = "(277)637-8087" OR phone_number = "(480)362-2098"
-INSERT INTO Users_DB VALUES ("nicze", "68", "fnfbmzpfxj@bajs.com", "(480)362-2098", "443-46-8444")
+
+SELECT phone_number FROM Users_DB WHERE name = "xn"
+INSERT INTO Users_DB VALUES ("xn", "11", "fepkhaim@hoyi.net", "(699)245-3017", "414-30-7642")
 Successful Insert ✓
 
 
 #18:
+
 SELECT ssn, name FROM Users_DB WHERE age > "58"
 INSERT INTO Users_DB VALUES ("layoyci'ox", "79", "nejmfyrphh@jwezobr.edu", "(888)463-4351", "560-57-2514")
 Successful Insert ✓
 
 
 #19:
+
 SELECT phone_number, phone_number FROM Users_DB WHERE email_address <> "vazf@g.org"
 INSERT INTO Users_DB VALUES ("doru'ochasi'uf", "67", "gwspi@bcvir.com", "(450)592-6142", "677-40-7375")
 Successful Insert ✓
 
 
-#20:
-SELECT ssn, phone_number FROM Users_DB WHERE age < "99" OR age > "96"
-INSERT INTO Users_DB VALUES ("273-27-5405", "108", "clrct@tzkm.com", "(666)383-9826", "ahtu'ux")
-Successful Insert ✓
-
-
-#22:
-SELECT name, ssn FROM Users_DB WHERE age <= "70" OR ssn = "534-96-7175"
-INSERT INTO Users_DB VALUES ("azyiy", "21", "jsiqvde@yznbiu.org", "(432)736-7294", "742-63-7146")
-Successful Insert ✓
-
-
-#23:
-SELECT name, age FROM Users_DB WHERE age > "9" AND age < "84" OR age = "42"
-INSERT INTO Users_DB VALUES ("xosdu'ugdidey", "42", "suyuvuc@jwnxhbh.com", "(817)242-1020", "267-73-6680")
-Successful Insert ✓
-
-
-#24:
-SELECT name, phone_number, name FROM Users_DB WHERE age > "31" AND age = "36" OR age > "96"
-INSERT INTO Users_DB VALUES ("(819)262-3445", "106", "qnwlo@xcsdq.org", "nama'exovgi", "920-60-6345")
-Successful Insert ✓
-
-
-#26:
-SELECT ssn, name FROM Users_DB WHERE age <= "74"
-INSERT INTO Users_DB VALUES ("hocceax", "61", "tgzek@wfzkba.org", "(418)715-6915", "409-51-3235")
-Successful Insert ✓
-
-
 #28:
-SELECT name FROM Users_DB WHERE age >= "61" OR email_address = "p@r.org"
-INSERT INTO Users_DB VALUES ("954-86-5225", "71", "p@r.org", "(433)406-1632", "cu'uxat")
+
+SELECT phone_number FROM Users_DB WHERE phone_number = "(362)659-6157"
+INSERT INTO Users_DB VALUES ("yo'unxob", "100", "dneesssydd@sydzjrl.edu", "(362)659-6157", "370-59-8955")
 Successful Insert ✓
 
 
 #29:
-SELECT phone_number, age FROM Users_DB WHERE age >= "36" AND age < "40"
-INSERT INTO Users_DB VALUES ("de'ojvu'icam", "39", "fggbhb@oblw.org", "(657)810-3579", "556-32-8775")
-Successful Insert ✓
 
-
-#30:
-SELECT email_address, phone_number FROM Users_DB WHERE age = "53" OR ssn = "513-15-4683" OR phone_number = "(402)304-7487"
-INSERT INTO Users_DB VALUES ("vejmoxiof", "53", "jdzdpgtgy@iqgl.edu", "(620)937-5300", "787-21-2809")
+SELECT name FROM Users_DB WHERE phone_number = "(243)541-9468" AND name = "gh"
+INSERT INTO Users_DB VALUES ("gh", "28", "nzklisjodp@busstc.edu", "(243)541-9468", "299-74-2963")
 Successful Insert ✓
 
 
 #31:
-SELECT age FROM Users_DB WHERE email_address = "k@d.org"
-INSERT INTO Users_DB VALUES ("hazo'uturbev", "62", "k@d.org", "(367)214-5089", "841-82-4669")
-Successful Insert ✓
 
-
-#32:
-SELECT phone_number FROM Users_DB WHERE age >= "8" AND age = "75" OR age < "23"
-INSERT INTO Users_DB VALUES ("anmux", "75", "bfpewxx@ndit.org", "(516)573-5160", "748-96-3018")
+SELECT ssn FROM Users_DB WHERE age >= "84"
+INSERT INTO Users_DB VALUES ("lochapis", "87", "aevuf@klot.net", "(355)416-6746", "806-71-7909")
 Successful Insert ✓
 
 
 #33:
-SELECT ssn FROM Users_DB WHERE age <= "30" OR age = "8" OR phone_number = "(889)325-6802"
-INSERT INTO Users_DB VALUES ("271-78-9736", "154", "aqylqzqopb@jugkqc.com", "(889)325-6802", "ku'uknori")
-Successful Insert ✓
 
-
-#34:
-SELECT name FROM Users_DB WHERE age > "47" AND name = "f"
-INSERT INTO Users_DB VALUES ("f", "67", "arredbastm@rrcjgx.net", "(568)422-3943", "217-33-1891")
+SELECT email_address, email_address FROM Users_DB WHERE age > "76" OR age < "56"
+INSERT INTO Users_DB VALUES ("ku'icro'iybiut", "84", "ysrxtgyxgj@ofvcff.com", "(806)684-2294", "105-52-8640")
 Successful Insert ✓
 
 
 #35:
-SELECT email_address, email_address FROM Users_DB WHERE age = "56" OR age > "41"
-INSERT INTO Users_DB VALUES ("brirrpuy@elmhy.net", "128", "ujdabzu", "(478)365-8039", "800-31-9423")
-Successful Insert ✓
 
-
-#36:
-SELECT ssn FROM Users_DB WHERE age <= "23" OR email_address <> "o@a.edu" OR age = "60"
-INSERT INTO Users_DB VALUES ("gu'ahcu'ufvesu", "13", "wqnhzpz@ymls.com", "(824)931-4986", "363-34-1089")
+SELECT age, ssn, age FROM Users_DB WHERE age > "47" OR age < "88"
+INSERT INTO Users_DB VALUES ("umoxri", "64", "ztvfy@qeoff.org", "(950)573-1453", "143-95-4387")
 Successful Insert ✓
 
 
 #37:
-SELECT ssn FROM Users_DB WHERE age > "62" OR phone_number = "(650)566-9716"
-INSERT INTO Users_DB VALUES ("za'ofdokisxub", "89", "hjcmvxkcrfp@klgsif.org", "(650)566-9716", "610-35-4847")
-Successful Insert ✓
 
-
-#38:
-SELECT ssn FROM Users_DB WHERE email_address <> "m@l.org"
-INSERT INTO Users_DB VALUES ("lo'ezukle", "71", "gezxepza@fnpeuqr.net", "(944)261-2034", "587-90-2577")
+SELECT phone_number FROM Users_DB WHERE age < "45" OR age < "24" OR age = "89"
+INSERT INTO Users_DB VALUES ("ru'umho", "89", "gvzqjgbz@tqqw.org", "(405)502-1465", "785-60-7642")
 Successful Insert ✓
 
 
 #39:
-SELECT name, ssn, ssn FROM Users_DB WHERE age < "81" AND name = "f"
-INSERT INTO Users_DB VALUES ("f", "31", "oueeqfabvl@kporir.edu", "(482)996-8845", "593-79-4721")
-Successful Insert ✓
 
-
-#40:
-SELECT phone_number FROM Users_DB WHERE phone_number = "(424)418-8004"
-INSERT INTO Users_DB VALUES ("xeri'ihyu", "15", "ujglbvg@dhunkaf.net", "(424)418-8004", "698-25-7484")
-Successful Insert ✓
-
-
-#41:
-SELECT name, name FROM Users_DB WHERE age >= "95" OR age < "35"
-INSERT INTO Users_DB VALUES ("xoapid", "34", "gqvpyretjkn@ukddqvc.com", "(420)517-3109", "757-59-9026")
+SELECT name FROM Users_DB WHERE age < "31" OR age <= "81" OR phone_number = "(496)889-7997"
+INSERT INTO Users_DB VALUES ("xu'ipye'atpol", "19", "aqyeljp@rawp.edu", "(496)889-7997", "406-11-8052")
 Successful Insert ✓
 
 
 #43:
-SELECT email_address, email_address FROM Users_DB WHERE age > "9" AND age > "43"
-INSERT INTO Users_DB VALUES ("roko", "149", "352-41-2173", "(983)969-3898", "eekcpsxbrmi@cmqnywe.org")
+
+SELECT ssn FROM Users_DB WHERE age < "75" AND name = "h"
+INSERT INTO Users_DB VALUES ("h", "54", "oregues@rvzgej.org", "(829)451-8812", "425-28-1483")
 Successful Insert ✓
 
 
 #44:
-SELECT age, age FROM Users_DB WHERE age = "32" AND age > "7" OR age < "47" OR ssn = "105-26-4589"
-INSERT INTO Users_DB VALUES ("luuk", "32", "lcwype@qtpw.net", "(467)922-3306", "882-11-5421")
+
+SELECT name FROM Users_DB WHERE email_address = "w@ff.com" OR name = "o"
+INSERT INTO Users_DB VALUES ("dapa'uroyce'iz", "84", "w@ff.com", "(422)406-4474", "741-33-2926")
+Successful Insert ✓
+
+
+#45:
+
+SELECT phone_number, name, ssn, email_address FROM Users_DB WHERE name = "a"
+INSERT INTO Users_DB VALUES ("a", "95", "sxvkr@ragsvk.net", "(324)256-8299", "498-33-2914")
 Successful Insert ✓
 
 
 #46:
-SELECT phone_number FROM Users_DB WHERE age = "61" OR phone_number = "(358)988-4383"
-INSERT INTO Users_DB VALUES ("xizi", "81", "ggjirk@yovdie.org", "(358)988-4383", "380-24-1249")
+
+SELECT ssn FROM Users_DB WHERE age = "7" AND age <= "70" AND age <= "43"
+INSERT INTO Users_DB VALUES ("bujuyil", "7", "shfcjt@krobea.edu", "(216)216-6299", "744-98-8304")
 Successful Insert ✓
 
 
 #47:
-SELECT ssn, phone_number FROM Users_DB WHERE age < "18" AND age = "74" AND age >= "73" OR age = "71"
-INSERT INTO Users_DB VALUES ("su'ehge'ursem", "71", "eacuaexpvne@ceuzn.edu", "(892)986-8765", "331-33-7959")
+
+SELECT ssn, email_address FROM Users_DB WHERE name <> "vm"
+INSERT INTO Users_DB VALUES ("daos", "17", "uznoz@wtntf.edu", "(887)853-2690", "691-73-4878")
 Successful Insert ✓
 
 
 #48:
-SELECT ssn FROM Users_DB WHERE phone_number = "(313)420-9744"
-INSERT INTO Users_DB VALUES ("orle'usmonu'af", "68", "ntuikiizdi@usmoyv.org", "(313)420-9744", "851-96-4193")
-Successful Insert ✓
 
-
-#50:
-SELECT name, email_address, phone_number FROM Users_DB WHERE ssn = "508-63-2779"
-INSERT INTO Users_DB VALUES ("tuudfo", "76", "czgnkzxvmkd@vsrek.org", "(292)711-4262", "508-63-2779")
-Successful Insert ✓
-
-
-#51:
-SELECT name FROM Users_DB WHERE age <= "90"
-INSERT INTO Users_DB VALUES ("314-65-5118", "80", "yrqho@yuvgib.org", "(327)922-0054", "se'ecodpobef")
+SELECT ssn FROM Users_DB WHERE age = "37" AND name = "b"
+INSERT INTO Users_DB VALUES ("b", "37", "iiaxdt@fsxevo.net", "(443)928-0512", "709-29-9125")
 Successful Insert ✓
 
 
 #52:
-SELECT phone_number FROM Users_DB WHERE age = "30"
-INSERT INTO Users_DB VALUES ("co'ejho'igji'ij", "30", "bwsbied@oonfy.net", "(549)492-9831", "521-76-9015")
-Successful Insert ✓
 
-
-#53:
-SELECT ssn FROM Users_DB WHERE age >= "60" AND age = "91" OR age >= "76" OR email_address = "w@j.org"
-INSERT INTO Users_DB VALUES ("umegefnu", "128", "(610)872-7520", "ilfgrw@bvklelo.org", "856-79-9313")
+SELECT age, age FROM Users_DB WHERE age = "54" AND age <= "61"
+INSERT INTO Users_DB VALUES ("ze'ugsavu", "54", "qmpzz@wdophcr.com", "(832)743-1074", "265-68-1399")
 Successful Insert ✓
 
 
 #54:
-SELECT ssn FROM Users_DB WHERE age > "58" OR age > "79" OR age > "20"
-INSERT INTO Users_DB VALUES ("605-81-8593", "102", "nuinf@rows.org", "(526)687-0494", "emxi'az")
+
+SELECT name, email_address FROM Users_DB WHERE name <> "x"
+INSERT INTO Users_DB VALUES ("vizutfocuf", "39", "tholc@kbtugsq.org", "(630)387-1863", "602-50-9381")
 Successful Insert ✓
 
 
-#56:
-SELECT phone_number FROM Users_DB WHERE age > "91"
-INSERT INTO Users_DB VALUES ("taopyad", "185", "635-94-2392", "(517)720-7167", "mjotxjvo@hrnj.edu")
-Successful Insert ✓
+#55:
 
-
-#57:
-SELECT email_address, ssn, age FROM Users_DB WHERE name = "a"
-INSERT INTO Users_DB VALUES ("a", "62", "rkzrraybn@dmokmo.edu", "(202)627-6246", "599-24-9037")
-Successful Insert ✓
-
-
-#58:
-SELECT ssn, name, email_address FROM Users_DB WHERE email_address = "k@w.org"
-INSERT INTO Users_DB VALUES ("(591)395-4198", "89", "k@w.org", "jo'ayilmu", "586-64-4436")
-Successful Insert ✓
-
-
-#59:
-SELECT age, email_address FROM Users_DB WHERE ssn <> "064-62-3197"
-INSERT INTO Users_DB VALUES ("itlu'av", "68", "krnpvhi@zelp.net", "(609)203-4864", "754-99-6945")
-Successful Insert ✓
-
-
-#60:
-SELECT email_address, email_address, phone_number, age FROM Users_DB WHERE email_address = "h@z.org"
-INSERT INTO Users_DB VALUES ("su'igpe", "72", "h@z.org", "(308)877-1333", "982-44-5717")
-Successful Insert ✓
-
-
-#61:
-SELECT email_address, ssn, phone_number FROM Users_DB WHERE age >= "76"
-INSERT INTO Users_DB VALUES ("xurrig", "93", "ifqpk@oeckw.edu", "(441)702-7456", "389-43-5321")
+SELECT ssn, phone_number FROM Users_DB WHERE age >= "83" AND email_address = "c@p.org"
+INSERT INTO Users_DB VALUES ("zo'ivpulegi", "97", "c@p.org", "(452)245-6504", "398-77-2258")
 Successful Insert ✓
 
 
 #62:
-SELECT age, name, name, name FROM Users_DB WHERE email_address = "j@zc.com"
-INSERT INTO Users_DB VALUES ("sa'ozpizxate", "100", "j@zc.com", "(460)364-5977", "738-43-6592")
+
+SELECT age, email_address FROM Users_DB WHERE age >= "64" OR age < "47"
+INSERT INTO Users_DB VALUES ("zussios", "5", "ovhuv@wepquu.com", "(676)374-2243", "635-64-5841")
 Successful Insert ✓
 
 
 #63:
-SELECT name FROM Users_DB WHERE age <= "82" OR email_address = "n@a.com"
-INSERT INTO Users_DB VALUES ("corxu'uvaxsu", "40", "n@a.com", "(346)917-9576", "121-30-5718")
-Successful Insert ✓
 
-
-#64:
-SELECT name FROM Users_DB WHERE age = "64" OR age > "28" OR phone_number = "(810)885-4555"
-INSERT INTO Users_DB VALUES ("idyigu'um", "27", "qkyuf@aazrsi.org", "(810)885-4555", "952-48-7926")
+SELECT phone_number FROM Users_DB WHERE age >= "8" OR name = "f" AND email_address = "q@e.edu"
+INSERT INTO Users_DB VALUES ("f", "29", "q@e.edu", "(280)895-8146", "584-24-9106")
 Successful Insert ✓
 
 
 #65:
-SELECT name FROM Users_DB WHERE name = "n"
-INSERT INTO Users_DB VALUES ("n", "76", "232-75-9669", "(877)822-8277", "oclvqmsr@qymis.edu")
+
+SELECT phone_number FROM Users_DB WHERE age > "7" AND age >= "14" OR age >= "83"
+INSERT INTO Users_DB VALUES ("mimvag", "32", "bjjgfxpadrl@cbnpsjs.edu", "(767)428-7772", "987-51-2463")
 Successful Insert ✓
 
 
 #66:
-SELECT email_address FROM Users_DB WHERE name = "c"
-INSERT INTO Users_DB VALUES ("c", "53", "sokzmpxt@eyequo.edu", "(925)399-6636", "447-79-1750")
+
+SELECT ssn, ssn FROM Users_DB WHERE age = "34" OR name <> "i"
+INSERT INTO Users_DB VALUES ("jeox", "96", "dibkorncp@anuhair.com", "(582)696-7183", "901-28-7116")
 Successful Insert ✓
 
 
 #67:
-SELECT phone_number FROM Users_DB WHERE ssn = "444-30-7673" AND age < "77"
-INSERT INTO Users_DB VALUES ("xeiyey", "54", "baotjufab@pitivml.org", "(602)341-6128", "444-30-7673")
-Successful Insert ✓
 
-
-#69:
-SELECT name FROM Users_DB WHERE age <= "39" OR age < "33" AND ssn = "790-07-9698"
-INSERT INTO Users_DB VALUES ("zoxmuy", "9", "jtkjla@qsvvebh.com", "(853)531-5377", "714-98-6425")
-Successful Insert ✓
-
-
-#70:
-SELECT age, ssn FROM Users_DB WHERE age >= "61"
-INSERT INTO Users_DB VALUES ("paxuylefa", "84", "kgvki@jxyvi.org", "(484)244-5669", "875-93-1194")
+SELECT email_address, ssn FROM Users_DB WHERE age < "28" AND age <= "46"
+INSERT INTO Users_DB VALUES ("horu'ad", "17", "vdlmt@lmfyzwa.com", "(953)903-0453", "192-88-5967")
 Successful Insert ✓
 
 
 #71:
-SELECT age FROM Users_DB WHERE age >= "92" OR ssn = "828-65-0201" AND phone_number = "(500)268-3126" AND age = "45"
-INSERT INTO Users_DB VALUES ("bojka'ipde", "98", "dwrzsfi@dtkuwmv.org", "(725)915-0997", "491-75-4808")
-Successful Insert ✓
 
-
-#72:
-SELECT phone_number FROM Users_DB WHERE age <= "94"
-INSERT INTO Users_DB VALUES ("ginxobenkey", "6", "zvwxhtmqkf@ouacp.com", "(502)521-2983", "341-74-2280")
+SELECT phone_number, phone_number FROM Users_DB WHERE phone_number = "(380)360-4167"
+INSERT INTO Users_DB VALUES ("fefur", "21", "vieol@fgwb.org", "(380)360-4167", "552-99-1782")
 Successful Insert ✓
 
 
 #73:
-SELECT email_address, name, name FROM Users_DB WHERE age > "23"
-INSERT INTO Users_DB VALUES ("di'evejbuvos", "74", "mpjuscnbdm@sfgyni.net", "(950)863-3705", "746-96-1462")
+
+SELECT name FROM Users_DB WHERE phone_number = "(497)914-3653"
+INSERT INTO Users_DB VALUES ("gi'ezafroxe", "54", "iwjqrv@msjxnyx.com", "(497)914-3653", "211-91-6642")
 Successful Insert ✓
 
 
 #75:
-SELECT age, ssn FROM Users_DB WHERE age >= "41" OR age >= "4"
-INSERT INTO Users_DB VALUES ("vi'orxijur", "16", "yzszbw@joufse.edu", "(942)533-0591", "794-28-7169")
+
+SELECT email_address FROM Users_DB WHERE age > "3" AND name = "p"
+INSERT INTO Users_DB VALUES ("p", "22", "exvzwbtkj@qwdiws.edu", "(574)805-2330", "986-32-8987")
 Successful Insert ✓
 
 
 #76:
-SELECT name FROM Users_DB WHERE age < "90"
-INSERT INTO Users_DB VALUES ("lo'ibfavu", "28", "iwxdz@sfmpuwn.net", "(415)382-6068", "937-78-9684")
+
+SELECT phone_number, phone_number FROM Users_DB WHERE email_address = "l@d.com"
+INSERT INTO Users_DB VALUES ("mu'ertotib", "15", "l@d.com", "(311)983-0999", "591-45-2549")
 Successful Insert ✓
 
 
 #77:
-SELECT name FROM Users_DB WHERE age > "18" OR age >= "50" AND name <> "k"
-INSERT INTO Users_DB VALUES ("ibre", "74", "fqxjs@zpdq.net", "(684)302-5625", "925-96-9711")
+
+SELECT name, name, ssn FROM Users_DB WHERE age < "7" OR age > "79"
+INSERT INTO Users_DB VALUES ("jeyup", "2", "criimu@fmocivn.org", "(514)559-8926", "941-29-6183")
 Successful Insert ✓
 
 
 #78:
-SELECT email_address FROM Users_DB WHERE age > "67" OR phone_number = "(970)948-4136" OR age < "35"
-INSERT INTO Users_DB VALUES ("gi'oxga'abep", "129", "(970)948-4136", "bvknt@xanpj.net", "597-20-8027")
+
+SELECT ssn, name, name FROM Users_DB WHERE age < "25"
+INSERT INTO Users_DB VALUES ("vu'elxeercik", "21", "wofolzoqj@inqwhju.com", "(665)311-3129", "158-20-5683")
 Successful Insert ✓
 
 
 #80:
-SELECT phone_number FROM Users_DB WHERE age > "89" OR age <= "59"
-INSERT INTO Users_DB VALUES ("jebujxo", "32", "jhjwirdfhb@rhjbue.net", "(440)538-1059", "477-51-2363")
+
+SELECT phone_number FROM Users_DB WHERE age <> "72"
+INSERT INTO Users_DB VALUES ("subvi'ivseuh", "31", "iwhvngp@wzzd.org", "(592)512-6043", "249-64-1289")
 Successful Insert ✓
 
 
 #82:
-SELECT ssn FROM Users_DB WHERE age >= "69" OR age = "2" OR age >= "48"
-INSERT INTO Users_DB VALUES ("fule'aner", "70", "npwntzu@kezuhmn.edu", "(988)561-9689", "895-98-4593")
+
+SELECT email_address, name FROM Users_DB WHERE phone_number = "(428)862-0354"
+INSERT INTO Users_DB VALUES ("fu'ebrofage", "98", "eutaz@azdrxk.com", "(428)862-0354", "307-27-8871")
 Successful Insert ✓
 
 
 #83:
-SELECT email_address FROM Users_DB WHERE age <= "91"
-INSERT INTO Users_DB VALUES ("sifuvu", "20", "lechc@asney.org", "(928)676-5704", "213-29-1983")
+
+SELECT name, age FROM Users_DB WHERE age > "12" OR age >= "16"
+INSERT INTO Users_DB VALUES ("ogmifvilbe", "99", "emoxzz@pcdsnx.net", "(415)426-5576", "592-98-7782")
 Successful Insert ✓
 
 
 #84:
-SELECT phone_number FROM Users_DB WHERE name = "fu"
-INSERT INTO Users_DB VALUES ("fu", "8", "yjgrgu@bhic.com", "(900)714-0546", "612-34-6152")
+
+SELECT ssn FROM Users_DB WHERE age <= "91" AND ssn = "292-17-0956"
+INSERT INTO Users_DB VALUES ("ohdurerko", "23", "wopkuummfbz@lung.net", "(311)795-0342", "292-17-0956")
 Successful Insert ✓
 
 
 #85:
-SELECT name FROM Users_DB WHERE age >= "99" OR phone_number = "(356)608-8237" OR ssn = "561-02-6819"
-INSERT INTO Users_DB VALUES ("ye'urij", "24", "llajjqdwpu@onnl.net", "(885)327-6528", "561-02-6819")
-Successful Insert ✓
 
-
-#86:
-SELECT phone_number FROM Users_DB WHERE age = "16" OR email_address = "q@e.com"
-INSERT INTO Users_DB VALUES ("(682)731-1060", "145", "q@e.com", "onokguzo", "743-85-3507")
-Successful Insert ✓
-
-
-#87:
-SELECT email_address, name FROM Users_DB WHERE age = "82" OR age < "64"
-INSERT INTO Users_DB VALUES ("845-98-3073", "26", "pttrafq@xidgta.com", "(435)330-5231", "ibuc")
-Successful Insert ✓
-
-
-#88:
-SELECT email_address FROM Users_DB WHERE age = "11" OR phone_number = "(971)350-5125"
-INSERT INTO Users_DB VALUES ("yico'itfi'uf", "3", "aedkwx@nhfc.org", "(971)350-5125", "841-57-9807")
+SELECT name FROM Users_DB WHERE age = "66"
+INSERT INTO Users_DB VALUES ("pe'anxa'ugzo", "66", "jfevocuc@whgz.org", "(488)772-5459", "976-65-1655")
 Successful Insert ✓
 
 
 #89:
-SELECT name FROM Users_DB WHERE age = "92" OR phone_number = "(954)341-1385" OR age >= "68"
-INSERT INTO Users_DB VALUES ("iden", "97", "vpnkaf@icfv.com", "(779)273-7100", "680-97-5762")
+
+SELECT phone_number, email_address, name FROM Users_DB WHERE age < "75"
+INSERT INTO Users_DB VALUES ("zokmatioc", "68", "kuacpdznx@jiky.net", "(818)779-0647", "605-92-2989")
 Successful Insert ✓
 
 
-#92:
-SELECT ssn, phone_number FROM Users_DB WHERE age >= "64" OR age = "89" AND email_address = "d@n.edu"
-INSERT INTO Users_DB VALUES ("uvpuy", "89", "d@n.edu", "(417)861-9128", "405-22-2932")
-Successful Insert ✓
+#90:
 
-
-#93:
-SELECT phone_number, ssn FROM Users_DB WHERE age > "15" OR age <= "35"
-INSERT INTO Users_DB VALUES ("194-85-1164", "185", "vvxarpbmymw@enwnred.edu", "(395)735-6033", "isme'acju")
+SELECT age FROM Users_DB WHERE name = "naiwu"
+INSERT INTO Users_DB VALUES ("naiwu", "70", "ngemq@nqkboi.net", "(306)834-3629", "382-77-9087")
 Successful Insert ✓
 
 
 #94:
-SELECT phone_number FROM Users_DB WHERE email_address = "h@c.edu" AND phone_number = "(994)674-4009"
-INSERT INTO Users_DB VALUES ("ehucac", "23", "h@c.edu", "(994)674-4009", "800-74-8214")
+
+SELECT phone_number, ssn FROM Users_DB WHERE age > "51" OR age <= "74" OR phone_number = "(503)723-5469" AND name = "n"
+INSERT INTO Users_DB VALUES ("dayevkom", "46", "uhqikwrqdbl@nwtpic.org", "(483)683-1520", "340-99-8213")
 Successful Insert ✓
 
 
 #95:
-SELECT ssn FROM Users_DB WHERE age = "20" OR email_address = "r@i.org"
-INSERT INTO Users_DB VALUES ("kikkonkopa'iy", "20", "lupthoznh@serh.edu", "(494)655-1166", "617-28-9096")
-Successful Insert ✓
 
-
-#96:
-SELECT ssn, name FROM Users_DB WHERE age <= "88" OR age = "77"
-INSERT INTO Users_DB VALUES ("texfemna'ux", "77", "jkmkyfebx@xgnqist.net", "(354)414-4773", "273-46-5250")
+SELECT ssn FROM Users_DB WHERE name <> "aob"
+INSERT INTO Users_DB VALUES ("vujcu'al", "78", "cofiyziip@ehufet.com", "(510)487-9508", "834-39-1996")
 Successful Insert ✓
 
 
 #97:
-SELECT ssn, email_address FROM Users_DB WHERE age >= "37" OR age < "35"
-INSERT INTO Users_DB VALUES ("juckeke'ivoh", "100", "gucqxxg@ancpr.org", "(406)696-9357", "643-94-3950")
+
+SELECT name, ssn FROM Users_DB WHERE name = "j"
+INSERT INTO Users_DB VALUES ("j", "89", "xysqce@asslv.edu", "(857)489-4134", "605-53-1791")
+Successful Insert ✓
+
+
+#98:
+
+SELECT ssn FROM Users_DB WHERE age = "54" AND age > "78" AND age < "73" OR phone_number = "(521)529-4906"
+INSERT INTO Users_DB VALUES ("ictokujne", "77", "xazmcywkl@yyrc.com", "(521)529-4906", "631-36-6932")
 Successful Insert ✓
 
 
 #99:
-SELECT ssn FROM Users_DB WHERE age <= "91" OR age > "85"
-INSERT INTO Users_DB VALUES ("ofso", "21", "exrnmajdnj@xviqktl.org", "(448)595-8947", "573-36-6409")
+
+SELECT age FROM Users_DB WHERE phone_number = "(279)868-9067" OR name <> "f"
+INSERT INTO Users_DB VALUES ("joxeb", "75", "dliqati@buiupm.com", "(640)279-7727", "867-92-9938")
 Successful Insert ✓
 

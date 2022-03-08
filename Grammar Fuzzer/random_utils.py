@@ -64,6 +64,16 @@ def random_num_with_N_digits(n):
     range_end = (10**n)-1
     return random.randint(range_start, range_end)
 
+def random_flip_char(s):
+    index = random.choice(range(len(s)))
+
+    # flip a character to a new
+    character = random.choice(string.ascii_letters)
+    while(character == s[index]):
+        character = random.choice(string.ascii_letters)
+
+    result = s[0:index] + character + s[index+1: ]
+    return result
 
 def list_diff(minuend, subtrahend):
     result = []
