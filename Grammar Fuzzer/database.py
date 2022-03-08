@@ -31,9 +31,13 @@ class Query:
         self.conn.cursor().execute(self.DROP_USERDB_TABLE)
 
         # Clear saved successes failures between runs
-        with open('./output/failures.txt', 'w') as f:
+        with open('./output/insert/failures.txt', 'w') as f:
             pass
-        with open('./output/successes.txt', 'w') as f:
+        with open('./output/insert/successes.txt', 'w') as f:
+            pass
+        with open('./output/delete/failures.txt', 'w') as f:
+            pass
+        with open('./output/delete/successes.txt', 'w') as f:
             pass
 
         self.conn.cursor().execute(self.CREATE_USERDB_TABLE)
@@ -49,16 +53,15 @@ class Query:
         return result
 
     def executeSqlStatement(self, sqlStatement):
-        if(sqlStatement == 'noop'):
-            return
+        print(f'STATEMENT: {sqlStatement}')
         self.conn.cursor().execute(sqlStatement)
         
     def failure_executeInsertStatementTwice(self, sqlInsert):
         self.executeSqlStatement(sqlInsert)
         self.executeSqlStatement(sqlInsert)
 
-    # def getAll(self):
-    #     return [self.objectify(p) for p in self.conn.cursor().execute(self.SELECT_ALL).fetchall()]
+    def getAll(self):
+        return self.conn.cursor().execute(self.SELECT_ALL).fetchall()
 
     # def objectify(self, p):
     #     print(p)

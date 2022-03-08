@@ -16,12 +16,18 @@ from random_utils import *
 db = 'Users_DB'
 generatedSSNs = set()
 
-numFailures = 0
+numInserts = 0
+numSuccessesInsert = 0
+numFailuresInsert = 0
 totalInsertFaults = 0
 numSwappedInsertFaults = 0
 numNoopInsertFaults = 0
 
-numSuccesses = 0
+numDeletes = 0
+numSuccessesDelete = 0
+numFailuresDelete = 0
+numNoopDeleteFaults = 0
+
 dbInterface = Query()
 fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
 # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
@@ -256,6 +262,16 @@ def generate_target(selectSqlStatement, vals):
     return [tuple([vals[k] for k in keys])]
 
 
+def generate_delete_from_ssn(ssnToDelete, probablityOfFault):
+    global numNoopDeleteFaults
+    global db
+    shouldGenerateFaultyDelete = 0 < random.uniform(0,1) < probablityOfFault
+    if(shouldGenerateFaultyDelete):
+        numNoopDeleteFaults+=1
+        return ''         
+    else: 
+        return f'DELETE FROM "{db}" WHERE ssn = "{ssnToDelete}"'
+
 def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
     global numNoopInsertFaults
@@ -269,7 +285,7 @@ def generate_insert_from_values(keys, vals, probablityOfFault):
             insert = insert_from_swapped_values(keys, vals)   
         elif(selectedFailure == 'noop'):
             numNoopInsertFaults+=1
-            return 'noop'         
+            return ''         
     else: 
         insert = insert_from_values(vals)
         
@@ -295,7 +311,7 @@ def insert_from_query(sql):
 
 
 def consistency_checker_insert(testNum, select, insert, before, after, target):
-    global numFailures, numSuccesses
+    global numFailuresInsert, numSuccessesInsert
     difference = list_diff(after, before)
     isConsistent = difference == target
 
@@ -306,61 +322,130 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
 
     if(isConsistent):
         print('Successful Insert \u2713')
-        successWriter = open('./output/successes.txt', 'a')
+        successWriter = open('./output/insert/successes.txt', 'a')
         successWriter.write(outputToSuccessTxt)
-        numSuccesses += 1
+        numSuccessesInsert += 1
         return True
     else:
-        numFailures += 1
+        numFailuresInsert += 1
         print(
             f'Failed Insert \u274c\nactual difference: {difference} vs expected difference: {target}\n')
-        failureWriter = open('./output/failures.txt', 'a')
+        failureWriter = open('./output/insert/failures.txt', 'a')
         failureWriter.write(outputToFailureTxt)
         return False
 
+def consistency_checker_delete(testNum, selectAll, delete, before, after, target):
+    global numFailuresDelete, numSuccessesDelete
+    difference = list_diff(before, after)
+    isConsistent = difference == target
 
-def insert_runner(numTests, probablityOfFaults):
-    for i in tqdm(range(numTests)):
-        print(f'\n#{i+1}:\n')
+    outputToSuccessTxt = '\n#{}:\n\n{}\n{}\nSuccessful Delete \u2713\n\n'.format(
+        testNum, selectAll, delete)
+    outputToFailureTxt = '\n#{}:\n{}\n{}\n\n{}\n{}\nFailed Delete \u274c\nactual difference: {} vs expected difference: {}\n\n'.format(
+        testNum, before, after, selectAll, delete, difference, target)
 
-        vals = None
-        while not vals:
-            select = fuzzer.fuzz()
-            vals = generate_values(select)
+    if(isConsistent):
+        print('Successful Delete \u2713')
+        successWriter = open('./output/delete/successes.txt', 'a')
+        successWriter.write(outputToSuccessTxt)
+        numSuccessesDelete += 1
+        return True
+    else:
+        print(
+            f'Failed Delete \u274c\nactual difference: {difference} vs expected difference: {target}\n')
+        failureWriter = open('./output/delete/failures.txt', 'a')
+        failureWriter.write(outputToFailureTxt)
+        numFailuresDelete += 1
+        return False
 
-        keys = extract_column_names(select)
-        insert = generate_insert_from_values(keys, vals.copy(), probablityOfFaults)
+def insert_runner(testNum, probablityOfFaults):
+    vals = None
+    while not vals:
+        select = fuzzer.fuzz()
+        vals = generate_values(select)
 
-        before = dbInterface.executeSelectStatement(select)
-        dbInterface.executeSqlStatement(insert)
-        after = dbInterface.executeSelectStatement(select)
+    keys = extract_column_names(select)
+    insert = generate_insert_from_values(keys, vals.copy(), probablityOfFaults)
 
-        target = generate_target(select, vals)
-        consistency_checker_insert(i+1, select, insert, before, after, target)
+    before = dbInterface.executeSelectStatement(select)
+    dbInterface.executeSqlStatement(insert)
+    after = dbInterface.executeSelectStatement(select)
+
+    target = generate_target(select, vals)
+    consistency_checker_insert(testNum, select, insert, before, after, target)
 
 
-if(len(sys.argv) != 3):
-    print('USAGE: python3 fuzzer.py <number of tests> <probablity (0-1) of fault being injected>')
+def delete_runner(testNum, probablityOfFaults):
+    global db
+    selectAll = f'SELECT * FROM {db}'
+
+    before = dbInterface.executeSelectStatement(selectAll)
+
+    if len(before) == 0:
+        return 'EMPTY_DB'
+
+    target = [random.choice(before)]
+
+    print(f'SSN: {target[-1]}')
+    delete = generate_delete_from_ssn(target[0][-1], probablityOfFaults)
+    dbInterface.executeSqlStatement(delete)
+    after = dbInterface.executeSelectStatement(selectAll)
+
+    consistency_checker_delete(testNum, selectAll, delete, before, after, target)
+
+
+if(len(sys.argv) != 4):
+    print('USAGE: python3 fuzzer.py <number of tests> <probablity (0-1) of insert fault injected> <probablity (0-1) of delete fault injected>')
     exit(0)
 
+
 numTests = int(sys.argv[1])
-probablityOfFaults = float(sys.argv[2])
+probablityOfFaultsInsert = float(sys.argv[2])
+probablityOfFaultsDelete = float(sys.argv[3])
 print('\n')
-block_print()
+
 tic = time.perf_counter()
-insert_runner(numTests, probablityOfFaults)
+
+for i in tqdm(range(numTests)):
+    print(f'\n#{i+1}:\n')
+    block_print()
+    insertOrDelete = random.sample(['insert', 'delete'], 1)[0]
+    forceInsert = False
+
+    if insertOrDelete == 'delete':
+        result = delete_runner(i+1, probablityOfFaultsDelete)
+        if(result == 'EMPTY_DB'):
+            forceInsert = True
+        else:
+            numDeletes+=1
+    if insertOrDelete == 'insert' or forceInsert:
+        insert_runner(i+1, probablityOfFaultsInsert)
+        numInserts +=1
+    enable_print()
 toc = time.perf_counter()
-enable_print()
 
 print('\n---------- SQLFUZZ RESULTS -------------\n')
-print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
-print(f'{numSuccesses} Successes\n{numFailures} Failures\n')
-print('\n--- INJECTED INSERT FAULTS RESULTS ---\n')
-print(f'Probablity of Failure: {probablityOfFaults}')
+print(f'{numTests} Total tests in {toc - tic:0.4f} seconds')
+print(f'Generated {numInserts} Insert Tests')
+print(f'{numSuccessesInsert} Succeeded\n{numFailuresInsert} Failed\n')
+print(f'Generated {numDeletes} Delete Tests')
+print(f'{numSuccessesDelete} Succeeded\n{numFailuresDelete} Failed\n')
+
+print('--- INJECTED INSERT FAULTS RESULTS ---\n')
+print(f'Probablity of insert fault: {probablityOfFaultsInsert}')
 print(f'Number of noop inserts injected: {numNoopInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
 try: 
-    print('Caught {}/{} -- {:.2f}%'.format(numFailures,totalInsertFaults,numFailures/totalInsertFaults * 100))
+    print('Caught {}/{} -- {:.2f}%'.format(numFailuresInsert,totalInsertFaults,numFailuresInsert/totalInsertFaults * 100))
 except ZeroDivisionError: 
-    print('No inserts injected, either increase number of tests or probablity of injected fault')
+    print('No inserts faults injected, either increase number of tests or probablity of insert fault injected')
+
+print('\n--- INJECTED DELETE FAULTS RESULTS ---\n')
+print(f'Probablity of delete failure: {probablityOfFaultsDelete}')
+print(f'Number of noop deletes injected: {numNoopDeleteFaults}\nTotal: {numNoopDeleteFaults}')
+try: 
+    print('Caught {}/{} -- {:.2f}%'.format(numFailuresDelete,numNoopDeleteFaults,numFailuresDelete/numNoopDeleteFaults * 100))
+except ZeroDivisionError: 
+    print('No delete faults injected, either increase number of tests or probablity of delete fault injected')
 print('\n----------------------------------------')
+
 

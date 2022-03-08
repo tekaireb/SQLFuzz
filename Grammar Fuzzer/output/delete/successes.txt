@@ -1,0 +1,7154 @@
+
+#2:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "165-59-7252"
+Successful Delete ✓
+
+
+#4:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "294-22-2588"
+Successful Delete ✓
+
+
+#6:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "328-13-4164"
+Successful Delete ✓
+
+
+#9:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "498-84-1320"
+Successful Delete ✓
+
+
+#12:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "894-76-7232"
+Successful Delete ✓
+
+
+#13:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "950-21-5569"
+Successful Delete ✓
+
+
+#15:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "769-04-8721"
+Successful Delete ✓
+
+
+#17:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "742-92-1645"
+Successful Delete ✓
+
+
+#25:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "561-23-6626"
+Successful Delete ✓
+
+
+#26:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "627-27-6373"
+Successful Delete ✓
+
+
+#27:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "934-79-8756"
+Successful Delete ✓
+
+
+#33:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "812-27-8685"
+Successful Delete ✓
+
+
+#34:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "464-80-7150"
+Successful Delete ✓
+
+
+#36:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "356-32-2801"
+Successful Delete ✓
+
+
+#39:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "774-89-6531"
+Successful Delete ✓
+
+
+#46:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "604-58-6754"
+Successful Delete ✓
+
+
+#49:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "762-32-1138"
+Successful Delete ✓
+
+
+#50:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "601-46-3298"
+Successful Delete ✓
+
+
+#54:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "519-82-8496"
+Successful Delete ✓
+
+
+#57:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "162-59-9561"
+Successful Delete ✓
+
+
+#58:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "833-94-6952"
+Successful Delete ✓
+
+
+#59:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "147-70-6963"
+Successful Delete ✓
+
+
+#63:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "116-10-9719"
+Successful Delete ✓
+
+
+#66:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "956-73-9882"
+Successful Delete ✓
+
+
+#67:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "629-57-9426"
+Successful Delete ✓
+
+
+#68:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "615-79-6281"
+Successful Delete ✓
+
+
+#69:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "387-65-9392"
+Successful Delete ✓
+
+
+#70:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "999-94-5644"
+Successful Delete ✓
+
+
+#74:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "482-63-9998"
+Successful Delete ✓
+
+
+#75:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "635-27-6634"
+Successful Delete ✓
+
+
+#76:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "703-74-3768"
+Successful Delete ✓
+
+
+#77:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "516-74-2744"
+Successful Delete ✓
+
+
+#78:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "805-58-6868"
+Successful Delete ✓
+
+
+#83:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "420-57-5902"
+Successful Delete ✓
+
+
+#84:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "886-98-6031"
+Successful Delete ✓
+
+
+#90:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "650-80-2394"
+Successful Delete ✓
+
+
+#94:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "112-68-9153"
+Successful Delete ✓
+
+
+#96:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "557-86-1797"
+Successful Delete ✓
+
+
+#97:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "855-62-4276"
+Successful Delete ✓
+
+
+#101:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "402-40-2486"
+Successful Delete ✓
+
+
+#105:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "641-37-4138"
+Successful Delete ✓
+
+
+#106:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "932-43-3915"
+Successful Delete ✓
+
+
+#109:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "357-89-9443"
+Successful Delete ✓
+
+
+#110:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "484-90-9753"
+Successful Delete ✓
+
+
+#111:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "618-17-7412"
+Successful Delete ✓
+
+
+#112:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-33-7254"
+Successful Delete ✓
+
+
+#114:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "129-70-1826"
+Successful Delete ✓
+
+
+#117:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "473-61-5581"
+Successful Delete ✓
+
+
+#118:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "145-26-9179"
+Successful Delete ✓
+
+
+#120:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "573-35-5289"
+Successful Delete ✓
+
+
+#125:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "108-47-4075"
+Successful Delete ✓
+
+
+#129:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "645-58-7131"
+Successful Delete ✓
+
+
+#130:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "805-77-3215"
+Successful Delete ✓
+
+
+#134:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "191-12-4411"
+Successful Delete ✓
+
+
+#135:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "775-77-2146"
+Successful Delete ✓
+
+
+#137:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "812-17-3611"
+Successful Delete ✓
+
+
+#138:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "786-25-3224"
+Successful Delete ✓
+
+
+#140:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "801-86-7208"
+Successful Delete ✓
+
+
+#141:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "585-64-1357"
+Successful Delete ✓
+
+
+#145:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "367-99-4869"
+Successful Delete ✓
+
+
+#149:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "396-79-5521"
+Successful Delete ✓
+
+
+#152:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "526-97-9870"
+Successful Delete ✓
+
+
+#153:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "418-84-9866"
+Successful Delete ✓
+
+
+#155:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "717-15-2192"
+Successful Delete ✓
+
+
+#156:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "457-56-3283"
+Successful Delete ✓
+
+
+#160:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "259-97-2121"
+Successful Delete ✓
+
+
+#161:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "983-85-1916"
+Successful Delete ✓
+
+
+#163:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "794-70-6706"
+Successful Delete ✓
+
+
+#165:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "211-91-6642"
+Successful Delete ✓
+
+
+#166:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "821-67-2616"
+Successful Delete ✓
+
+
+#168:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "292-72-2712"
+Successful Delete ✓
+
+
+#169:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "721-59-8033"
+Successful Delete ✓
+
+
+#173:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "996-49-9021"
+Successful Delete ✓
+
+
+#176:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "752-46-5718"
+Successful Delete ✓
+
+
+#178:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "174-26-9436"
+Successful Delete ✓
+
+
+#180:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "152-64-9118"
+Successful Delete ✓
+
+
+#182:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "316-38-8448"
+Successful Delete ✓
+
+
+#185:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "797-29-9571"
+Successful Delete ✓
+
+
+#188:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "684-64-8288"
+Successful Delete ✓
+
+
+#190:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "293-85-3436"
+Successful Delete ✓
+
+
+#193:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "336-49-4453"
+Successful Delete ✓
+
+
+#195:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "370-21-9026"
+Successful Delete ✓
+
+
+#197:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "623-99-9956"
+Successful Delete ✓
+
+
+#198:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "791-78-4541"
+Successful Delete ✓
+
+
+#204:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "991-33-0326"
+Successful Delete ✓
+
+
+#205:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "966-78-2301"
+Successful Delete ✓
+
+
+#207:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "182-86-7697"
+Successful Delete ✓
+
+
+#209:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "698-49-7017"
+Successful Delete ✓
+
+
+#210:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "004-40-6345"
+Successful Delete ✓
+
+
+#211:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "214-99-1469"
+Successful Delete ✓
+
+
+#212:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "193-02-7563"
+Successful Delete ✓
+
+
+#214:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "513-83-7347"
+Successful Delete ✓
+
+
+#216:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "250-55-5699"
+Successful Delete ✓
+
+
+#218:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "419-59-8449"
+Successful Delete ✓
+
+
+#219:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "373-95-2999"
+Successful Delete ✓
+
+
+#220:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "196-66-6610"
+Successful Delete ✓
+
+
+#221:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "436-12-3190"
+Successful Delete ✓
+
+
+#228:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "636-32-9335"
+Successful Delete ✓
+
+
+#232:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "893-50-9090"
+Successful Delete ✓
+
+
+#234:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "446-68-3104"
+Successful Delete ✓
+
+
+#235:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "842-20-6534"
+Successful Delete ✓
+
+
+#239:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "466-71-7069"
+Successful Delete ✓
+
+
+#240:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "472-53-6341"
+Successful Delete ✓
+
+
+#243:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "874-82-1645"
+Successful Delete ✓
+
+
+#244:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "719-78-4277"
+Successful Delete ✓
+
+
+#245:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "278-76-3480"
+Successful Delete ✓
+
+
+#246:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "468-58-1335"
+Successful Delete ✓
+
+
+#248:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "367-96-6203"
+Successful Delete ✓
+
+
+#249:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "124-66-9128"
+Successful Delete ✓
+
+
+#252:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "188-81-9158"
+Successful Delete ✓
+
+
+#257:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "812-43-7219"
+Successful Delete ✓
+
+
+#258:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "296-12-2386"
+Successful Delete ✓
+
+
+#260:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "424-62-2930"
+Successful Delete ✓
+
+
+#263:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "305-32-5936"
+Successful Delete ✓
+
+
+#265:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "804-58-6469"
+Successful Delete ✓
+
+
+#266:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "175-86-7021"
+Successful Delete ✓
+
+
+#271:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "713-56-4953"
+Successful Delete ✓
+
+
+#272:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "290-76-7547"
+Successful Delete ✓
+
+
+#274:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "694-18-5740"
+Successful Delete ✓
+
+
+#276:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "109-69-1606"
+Successful Delete ✓
+
+
+#281:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "779-78-5079"
+Successful Delete ✓
+
+
+#282:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "557-64-8036"
+Successful Delete ✓
+
+
+#283:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "685-40-2431"
+Successful Delete ✓
+
+
+#284:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "686-79-6572"
+Successful Delete ✓
+
+
+#286:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "112-38-6506"
+Successful Delete ✓
+
+
+#292:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "346-85-6091"
+Successful Delete ✓
+
+
+#296:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "133-59-4760"
+Successful Delete ✓
+
+
+#298:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "826-94-7604"
+Successful Delete ✓
+
+
+#303:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "960-85-4172"
+Successful Delete ✓
+
+
+#306:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "150-42-1050"
+Successful Delete ✓
+
+
+#308:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "238-58-3535"
+Successful Delete ✓
+
+
+#309:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "332-66-1872"
+Successful Delete ✓
+
+
+#311:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "506-48-8318"
+Successful Delete ✓
+
+
+#312:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "211-60-6472"
+Successful Delete ✓
+
+
+#316:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "348-43-5518"
+Successful Delete ✓
+
+
+#318:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "454-41-7124"
+Successful Delete ✓
+
+
+#321:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "074-61-2289"
+Successful Delete ✓
+
+
+#322:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "942-68-8145"
+Successful Delete ✓
+
+
+#323:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "574-60-8817"
+Successful Delete ✓
+
+
+#324:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "648-79-7828"
+Successful Delete ✓
+
+
+#325:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "758-30-1414"
+Successful Delete ✓
+
+
+#326:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "481-72-1743"
+Successful Delete ✓
+
+
+#327:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "313-48-8020"
+Successful Delete ✓
+
+
+#329:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "705-92-7266"
+Successful Delete ✓
+
+
+#330:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "941-34-3784"
+Successful Delete ✓
+
+
+#331:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "080-24-2445"
+Successful Delete ✓
+
+
+#333:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "240-43-7474"
+Successful Delete ✓
+
+
+#336:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "905-71-5527"
+Successful Delete ✓
+
+
+#337:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "214-40-6384"
+Successful Delete ✓
+
+
+#338:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "726-35-1080"
+Successful Delete ✓
+
+
+#339:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "216-20-8530"
+Successful Delete ✓
+
+
+#340:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "834-89-7077"
+Successful Delete ✓
+
+
+#343:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "525-97-2212"
+Successful Delete ✓
+
+
+#344:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "054-99-5527"
+Successful Delete ✓
+
+
+#345:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "229-37-8595"
+Successful Delete ✓
+
+
+#346:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "615-98-2813"
+Successful Delete ✓
+
+
+#347:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "171-53-9698"
+Successful Delete ✓
+
+
+#349:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "416-22-3366"
+Successful Delete ✓
+
+
+#351:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "645-57-1188"
+Successful Delete ✓
+
+
+#352:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "724-37-2126"
+Successful Delete ✓
+
+
+#354:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "783-87-4229"
+Successful Delete ✓
+
+
+#361:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "131-96-3045"
+Successful Delete ✓
+
+
+#362:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "169-55-9592"
+Successful Delete ✓
+
+
+#367:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "178-36-8168"
+Successful Delete ✓
+
+
+#374:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "612-74-3928"
+Successful Delete ✓
+
+
+#375:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "816-88-2518"
+Successful Delete ✓
+
+
+#376:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "717-87-3855"
+Successful Delete ✓
+
+
+#377:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "851-44-2035"
+Successful Delete ✓
+
+
+#381:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "507-71-3053"
+Successful Delete ✓
+
+
+#384:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "525-10-6445"
+Successful Delete ✓
+
+
+#385:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "869-55-9086"
+Successful Delete ✓
+
+
+#387:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "542-72-4963"
+Successful Delete ✓
+
+
+#392:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "498-32-3004"
+Successful Delete ✓
+
+
+#397:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "513-62-8870"
+Successful Delete ✓
+
+
+#401:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "147-28-2653"
+Successful Delete ✓
+
+
+#402:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "277-43-9388"
+Successful Delete ✓
+
+
+#408:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "794-16-6714"
+Successful Delete ✓
+
+
+#409:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "235-47-4969"
+Successful Delete ✓
+
+
+#410:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "360-77-3828"
+Successful Delete ✓
+
+
+#411:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "279-03-3409"
+Successful Delete ✓
+
+
+#412:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "389-74-4619"
+Successful Delete ✓
+
+
+#413:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "589-90-9963"
+Successful Delete ✓
+
+
+#418:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "102-15-1563"
+Successful Delete ✓
+
+
+#419:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "379-21-1639"
+Successful Delete ✓
+
+
+#424:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "152-11-3909"
+Successful Delete ✓
+
+
+#427:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "877-12-4539"
+Successful Delete ✓
+
+
+#429:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "189-62-8602"
+Successful Delete ✓
+
+
+#432:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "422-99-7674"
+Successful Delete ✓
+
+
+#434:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "567-12-7694"
+Successful Delete ✓
+
+
+#436:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "797-80-4474"
+Successful Delete ✓
+
+
+#437:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "903-57-6014"
+Successful Delete ✓
+
+
+#440:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "623-27-1435"
+Successful Delete ✓
+
+
+#442:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "722-11-8917"
+Successful Delete ✓
+
+
+#444:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "385-83-5718"
+Successful Delete ✓
+
+
+#446:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "438-17-4943"
+Successful Delete ✓
+
+
+#447:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "256-40-3187"
+Successful Delete ✓
+
+
+#456:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "283-72-0375"
+Successful Delete ✓
+
+
+#464:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "255-31-7347"
+Successful Delete ✓
+
+
+#465:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "360-52-2074"
+Successful Delete ✓
+
+
+#467:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "886-88-1880"
+Successful Delete ✓
+
+
+#469:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "558-42-5518"
+Successful Delete ✓
+
+
+#472:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "733-73-7953"
+Successful Delete ✓
+
+
+#474:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "568-77-9471"
+Successful Delete ✓
+
+
+#475:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "152-56-2469"
+Successful Delete ✓
+
+
+#476:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "750-84-8900"
+Successful Delete ✓
+
+
+#479:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "169-82-3392"
+Successful Delete ✓
+
+
+#482:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-22-3755"
+Successful Delete ✓
+
+
+#485:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "556-64-9248"
+Successful Delete ✓
+
+
+#486:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "420-30-6033"
+Successful Delete ✓
+
+
+#487:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "259-21-1904"
+Successful Delete ✓
+
+
+#489:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "535-25-8349"
+Successful Delete ✓
+
+
+#491:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "961-53-7227"
+Successful Delete ✓
+
+
+#492:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "544-45-1244"
+Successful Delete ✓
+
+
+#493:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "978-10-5165"
+Successful Delete ✓
+
+
+#498:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "248-30-5252"
+Successful Delete ✓
+
+
+#499:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "800-63-8885"
+Successful Delete ✓
+
+
+#500:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "811-95-6423"
+Successful Delete ✓
+
+
+#501:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "651-82-7348"
+Successful Delete ✓
+
+
+#504:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "683-54-4829"
+Successful Delete ✓
+
+
+#505:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "207-59-2760"
+Successful Delete ✓
+
+
+#506:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "555-72-4635"
+Successful Delete ✓
+
+
+#512:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "276-14-1914"
+Successful Delete ✓
+
+
+#518:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "504-39-5278"
+Successful Delete ✓
+
+
+#519:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "149-27-7792"
+Successful Delete ✓
+
+
+#520:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "889-76-2234"
+Successful Delete ✓
+
+
+#523:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "004-43-5954"
+Successful Delete ✓
+
+
+#524:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "386-64-5094"
+Successful Delete ✓
+
+
+#527:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "760-94-8590"
+Successful Delete ✓
+
+
+#528:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "955-35-9150"
+Successful Delete ✓
+
+
+#530:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "801-67-8158"
+Successful Delete ✓
+
+
+#533:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "211-93-1137"
+Successful Delete ✓
+
+
+#534:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "115-23-5849"
+Successful Delete ✓
+
+
+#537:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "124-54-9583"
+Successful Delete ✓
+
+
+#540:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "195-89-6341"
+Successful Delete ✓
+
+
+#542:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "867-42-0526"
+Successful Delete ✓
+
+
+#543:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "892-90-8159"
+Successful Delete ✓
+
+
+#544:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "438-49-7874"
+Successful Delete ✓
+
+
+#547:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "602-42-8865"
+Successful Delete ✓
+
+
+#548:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "630-53-2103"
+Successful Delete ✓
+
+
+#550:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "923-33-8584"
+Successful Delete ✓
+
+
+#551:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "763-34-3726"
+Successful Delete ✓
+
+
+#553:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "538-19-1177"
+Successful Delete ✓
+
+
+#555:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "555-57-1603"
+Successful Delete ✓
+
+
+#558:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "139-23-6711"
+Successful Delete ✓
+
+
+#560:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "578-36-4774"
+Successful Delete ✓
+
+
+#561:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "686-84-2746"
+Successful Delete ✓
+
+
+#562:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "197-12-6089"
+Successful Delete ✓
+
+
+#563:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "734-21-4339"
+Successful Delete ✓
+
+
+#564:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "452-26-0111"
+Successful Delete ✓
+
+
+#565:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "501-48-9482"
+Successful Delete ✓
+
+
+#566:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "834-27-3655"
+Successful Delete ✓
+
+
+#567:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "773-65-1017"
+Successful Delete ✓
+
+
+#568:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "935-89-4769"
+Successful Delete ✓
+
+
+#569:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "258-69-2682"
+Successful Delete ✓
+
+
+#571:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "928-44-0237"
+Successful Delete ✓
+
+
+#573:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "043-86-2557"
+Successful Delete ✓
+
+
+#577:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-25-4840"
+Successful Delete ✓
+
+
+#579:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "175-64-6210"
+Successful Delete ✓
+
+
+#580:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "739-83-2031"
+Successful Delete ✓
+
+
+#581:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "811-40-7737"
+Successful Delete ✓
+
+
+#582:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "541-60-1375"
+Successful Delete ✓
+
+
+#585:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "130-35-3741"
+Successful Delete ✓
+
+
+#587:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "995-73-2118"
+Successful Delete ✓
+
+
+#588:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "559-54-1695"
+Successful Delete ✓
+
+
+#594:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "952-10-6325"
+Successful Delete ✓
+
+
+#595:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "470-57-8234"
+Successful Delete ✓
+
+
+#603:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "878-99-4790"
+Successful Delete ✓
+
+
+#609:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "602-31-9380"
+Successful Delete ✓
+
+
+#610:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "898-48-0073"
+Successful Delete ✓
+
+
+#612:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "808-53-0063"
+Successful Delete ✓
+
+
+#614:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "664-62-2975"
+Successful Delete ✓
+
+
+#615:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "689-63-8517"
+Successful Delete ✓
+
+
+#616:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "622-81-7644"
+Successful Delete ✓
+
+
+#617:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "512-95-9677"
+Successful Delete ✓
+
+
+#620:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "444-64-7685"
+Successful Delete ✓
+
+
+#624:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "980-56-5149"
+Successful Delete ✓
+
+
+#630:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "170-12-4242"
+Successful Delete ✓
+
+
+#632:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "721-81-2525"
+Successful Delete ✓
+
+
+#637:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "543-75-6616"
+Successful Delete ✓
+
+
+#638:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "356-87-5174"
+Successful Delete ✓
+
+
+#647:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "494-58-4970"
+Successful Delete ✓
+
+
+#651:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "620-70-9776"
+Successful Delete ✓
+
+
+#652:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "736-19-1502"
+Successful Delete ✓
+
+
+#653:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "244-24-5451"
+Successful Delete ✓
+
+
+#654:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "610-91-6063"
+Successful Delete ✓
+
+
+#658:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "655-55-8792"
+Successful Delete ✓
+
+
+#659:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "842-83-3795"
+Successful Delete ✓
+
+
+#663:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "145-10-5166"
+Successful Delete ✓
+
+
+#665:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "338-98-4736"
+Successful Delete ✓
+
+
+#667:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "864-72-3089"
+Successful Delete ✓
+
+
+#670:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "804-85-5173"
+Successful Delete ✓
+
+
+#671:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "641-59-3362"
+Successful Delete ✓
+
+
+#673:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "789-11-6914"
+Successful Delete ✓
+
+
+#675:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "919-18-1030"
+Successful Delete ✓
+
+
+#676:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "968-66-1567"
+Successful Delete ✓
+
+
+#681:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "240-37-2676"
+Successful Delete ✓
+
+
+#689:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "391-77-1425"
+Successful Delete ✓
+
+
+#694:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "589-83-8687"
+Successful Delete ✓
+
+
+#697:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "596-74-7115"
+Successful Delete ✓
+
+
+#698:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "757-60-6812"
+Successful Delete ✓
+
+
+#700:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "867-49-3520"
+Successful Delete ✓
+
+
+#701:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "525-61-4992"
+Successful Delete ✓
+
+
+#703:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "474-80-2110"
+Successful Delete ✓
+
+
+#705:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "313-77-1115"
+Successful Delete ✓
+
+
+#707:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "969-89-8948"
+Successful Delete ✓
+
+
+#708:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "568-97-1393"
+Successful Delete ✓
+
+
+#709:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "511-88-1378"
+Successful Delete ✓
+
+
+#710:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "244-38-1949"
+Successful Delete ✓
+
+
+#717:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "133-68-6628"
+Successful Delete ✓
+
+
+#719:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "750-77-4624"
+Successful Delete ✓
+
+
+#723:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "198-70-9502"
+Successful Delete ✓
+
+
+#724:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "718-51-7236"
+Successful Delete ✓
+
+
+#725:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "548-94-4588"
+Successful Delete ✓
+
+
+#727:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "280-25-2991"
+Successful Delete ✓
+
+
+#728:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "350-24-7653"
+Successful Delete ✓
+
+
+#729:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "855-58-1206"
+Successful Delete ✓
+
+
+#733:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "253-55-5336"
+Successful Delete ✓
+
+
+#737:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "860-40-2723"
+Successful Delete ✓
+
+
+#739:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "532-94-7687"
+Successful Delete ✓
+
+
+#747:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "991-70-9159"
+Successful Delete ✓
+
+
+#748:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "305-19-5648"
+Successful Delete ✓
+
+
+#754:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "164-17-4125"
+Successful Delete ✓
+
+
+#756:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "519-14-5566"
+Successful Delete ✓
+
+
+#763:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "738-26-7652"
+Successful Delete ✓
+
+
+#764:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "302-66-5559"
+Successful Delete ✓
+
+
+#766:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "900-76-3796"
+Successful Delete ✓
+
+
+#767:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "149-79-1514"
+Successful Delete ✓
+
+
+#768:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "620-53-2868"
+Successful Delete ✓
+
+
+#771:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "336-60-3899"
+Successful Delete ✓
+
+
+#774:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "924-68-7276"
+Successful Delete ✓
+
+
+#775:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "743-85-4291"
+Successful Delete ✓
+
+
+#777:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "761-88-1424"
+Successful Delete ✓
+
+
+#787:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "469-89-6865"
+Successful Delete ✓
+
+
+#788:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "820-90-4053"
+Successful Delete ✓
+
+
+#789:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "327-22-7372"
+Successful Delete ✓
+
+
+#791:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "732-94-2953"
+Successful Delete ✓
+
+
+#792:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "960-98-3486"
+Successful Delete ✓
+
+
+#799:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "547-23-9674"
+Successful Delete ✓
+
+
+#801:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "201-47-2418"
+Successful Delete ✓
+
+
+#804:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "253-27-3169"
+Successful Delete ✓
+
+
+#806:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "116-43-1094"
+Successful Delete ✓
+
+
+#808:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "355-11-1232"
+Successful Delete ✓
+
+
+#809:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "422-65-8804"
+Successful Delete ✓
+
+
+#811:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "464-26-9740"
+Successful Delete ✓
+
+
+#813:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "459-22-8779"
+Successful Delete ✓
+
+
+#815:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "459-07-6969"
+Successful Delete ✓
+
+
+#820:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "600-79-9282"
+Successful Delete ✓
+
+
+#821:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "763-17-4098"
+Successful Delete ✓
+
+
+#828:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "807-62-2568"
+Successful Delete ✓
+
+
+#831:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "686-48-7017"
+Successful Delete ✓
+
+
+#834:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "920-37-1331"
+Successful Delete ✓
+
+
+#835:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "943-80-1793"
+Successful Delete ✓
+
+
+#836:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "684-87-9003"
+Successful Delete ✓
+
+
+#840:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "849-45-9510"
+Successful Delete ✓
+
+
+#841:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "535-65-6907"
+Successful Delete ✓
+
+
+#842:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "729-97-2570"
+Successful Delete ✓
+
+
+#843:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "285-59-7236"
+Successful Delete ✓
+
+
+#844:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "312-59-8283"
+Successful Delete ✓
+
+
+#845:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "963-39-9325"
+Successful Delete ✓
+
+
+#849:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "504-90-7143"
+Successful Delete ✓
+
+
+#852:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "389-84-6345"
+Successful Delete ✓
+
+
+#853:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "292-54-9409"
+Successful Delete ✓
+
+
+#854:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "538-78-3063"
+Successful Delete ✓
+
+
+#856:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "169-69-9624"
+Successful Delete ✓
+
+
+#857:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "249-93-7321"
+Successful Delete ✓
+
+
+#862:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "373-92-8539"
+Successful Delete ✓
+
+
+#864:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "655-29-8571"
+Successful Delete ✓
+
+
+#870:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "485-19-4625"
+Successful Delete ✓
+
+
+#871:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "359-74-4070"
+Successful Delete ✓
+
+
+#873:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "522-99-4176"
+Successful Delete ✓
+
+
+#874:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "326-94-3057"
+Successful Delete ✓
+
+
+#875:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "910-47-9831"
+Successful Delete ✓
+
+
+#877:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "525-80-1438"
+Successful Delete ✓
+
+
+#879:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "180-82-9061"
+Successful Delete ✓
+
+
+#880:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "513-14-5873"
+Successful Delete ✓
+
+
+#882:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "516-12-5621"
+Successful Delete ✓
+
+
+#883:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "117-61-2476"
+Successful Delete ✓
+
+
+#889:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "332-13-1121"
+Successful Delete ✓
+
+
+#892:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "124-31-4995"
+Successful Delete ✓
+
+
+#896:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "734-89-2232"
+Successful Delete ✓
+
+
+#898:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "123-60-1649"
+Successful Delete ✓
+
+
+#900:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "790-22-3206"
+Successful Delete ✓
+
+
+#901:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "062-81-5914"
+Successful Delete ✓
+
+
+#902:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "877-54-5279"
+Successful Delete ✓
+
+
+#904:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "325-69-4600"
+Successful Delete ✓
+
+
+#905:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "431-97-4534"
+Successful Delete ✓
+
+
+#906:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "382-50-3168"
+Successful Delete ✓
+
+
+#912:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "973-52-5386"
+Successful Delete ✓
+
+
+#914:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "335-68-3395"
+Successful Delete ✓
+
+
+#915:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "748-02-2538"
+Successful Delete ✓
+
+
+#923:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "746-67-2193"
+Successful Delete ✓
+
+
+#924:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "647-36-6731"
+Successful Delete ✓
+
+
+#926:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "567-78-7071"
+Successful Delete ✓
+
+
+#928:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "827-53-7382"
+Successful Delete ✓
+
+
+#929:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "414-73-8268"
+Successful Delete ✓
+
+
+#930:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "880-98-3826"
+Successful Delete ✓
+
+
+#931:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "665-52-6936"
+Successful Delete ✓
+
+
+#934:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "440-57-1381"
+Successful Delete ✓
+
+
+#935:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "367-86-1927"
+Successful Delete ✓
+
+
+#938:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "610-50-7087"
+Successful Delete ✓
+
+
+#940:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "656-66-6430"
+Successful Delete ✓
+
+
+#944:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "113-74-9357"
+Successful Delete ✓
+
+
+#945:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "309-57-4260"
+Successful Delete ✓
+
+
+#947:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "828-58-4383"
+Successful Delete ✓
+
+
+#950:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "796-98-7281"
+Successful Delete ✓
+
+
+#954:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "201-54-6784"
+Successful Delete ✓
+
+
+#955:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "215-67-1566"
+Successful Delete ✓
+
+
+#956:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "973-68-3057"
+Successful Delete ✓
+
+
+#957:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "413-40-9989"
+Successful Delete ✓
+
+
+#958:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "860-76-8501"
+Successful Delete ✓
+
+
+#961:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "791-56-8852"
+Successful Delete ✓
+
+
+#965:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "142-35-6998"
+Successful Delete ✓
+
+
+#966:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "533-62-8160"
+Successful Delete ✓
+
+
+#968:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "750-48-3018"
+Successful Delete ✓
+
+
+#969:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "149-83-4359"
+Successful Delete ✓
+
+
+#973:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "965-15-2981"
+Successful Delete ✓
+
+
+#975:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "785-20-9263"
+Successful Delete ✓
+
+
+#979:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "737-48-1929"
+Successful Delete ✓
+
+
+#981:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "286-43-1493"
+Successful Delete ✓
+
+
+#984:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "598-82-7851"
+Successful Delete ✓
+
+
+#985:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "176-63-5942"
+Successful Delete ✓
+
+
+#986:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "487-41-6311"
+Successful Delete ✓
+
+
+#987:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "512-12-6753"
+Successful Delete ✓
+
+
+#988:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "915-51-8335"
+Successful Delete ✓
+
+
+#989:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "799-67-4287"
+Successful Delete ✓
+
+
+#990:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "388-46-6797"
+Successful Delete ✓
+
+
+#991:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "502-92-1712"
+Successful Delete ✓
+
+
+#994:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "126-71-9211"
+Successful Delete ✓
+
+
+#996:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "741-75-5033"
+Successful Delete ✓
+
+
+#997:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "744-68-4920"
+Successful Delete ✓
+
+
+#998:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "208-17-7169"
+Successful Delete ✓
+
+
+#1000:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "670-82-2413"
+Successful Delete ✓
+
+
+#1003:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "282-23-9924"
+Successful Delete ✓
+
+
+#1005:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "628-93-2350"
+Successful Delete ✓
+
+
+#1006:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "269-40-5060"
+Successful Delete ✓
+
+
+#1009:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "764-21-5046"
+Successful Delete ✓
+
+
+#1011:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "913-54-8836"
+Successful Delete ✓
+
+
+#1012:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "811-79-1899"
+Successful Delete ✓
+
+
+#1013:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "676-37-9165"
+Successful Delete ✓
+
+
+#1015:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "374-18-8199"
+Successful Delete ✓
+
+
+#1016:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "954-98-8326"
+Successful Delete ✓
+
+
+#1018:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "641-46-9846"
+Successful Delete ✓
+
+
+#1019:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "284-63-1020"
+Successful Delete ✓
+
+
+#1021:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "194-10-6384"
+Successful Delete ✓
+
+
+#1022:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "944-50-1043"
+Successful Delete ✓
+
+
+#1024:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "989-41-6216"
+Successful Delete ✓
+
+
+#1026:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "622-23-7614"
+Successful Delete ✓
+
+
+#1032:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "571-47-2047"
+Successful Delete ✓
+
+
+#1038:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "664-96-8414"
+Successful Delete ✓
+
+
+#1040:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "774-93-5457"
+Successful Delete ✓
+
+
+#1041:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "915-27-1702"
+Successful Delete ✓
+
+
+#1043:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "483-16-9739"
+Successful Delete ✓
+
+
+#1046:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "676-58-3950"
+Successful Delete ✓
+
+
+#1049:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "838-79-1907"
+Successful Delete ✓
+
+
+#1050:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "962-96-6741"
+Successful Delete ✓
+
+
+#1051:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "374-59-6363"
+Successful Delete ✓
+
+
+#1052:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "248-54-1387"
+Successful Delete ✓
+
+
+#1055:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "300-57-0646"
+Successful Delete ✓
+
+
+#1058:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "835-68-8483"
+Successful Delete ✓
+
+
+#1059:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "739-82-6439"
+Successful Delete ✓
+
+
+#1060:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "529-91-3640"
+Successful Delete ✓
+
+
+#1061:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "327-24-6224"
+Successful Delete ✓
+
+
+#1062:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "551-20-6797"
+Successful Delete ✓
+
+
+#1063:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "988-36-1622"
+Successful Delete ✓
+
+
+#1069:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "310-40-6524"
+Successful Delete ✓
+
+
+#1070:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "470-75-7419"
+Successful Delete ✓
+
+
+#1072:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "953-92-1355"
+Successful Delete ✓
+
+
+#1074:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "397-93-4967"
+Successful Delete ✓
+
+
+#1077:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "552-75-7095"
+Successful Delete ✓
+
+
+#1079:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "618-87-4919"
+Successful Delete ✓
+
+
+#1081:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "602-40-0375"
+Successful Delete ✓
+
+
+#1082:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "648-48-9605"
+Successful Delete ✓
+
+
+#1086:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "755-32-3260"
+Successful Delete ✓
+
+
+#1087:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "680-81-4487"
+Successful Delete ✓
+
+
+#1089:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "789-68-7641"
+Successful Delete ✓
+
+
+#1095:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "200-12-6341"
+Successful Delete ✓
+
+
+#1096:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "134-31-5666"
+Successful Delete ✓
+
+
+#1097:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "632-26-3839"
+Successful Delete ✓
+
+
+#1098:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "292-88-4838"
+Successful Delete ✓
+
+
+#1099:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "617-70-9275"
+Successful Delete ✓
+
+
+#1101:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "497-78-6059"
+Successful Delete ✓
+
+
+#1104:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "513-18-5599"
+Successful Delete ✓
+
+
+#1105:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "345-44-5199"
+Successful Delete ✓
+
+
+#1106:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "699-17-6731"
+Successful Delete ✓
+
+
+#1108:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "607-67-3239"
+Successful Delete ✓
+
+
+#1110:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "182-21-8171"
+Successful Delete ✓
+
+
+#1112:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "924-94-8912"
+Successful Delete ✓
+
+
+#1115:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "440-12-3006"
+Successful Delete ✓
+
+
+#1117:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "293-41-5992"
+Successful Delete ✓
+
+
+#1120:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "645-81-8963"
+Successful Delete ✓
+
+
+#1127:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "173-17-8030"
+Successful Delete ✓
+
+
+#1129:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "948-25-5997"
+Successful Delete ✓
+
+
+#1131:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "545-20-3459"
+Successful Delete ✓
+
+
+#1133:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "213-27-1121"
+Successful Delete ✓
+
+
+#1134:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "204-79-9356"
+Successful Delete ✓
+
+
+#1137:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "675-83-1985"
+Successful Delete ✓
+
+
+#1140:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "236-41-4004"
+Successful Delete ✓
+
+
+#1141:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "975-11-5633"
+Successful Delete ✓
+
+
+#1142:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "756-18-7632"
+Successful Delete ✓
+
+
+#1143:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "347-66-5586"
+Successful Delete ✓
+
+
+#1145:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "405-56-7649"
+Successful Delete ✓
+
+
+#1146:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "640-52-9290"
+Successful Delete ✓
+
+
+#1147:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "223-37-8739"
+Successful Delete ✓
+
+
+#1150:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "933-62-6449"
+Successful Delete ✓
+
+
+#1153:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "952-67-5789"
+Successful Delete ✓
+
+
+#1158:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "500-43-1785"
+Successful Delete ✓
+
+
+#1160:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "779-99-7996"
+Successful Delete ✓
+
+
+#1162:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "137-55-7871"
+Successful Delete ✓
+
+
+#1163:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "796-17-3357"
+Successful Delete ✓
+
+
+#1165:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "408-93-1298"
+Successful Delete ✓
+
+
+#1166:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "889-54-1569"
+Successful Delete ✓
+
+
+#1168:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "195-09-2700"
+Successful Delete ✓
+
+
+#1170:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "210-32-9635"
+Successful Delete ✓
+
+
+#1171:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "610-32-1768"
+Successful Delete ✓
+
+
+#1172:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-68-4719"
+Successful Delete ✓
+
+
+#1173:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "353-71-1516"
+Successful Delete ✓
+
+
+#1177:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "473-97-8510"
+Successful Delete ✓
+
+
+#1178:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "944-54-9597"
+Successful Delete ✓
+
+
+#1180:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "215-51-3565"
+Successful Delete ✓
+
+
+#1185:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "871-18-4655"
+Successful Delete ✓
+
+
+#1186:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "885-66-4468"
+Successful Delete ✓
+
+
+#1187:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "660-85-2550"
+Successful Delete ✓
+
+
+#1189:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "653-43-4206"
+Successful Delete ✓
+
+
+#1191:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "370-26-1625"
+Successful Delete ✓
+
+
+#1192:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "738-74-2371"
+Successful Delete ✓
+
+
+#1194:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "988-77-5552"
+Successful Delete ✓
+
+
+#1195:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "146-07-1791"
+Successful Delete ✓
+
+
+#1196:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "344-15-4436"
+Successful Delete ✓
+
+
+#1197:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "897-54-1951"
+Successful Delete ✓
+
+
+#1198:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "316-59-8253"
+Successful Delete ✓
+
+
+#1204:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "347-77-8862"
+Successful Delete ✓
+
+
+#1207:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "627-94-3987"
+Successful Delete ✓
+
+
+#1208:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "649-63-7207"
+Successful Delete ✓
+
+
+#1209:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "921-35-4224"
+Successful Delete ✓
+
+
+#1211:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "263-19-2068"
+Successful Delete ✓
+
+
+#1214:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "428-97-5586"
+Successful Delete ✓
+
+
+#1217:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "930-84-5497"
+Successful Delete ✓
+
+
+#1218:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "720-24-2658"
+Successful Delete ✓
+
+
+#1219:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "532-45-7391"
+Successful Delete ✓
+
+
+#1221:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "564-80-2695"
+Successful Delete ✓
+
+
+#1224:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "653-93-5701"
+Successful Delete ✓
+
+
+#1225:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "403-12-1990"
+Successful Delete ✓
+
+
+#1226:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "233-67-3211"
+Successful Delete ✓
+
+
+#1227:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "865-66-1650"
+Successful Delete ✓
+
+
+#1228:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-41-6551"
+Successful Delete ✓
+
+
+#1229:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "248-63-5133"
+Successful Delete ✓
+
+
+#1234:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "593-92-2217"
+Successful Delete ✓
+
+
+#1236:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "722-60-5154"
+Successful Delete ✓
+
+
+#1237:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "929-20-2257"
+Successful Delete ✓
+
+
+#1239:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "656-55-6815"
+Successful Delete ✓
+
+
+#1241:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "890-90-8448"
+Successful Delete ✓
+
+
+#1242:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "808-14-6459"
+Successful Delete ✓
+
+
+#1245:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "719-31-9573"
+Successful Delete ✓
+
+
+#1246:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "435-64-9299"
+Successful Delete ✓
+
+
+#1247:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "838-43-6220"
+Successful Delete ✓
+
+
+#1248:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "251-88-3751"
+Successful Delete ✓
+
+
+#1249:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "452-45-1601"
+Successful Delete ✓
+
+
+#1250:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "397-69-7548"
+Successful Delete ✓
+
+
+#1251:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "805-70-1655"
+Successful Delete ✓
+
+
+#1252:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "794-84-9023"
+Successful Delete ✓
+
+
+#1253:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "892-83-7297"
+Successful Delete ✓
+
+
+#1255:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "958-51-8807"
+Successful Delete ✓
+
+
+#1259:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "787-10-5942"
+Successful Delete ✓
+
+
+#1260:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "690-12-3961"
+Successful Delete ✓
+
+
+#1262:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "638-82-7462"
+Successful Delete ✓
+
+
+#1265:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "402-61-2648"
+Successful Delete ✓
+
+
+#1267:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "565-41-3883"
+Successful Delete ✓
+
+
+#1268:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "416-42-2335"
+Successful Delete ✓
+
+
+#1271:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "702-20-2766"
+Successful Delete ✓
+
+
+#1273:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "615-92-9906"
+Successful Delete ✓
+
+
+#1274:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "601-65-6595"
+Successful Delete ✓
+
+
+#1276:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "576-74-3630"
+Successful Delete ✓
+
+
+#1277:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "302-38-9349"
+Successful Delete ✓
+
+
+#1281:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "967-35-7123"
+Successful Delete ✓
+
+
+#1282:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "305-73-6173"
+Successful Delete ✓
+
+
+#1287:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "734-63-9398"
+Successful Delete ✓
+
+
+#1293:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "463-51-1480"
+Successful Delete ✓
+
+
+#1294:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "556-60-2722"
+Successful Delete ✓
+
+
+#1295:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "531-10-3785"
+Successful Delete ✓
+
+
+#1297:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "751-19-1422"
+Successful Delete ✓
+
+
+#1298:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "597-30-8649"
+Successful Delete ✓
+
+
+#1303:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "623-18-3653"
+Successful Delete ✓
+
+
+#1306:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "149-29-5090"
+Successful Delete ✓
+
+
+#1311:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "218-71-6149"
+Successful Delete ✓
+
+
+#1314:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "118-78-2394"
+Successful Delete ✓
+
+
+#1315:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "620-29-7358"
+Successful Delete ✓
+
+
+#1316:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "628-89-1005"
+Successful Delete ✓
+
+
+#1317:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "894-61-2121"
+Successful Delete ✓
+
+
+#1319:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "802-00-7918"
+Successful Delete ✓
+
+
+#1320:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "755-79-7829"
+Successful Delete ✓
+
+
+#1323:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "982-18-3766"
+Successful Delete ✓
+
+
+#1325:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "891-47-5980"
+Successful Delete ✓
+
+
+#1326:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "817-59-6817"
+Successful Delete ✓
+
+
+#1327:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "317-65-1139"
+Successful Delete ✓
+
+
+#1331:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "999-15-8281"
+Successful Delete ✓
+
+
+#1336:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "817-59-6471"
+Successful Delete ✓
+
+
+#1338:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "660-46-1153"
+Successful Delete ✓
+
+
+#1340:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "714-20-8170"
+Successful Delete ✓
+
+
+#1343:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "935-70-6696"
+Successful Delete ✓
+
+
+#1348:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "925-53-8779"
+Successful Delete ✓
+
+
+#1349:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "562-24-3487"
+Successful Delete ✓
+
+
+#1350:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "897-22-5414"
+Successful Delete ✓
+
+
+#1354:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "978-81-3607"
+Successful Delete ✓
+
+
+#1356:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "897-95-3411"
+Successful Delete ✓
+
+
+#1357:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "479-44-3866"
+Successful Delete ✓
+
+
+#1360:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "712-76-3131"
+Successful Delete ✓
+
+
+#1361:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "521-73-8822"
+Successful Delete ✓
+
+
+#1362:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "128-82-2070"
+Successful Delete ✓
+
+
+#1363:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "957-67-6233"
+Successful Delete ✓
+
+
+#1364:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "036-10-5197"
+Successful Delete ✓
+
+
+#1367:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "299-75-8537"
+Successful Delete ✓
+
+
+#1368:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "124-90-6596"
+Successful Delete ✓
+
+
+#1369:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "656-99-3448"
+Successful Delete ✓
+
+
+#1372:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "555-46-1307"
+Successful Delete ✓
+
+
+#1373:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "633-66-3079"
+Successful Delete ✓
+
+
+#1377:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "933-65-9635"
+Successful Delete ✓
+
+
+#1378:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "132-19-8089"
+Successful Delete ✓
+
+
+#1380:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "838-43-2847"
+Successful Delete ✓
+
+
+#1382:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "959-80-3598"
+Successful Delete ✓
+
+
+#1383:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "559-87-8666"
+Successful Delete ✓
+
+
+#1395:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "428-41-2151"
+Successful Delete ✓
+
+
+#1396:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "762-66-8483"
+Successful Delete ✓
+
+
+#1402:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "108-76-5828"
+Successful Delete ✓
+
+
+#1405:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "380-87-8571"
+Successful Delete ✓
+
+
+#1406:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "654-74-4748"
+Successful Delete ✓
+
+
+#1407:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "540-10-9477"
+Successful Delete ✓
+
+
+#1409:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "393-36-7998"
+Successful Delete ✓
+
+
+#1411:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "609-49-4693"
+Successful Delete ✓
+
+
+#1414:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "721-89-5325"
+Successful Delete ✓
+
+
+#1416:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "932-60-7031"
+Successful Delete ✓
+
+
+#1418:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "490-31-3043"
+Successful Delete ✓
+
+
+#1419:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "690-98-3327"
+Successful Delete ✓
+
+
+#1426:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "586-70-3055"
+Successful Delete ✓
+
+
+#1428:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "954-37-7744"
+Successful Delete ✓
+
+
+#1429:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "913-38-4326"
+Successful Delete ✓
+
+
+#1430:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "679-05-4254"
+Successful Delete ✓
+
+
+#1432:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "033-33-0953"
+Successful Delete ✓
+
+
+#1434:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "837-73-7090"
+Successful Delete ✓
+
+
+#1440:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "347-99-4635"
+Successful Delete ✓
+
+
+#1441:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "122-34-6345"
+Successful Delete ✓
+
+
+#1442:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "914-73-9219"
+Successful Delete ✓
+
+
+#1443:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "584-90-1657"
+Successful Delete ✓
+
+
+#1444:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "803-27-4405"
+Successful Delete ✓
+
+
+#1445:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "751-68-9152"
+Successful Delete ✓
+
+
+#1450:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "722-15-4812"
+Successful Delete ✓
+
+
+#1452:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "198-76-5428"
+Successful Delete ✓
+
+
+#1455:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "608-97-8642"
+Successful Delete ✓
+
+
+#1457:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "753-39-6326"
+Successful Delete ✓
+
+
+#1461:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "444-62-4987"
+Successful Delete ✓
+
+
+#1463:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "698-20-2374"
+Successful Delete ✓
+
+
+#1470:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "701-16-2786"
+Successful Delete ✓
+
+
+#1474:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "879-50-6445"
+Successful Delete ✓
+
+
+#1475:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "431-39-5194"
+Successful Delete ✓
+
+
+#1484:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "990-60-3192"
+Successful Delete ✓
+
+
+#1485:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "776-58-5020"
+Successful Delete ✓
+
+
+#1487:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "386-22-6176"
+Successful Delete ✓
+
+
+#1489:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "782-87-9125"
+Successful Delete ✓
+
+
+#1490:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "956-33-7960"
+Successful Delete ✓
+
+
+#1493:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "901-90-4211"
+Successful Delete ✓
+
+
+#1495:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "955-76-2845"
+Successful Delete ✓
+
+
+#1496:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "431-42-6813"
+Successful Delete ✓
+
+
+#1498:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "375-97-9618"
+Successful Delete ✓
+
+
+#1503:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "627-21-6187"
+Successful Delete ✓
+
+
+#1510:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "613-30-5573"
+Successful Delete ✓
+
+
+#1514:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "399-80-2334"
+Successful Delete ✓
+
+
+#1517:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "975-84-3029"
+Successful Delete ✓
+
+
+#1519:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "448-35-2978"
+Successful Delete ✓
+
+
+#1520:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "458-90-4878"
+Successful Delete ✓
+
+
+#1521:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "765-91-5220"
+Successful Delete ✓
+
+
+#1525:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "919-64-9464"
+Successful Delete ✓
+
+
+#1528:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "937-89-9438"
+Successful Delete ✓
+
+
+#1533:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "650-70-9581"
+Successful Delete ✓
+
+
+#1541:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "658-58-5030"
+Successful Delete ✓
+
+
+#1543:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "264-40-4729"
+Successful Delete ✓
+
+
+#1545:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "806-99-1058"
+Successful Delete ✓
+
+
+#1546:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "906-29-3416"
+Successful Delete ✓
+
+
+#1547:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "459-22-5826"
+Successful Delete ✓
+
+
+#1549:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "750-80-3937"
+Successful Delete ✓
+
+
+#1551:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "633-76-4856"
+Successful Delete ✓
+
+
+#1552:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "294-61-2926"
+Successful Delete ✓
+
+
+#1553:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "112-63-1573"
+Successful Delete ✓
+
+
+#1554:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "299-30-6222"
+Successful Delete ✓
+
+
+#1555:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "544-70-9638"
+Successful Delete ✓
+
+
+#1556:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "406-33-9971"
+Successful Delete ✓
+
+
+#1561:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "552-61-8552"
+Successful Delete ✓
+
+
+#1568:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "685-17-7852"
+Successful Delete ✓
+
+
+#1571:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "555-34-3183"
+Successful Delete ✓
+
+
+#1572:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "111-49-7980"
+Successful Delete ✓
+
+
+#1573:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "745-21-8780"
+Successful Delete ✓
+
+
+#1575:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "370-29-1705"
+Successful Delete ✓
+
+
+#1576:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "758-66-8074"
+Successful Delete ✓
+
+
+#1577:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "794-81-4009"
+Successful Delete ✓
+
+
+#1578:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "267-82-2353"
+Successful Delete ✓
+
+
+#1581:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "920-45-8312"
+Successful Delete ✓
+
+
+#1582:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "745-15-3685"
+Successful Delete ✓
+
+
+#1583:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "210-33-9205"
+Successful Delete ✓
+
+
+#1585:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "432-56-1919"
+Successful Delete ✓
+
+
+#1588:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "269-28-4364"
+Successful Delete ✓
+
+
+#1589:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "861-74-6552"
+Successful Delete ✓
+
+
+#1591:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "831-81-4269"
+Successful Delete ✓
+
+
+#1593:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "504-41-2305"
+Successful Delete ✓
+
+
+#1597:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "611-19-7233"
+Successful Delete ✓
+
+
+#1599:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "438-13-2370"
+Successful Delete ✓
+
+
+#1602:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "944-22-2630"
+Successful Delete ✓
+
+
+#1603:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "322-97-4151"
+Successful Delete ✓
+
+
+#1604:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "983-21-5649"
+Successful Delete ✓
+
+
+#1608:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "383-98-9560"
+Successful Delete ✓
+
+
+#1609:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "411-19-8672"
+Successful Delete ✓
+
+
+#1610:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "936-36-5852"
+Successful Delete ✓
+
+
+#1614:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "773-29-8346"
+Successful Delete ✓
+
+
+#1617:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "987-14-2334"
+Successful Delete ✓
+
+
+#1619:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "818-38-5752"
+Successful Delete ✓
+
+
+#1621:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "901-20-6332"
+Successful Delete ✓
+
+
+#1628:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "676-46-2168"
+Successful Delete ✓
+
+
+#1629:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "674-15-1186"
+Successful Delete ✓
+
+
+#1630:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "591-40-9997"
+Successful Delete ✓
+
+
+#1631:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "293-29-1182"
+Successful Delete ✓
+
+
+#1637:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "299-68-2978"
+Successful Delete ✓
+
+
+#1638:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "892-56-8305"
+Successful Delete ✓
+
+
+#1641:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "269-96-4054"
+Successful Delete ✓
+
+
+#1644:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "889-54-2265"
+Successful Delete ✓
+
+
+#1648:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "771-23-5844"
+Successful Delete ✓
+
+
+#1651:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "289-75-3590"
+Successful Delete ✓
+
+
+#1652:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "150-48-7924"
+Successful Delete ✓
+
+
+#1654:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "177-40-6300"
+Successful Delete ✓
+
+
+#1656:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "554-21-6738"
+Successful Delete ✓
+
+
+#1658:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "174-37-3729"
+Successful Delete ✓
+
+
+#1659:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "927-30-4396"
+Successful Delete ✓
+
+
+#1665:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "286-46-2508"
+Successful Delete ✓
+
+
+#1673:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "212-85-4430"
+Successful Delete ✓
+
+
+#1674:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "263-37-3743"
+Successful Delete ✓
+
+
+#1675:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "260-80-3552"
+Successful Delete ✓
+
+
+#1677:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "533-51-8103"
+Successful Delete ✓
+
+
+#1678:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "524-13-2243"
+Successful Delete ✓
+
+
+#1679:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "446-58-9843"
+Successful Delete ✓
+
+
+#1680:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "634-21-4812"
+Successful Delete ✓
+
+
+#1682:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "996-13-8577"
+Successful Delete ✓
+
+
+#1683:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "132-34-1061"
+Successful Delete ✓
+
+
+#1684:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "362-68-4182"
+Successful Delete ✓
+
+
+#1686:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "402-77-3949"
+Successful Delete ✓
+
+
+#1688:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "612-72-4015"
+Successful Delete ✓
+
+
+#1698:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "690-31-8327"
+Successful Delete ✓
+
+
+#1699:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "916-86-1041"
+Successful Delete ✓
+
+
+#1700:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "142-69-3568"
+Successful Delete ✓
+
+
+#1701:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "820-80-8419"
+Successful Delete ✓
+
+
+#1710:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "366-34-8432"
+Successful Delete ✓
+
+
+#1711:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "463-93-7976"
+Successful Delete ✓
+
+
+#1713:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "290-48-8058"
+Successful Delete ✓
+
+
+#1715:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "382-71-2661"
+Successful Delete ✓
+
+
+#1717:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "277-25-3742"
+Successful Delete ✓
+
+
+#1721:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "824-70-8162"
+Successful Delete ✓
+
+
+#1722:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "612-27-4966"
+Successful Delete ✓
+
+
+#1724:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "138-40-9928"
+Successful Delete ✓
+
+
+#1726:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "866-22-8409"
+Successful Delete ✓
+
+
+#1727:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "199-60-8415"
+Successful Delete ✓
+
+
+#1728:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "374-95-6480"
+Successful Delete ✓
+
+
+#1731:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "519-79-8889"
+Successful Delete ✓
+
+
+#1732:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "662-95-6682"
+Successful Delete ✓
+
+
+#1735:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "972-74-9423"
+Successful Delete ✓
+
+
+#1740:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "858-80-7014"
+Successful Delete ✓
+
+
+#1742:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "908-62-9217"
+Successful Delete ✓
+
+
+#1743:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "433-78-7869"
+Successful Delete ✓
+
+
+#1746:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "901-47-7051"
+Successful Delete ✓
+
+
+#1751:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "785-68-5696"
+Successful Delete ✓
+
+
+#1752:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "662-74-4260"
+Successful Delete ✓
+
+
+#1754:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "886-04-0230"
+Successful Delete ✓
+
+
+#1755:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "467-10-8204"
+Successful Delete ✓
+
+
+#1756:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "199-56-1332"
+Successful Delete ✓
+
+
+#1758:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "596-69-8308"
+Successful Delete ✓
+
+
+#1761:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "236-17-7873"
+Successful Delete ✓
+
+
+#1762:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "153-42-7718"
+Successful Delete ✓
+
+
+#1763:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "997-65-2374"
+Successful Delete ✓
+
+
+#1764:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "474-67-9356"
+Successful Delete ✓
+
+
+#1772:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "335-37-8644"
+Successful Delete ✓
+
+
+#1774:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "475-57-0599"
+Successful Delete ✓
+
+
+#1776:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "356-08-1296"
+Successful Delete ✓
+
+
+#1778:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "562-20-5261"
+Successful Delete ✓
+
+
+#1784:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "323-70-7916"
+Successful Delete ✓
+
+
+#1786:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "498-77-9276"
+Successful Delete ✓
+
+
+#1787:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "256-35-6169"
+Successful Delete ✓
+
+
+#1788:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "339-25-1713"
+Successful Delete ✓
+
+
+#1789:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "628-17-4104"
+Successful Delete ✓
+
+
+#1793:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "969-89-1013"
+Successful Delete ✓
+
+
+#1794:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "273-13-1675"
+Successful Delete ✓
+
+
+#1795:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "797-23-9411"
+Successful Delete ✓
+
+
+#1797:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "247-35-7411"
+Successful Delete ✓
+
+
+#1803:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "808-12-6503"
+Successful Delete ✓
+
+
+#1805:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "222-80-9784"
+Successful Delete ✓
+
+
+#1806:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "112-70-6022"
+Successful Delete ✓
+
+
+#1807:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "192-87-8921"
+Successful Delete ✓
+
+
+#1808:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "293-60-2325"
+Successful Delete ✓
+
+
+#1809:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "406-75-1036"
+Successful Delete ✓
+
+
+#1811:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "911-60-7626"
+Successful Delete ✓
+
+
+#1813:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "568-31-1928"
+Successful Delete ✓
+
+
+#1815:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "172-47-7952"
+Successful Delete ✓
+
+
+#1816:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "636-18-4485"
+Successful Delete ✓
+
+
+#1821:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "171-87-4008"
+Successful Delete ✓
+
+
+#1823:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "586-33-5683"
+Successful Delete ✓
+
+
+#1826:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "503-88-4322"
+Successful Delete ✓
+
+
+#1830:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "847-50-8696"
+Successful Delete ✓
+
+
+#1831:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "448-14-7607"
+Successful Delete ✓
+
+
+#1833:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "315-76-3837"
+Successful Delete ✓
+
+
+#1837:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "873-71-1688"
+Successful Delete ✓
+
+
+#1838:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "439-35-4320"
+Successful Delete ✓
+
+
+#1839:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "445-65-5192"
+Successful Delete ✓
+
+
+#1840:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "367-46-1931"
+Successful Delete ✓
+
+
+#1843:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "601-46-9092"
+Successful Delete ✓
+
+
+#1850:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "280-29-6404"
+Successful Delete ✓
+
+
+#1853:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "331-61-9520"
+Successful Delete ✓
+
+
+#1854:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "526-35-6415"
+Successful Delete ✓
+
+
+#1856:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "229-82-1176"
+Successful Delete ✓
+
+
+#1860:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "299-60-9896"
+Successful Delete ✓
+
+
+#1864:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "979-56-6754"
+Successful Delete ✓
+
+
+#1865:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "960-37-4478"
+Successful Delete ✓
+
+
+#1866:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "192-40-4683"
+Successful Delete ✓
+
+
+#1867:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "679-33-4302"
+Successful Delete ✓
+
+
+#1873:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "415-76-4459"
+Successful Delete ✓
+
+
+#1874:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "509-84-1197"
+Successful Delete ✓
+
+
+#1877:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "785-71-5007"
+Successful Delete ✓
+
+
+#1879:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "933-58-3959"
+Successful Delete ✓
+
+
+#1884:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "825-79-7843"
+Successful Delete ✓
+
+
+#1886:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "696-68-2814"
+Successful Delete ✓
+
+
+#1889:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "058-48-4768"
+Successful Delete ✓
+
+
+#1890:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "235-20-6031"
+Successful Delete ✓
+
+
+#1891:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "160-43-4617"
+Successful Delete ✓
+
+
+#1892:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "795-07-3978"
+Successful Delete ✓
+
+
+#1894:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "728-13-8346"
+Successful Delete ✓
+
+
+#1896:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "497-52-5066"
+Successful Delete ✓
+
+
+#1897:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "368-41-2469"
+Successful Delete ✓
+
+
+#1899:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "894-48-7562"
+Successful Delete ✓
+
+
+#1900:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "759-30-6518"
+Successful Delete ✓
+
+
+#1904:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "435-57-6776"
+Successful Delete ✓
+
+
+#1906:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "386-25-7627"
+Successful Delete ✓
+
+
+#1907:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "914-65-6581"
+Successful Delete ✓
+
+
+#1909:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "495-93-2172"
+Successful Delete ✓
+
+
+#1914:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "265-72-3139"
+Successful Delete ✓
+
+
+#1917:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "614-69-7179"
+Successful Delete ✓
+
+
+#1920:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "404-39-9304"
+Successful Delete ✓
+
+
+#1921:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "612-24-1896"
+Successful Delete ✓
+
+
+#1922:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "537-84-7798"
+Successful Delete ✓
+
+
+#1923:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "272-77-4185"
+Successful Delete ✓
+
+
+#1925:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "930-42-1496"
+Successful Delete ✓
+
+
+#1927:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "548-60-5123"
+Successful Delete ✓
+
+
+#1928:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "196-54-3612"
+Successful Delete ✓
+
+
+#1929:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "754-51-5789"
+Successful Delete ✓
+
+
+#1931:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "627-46-3790"
+Successful Delete ✓
+
+
+#1934:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "522-59-3959"
+Successful Delete ✓
+
+
+#1938:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "281-37-8732"
+Successful Delete ✓
+
+
+#1939:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "915-96-4795"
+Successful Delete ✓
+
+
+#1941:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "320-12-6890"
+Successful Delete ✓
+
+
+#1944:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "302-29-4221"
+Successful Delete ✓
+
+
+#1945:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "713-32-7750"
+Successful Delete ✓
+
+
+#1947:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "176-32-6228"
+Successful Delete ✓
+
+
+#1950:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "798-64-6552"
+Successful Delete ✓
+
+
+#1954:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "977-37-3981"
+Successful Delete ✓
+
+
+#1956:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "110-36-5609"
+Successful Delete ✓
+
+
+#1958:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "873-34-8290"
+Successful Delete ✓
+
+
+#1959:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "320-73-6478"
+Successful Delete ✓
+
+
+#1960:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "270-10-2912"
+Successful Delete ✓
+
+
+#1961:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "667-26-7499"
+Successful Delete ✓
+
+
+#1962:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "936-51-7145"
+Successful Delete ✓
+
+
+#1964:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "307-22-6800"
+Successful Delete ✓
+
+
+#1966:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "816-92-9149"
+Successful Delete ✓
+
+
+#1967:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "686-13-3877"
+Successful Delete ✓
+
+
+#1968:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "438-65-6581"
+Successful Delete ✓
+
+
+#1972:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "580-37-4138"
+Successful Delete ✓
+
+
+#1974:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "186-72-9844"
+Successful Delete ✓
+
+
+#1975:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "537-92-9879"
+Successful Delete ✓
+
+
+#1976:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "604-70-6292"
+Successful Delete ✓
+
+
+#1980:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "406-25-3690"
+Successful Delete ✓
+
+
+#1982:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "704-89-4180"
+Successful Delete ✓
+
+
+#1985:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "493-72-5127"
+Successful Delete ✓
+
+
+#1990:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "487-75-9761"
+Successful Delete ✓
+
+
+#1991:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "952-48-6859"
+Successful Delete ✓
+
+
+#1993:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "182-38-7365"
+Successful Delete ✓
+
+
+#1995:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "427-98-7805"
+Successful Delete ✓
+
+
+#1996:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "950-57-6567"
+Successful Delete ✓
+
+
+#1997:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "259-76-7238"
+Successful Delete ✓
+
+
+#1999:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "777-63-9303"
+Successful Delete ✓
+
+
+#2000:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "986-69-5474"
+Successful Delete ✓
+
+
+#2001:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "866-53-7971"
+Successful Delete ✓
+
+
+#2002:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "690-96-7167"
+Successful Delete ✓
+
+
+#2005:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "828-19-8554"
+Successful Delete ✓
+
+
+#2006:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "959-45-9814"
+Successful Delete ✓
+
+
+#2008:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "601-27-7827"
+Successful Delete ✓
+
+
+#2011:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "759-97-7160"
+Successful Delete ✓
+
+
+#2016:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "646-36-9350"
+Successful Delete ✓
+
+
+#2022:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "139-40-7258"
+Successful Delete ✓
+
+
+#2025:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "276-74-2971"
+Successful Delete ✓
+
+
+#2026:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "115-85-1927"
+Successful Delete ✓
+
+
+#2029:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "045-14-0641"
+Successful Delete ✓
+
+
+#2034:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "589-20-8339"
+Successful Delete ✓
+
+
+#2037:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "894-99-7451"
+Successful Delete ✓
+
+
+#2040:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "436-17-5240"
+Successful Delete ✓
+
+
+#2041:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "380-62-7524"
+Successful Delete ✓
+
+
+#2042:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "220-28-1480"
+Successful Delete ✓
+
+
+#2044:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "142-97-3218"
+Successful Delete ✓
+
+
+#2047:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "524-14-5537"
+Successful Delete ✓
+
+
+#2050:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "943-17-3274"
+Successful Delete ✓
+
+
+#2051:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "845-33-5530"
+Successful Delete ✓
+
+
+#2052:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "181-07-2841"
+Successful Delete ✓
+
+
+#2053:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "109-86-5453"
+Successful Delete ✓
+
+
+#2054:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "210-96-8495"
+Successful Delete ✓
+
+
+#2055:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "268-44-4349"
+Successful Delete ✓
+
+
+#2056:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "529-56-5488"
+Successful Delete ✓
+
+
+#2059:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "772-26-1238"
+Successful Delete ✓
+
+
+#2064:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "630-93-2870"
+Successful Delete ✓
+
+
+#2065:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "952-70-2835"
+Successful Delete ✓
+
+
+#2067:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "200-72-6239"
+Successful Delete ✓
+
+
+#2068:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "813-92-6498"
+Successful Delete ✓
+
+
+#2069:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "130K35-4286"
+Successful Delete ✓
+
+
+#2073:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "603-80-0319"
+Successful Delete ✓
+
+
+#2074:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "223-80-6377"
+Successful Delete ✓
+
+
+#2075:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "696-38-4280"
+Successful Delete ✓
+
+
+#2076:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "193-69-2258"
+Successful Delete ✓
+
+
+#2078:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "961-53-9433"
+Successful Delete ✓
+
+
+#2079:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "693-12-7001"
+Successful Delete ✓
+
+
+#2082:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "183-55-4748"
+Successful Delete ✓
+
+
+#2086:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "961-13-3826"
+Successful Delete ✓
+
+
+#2087:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "354-41-9435"
+Successful Delete ✓
+
+
+#2088:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "468-74-7538"
+Successful Delete ✓
+
+
+#2089:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "108-88-1240"
+Successful Delete ✓
+
+
+#2092:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "905-93-4654"
+Successful Delete ✓
+
+
+#2093:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "164-63-6687"
+Successful Delete ✓
+
+
+#2095:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "936-76-9186"
+Successful Delete ✓
+
+
+#2096:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "272-59-8773"
+Successful Delete ✓
+
+
+#2097:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "323-84-5036"
+Successful Delete ✓
+
+
+#2099:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "175-92-2815"
+Successful Delete ✓
+
+
+#2100:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "760-90-7928"
+Successful Delete ✓
+
+
+#2101:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "795-28-9065"
+Successful Delete ✓
+
+
+#2106:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "321-57-4613"
+Successful Delete ✓
+
+
+#2108:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "244-81-4495"
+Successful Delete ✓
+
+
+#2110:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "527-30-6568"
+Successful Delete ✓
+
+
+#2111:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "488-71-6130"
+Successful Delete ✓
+
+
+#2112:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "532-86-6321"
+Successful Delete ✓
+
+
+#2113:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "694-33-6779"
+Successful Delete ✓
+
+
+#2114:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "075-59-3562"
+Successful Delete ✓
+
+
+#2115:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "292d98-6257"
+Successful Delete ✓
+
+
+#2120:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "995-96-3370"
+Successful Delete ✓
+
+
+#2124:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "505-41-5138"
+Successful Delete ✓
+
+
+#2125:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "117-61-7893"
+Successful Delete ✓
+
+
+#2126:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "546-20-5990"
+Successful Delete ✓
+
+
+#2127:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "454-86-2494"
+Successful Delete ✓
+
+
+#2129:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "847-30-7856"
+Successful Delete ✓
+
+
+#2130:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "561-56-4921"
+Successful Delete ✓
+
+
+#2132:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "656-99-2813"
+Successful Delete ✓
+
+
+#2133:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "992-65-2045"
+Successful Delete ✓
+
+
+#2134:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "217-69-7928"
+Successful Delete ✓
+
+
+#2138:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "327-64-5897"
+Successful Delete ✓
+
+
+#2141:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "967-20-8959"
+Successful Delete ✓
+
+
+#2144:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "105-72-6659"
+Successful Delete ✓
+
+
+#2145:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "301-43-5220"
+Successful Delete ✓
+
+
+#2147:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "440-77-4069"
+Successful Delete ✓
+
+
+#2150:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "926-39-7783"
+Successful Delete ✓
+
+
+#2152:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "124-71-1966"
+Successful Delete ✓
+
+
+#2156:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "766-62-8588"
+Successful Delete ✓
+
+
+#2161:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "502-91-9340"
+Successful Delete ✓
+
+
+#2163:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "809-18-1279"
+Successful Delete ✓
+
+
+#2164:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "814-97-7072"
+Successful Delete ✓
+
+
+#2168:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "258-42-9983"
+Successful Delete ✓
+
+
+#2170:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "247-77-8817"
+Successful Delete ✓
+
+
+#2173:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "464-04-5715"
+Successful Delete ✓
+
+
+#2175:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "454-27-5296"
+Successful Delete ✓
+
+
+#2176:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "679-70-1957"
+Successful Delete ✓
+
+
+#2178:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "914-87-4373"
+Successful Delete ✓
+
+
+#2180:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "271-13-8759"
+Successful Delete ✓
+
+
+#2181:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "189-57-4788"
+Successful Delete ✓
+
+
+#2187:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "404-52-6947"
+Successful Delete ✓
+
+
+#2192:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "862-62-9390"
+Successful Delete ✓
+
+
+#2194:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "508-53-8858"
+Successful Delete ✓
+
+
+#2195:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "647-87-6148"
+Successful Delete ✓
+
+
+#2196:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "746-10-7430"
+Successful Delete ✓
+
+
+#2197:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "917-74-5837"
+Successful Delete ✓
+
+
+#2199:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "133-49-6343"
+Successful Delete ✓
+
+
+#2201:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "364-39-9239"
+Successful Delete ✓
+
+
+#2204:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "958-29-6700"
+Successful Delete ✓
+
+
+#2207:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "110-66-2814"
+Successful Delete ✓
+
+
+#2213:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "377-87-4504"
+Successful Delete ✓
+
+
+#2214:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "706-43-8362"
+Successful Delete ✓
+
+
+#2216:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "794-49-4998"
+Successful Delete ✓
+
+
+#2217:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "815-59-8895"
+Successful Delete ✓
+
+
+#2218:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "312-22-6335"
+Successful Delete ✓
+
+
+#2227:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "506-83-1293"
+Successful Delete ✓
+
+
+#2230:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "803-30-7556"
+Successful Delete ✓
+
+
+#2231:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "687-59-9587"
+Successful Delete ✓
+
+
+#2233:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "453-09-8724"
+Successful Delete ✓
+
+
+#2237:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "216-99-6780"
+Successful Delete ✓
+
+
+#2238:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "469-94-5549"
+Successful Delete ✓
+
+
+#2240:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "422-91-9141"
+Successful Delete ✓
+
+
+#2243:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "559-86-5727"
+Successful Delete ✓
+
+
+#2244:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "364-54-9492"
+Successful Delete ✓
+
+
+#2246:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "112-50-1466"
+Successful Delete ✓
+
+
+#2248:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "898-42-5048"
+Successful Delete ✓
+
+
+#2249:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "901-73-7333"
+Successful Delete ✓
+
+
+#2250:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "283-89-3880"
+Successful Delete ✓
+
+
+#2255:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "809-46-7004"
+Successful Delete ✓
+
+
+#2256:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "645-55-8433"
+Successful Delete ✓
+
+
+#2257:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "580-80-2622"
+Successful Delete ✓
+
+
+#2258:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "515-38-3713"
+Successful Delete ✓
+
+
+#2261:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "710-26-6488"
+Successful Delete ✓
+
+
+#2263:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "918-71-7940"
+Successful Delete ✓
+
+
+#2264:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "764-52-8057"
+Successful Delete ✓
+
+
+#2265:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "260-48-4920"
+Successful Delete ✓
+
+
+#2268:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "287-52-1200"
+Successful Delete ✓
+
+
+#2269:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "865-58-9479"
+Successful Delete ✓
+
+
+#2271:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "214-61-2096"
+Successful Delete ✓
+
+
+#2272:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "547-50-5283"
+Successful Delete ✓
+
+
+#2273:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "616-79-8503"
+Successful Delete ✓
+
+
+#2275:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "743-51-4192"
+Successful Delete ✓
+
+
+#2277:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "165-21-1704"
+Successful Delete ✓
+
+
+#2283:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "688-32-7480"
+Successful Delete ✓
+
+
+#2286:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "383-74-5392"
+Successful Delete ✓
+
+
+#2289:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "399-53-6258"
+Successful Delete ✓
+
+
+#2292:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "357-63-4591"
+Successful Delete ✓
+
+
+#2293:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "636-55-8280"
+Successful Delete ✓
+
+
+#2294:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "304-26-5494"
+Successful Delete ✓
+
+
+#2295:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "879-28-7375"
+Successful Delete ✓
+
+
+#2297:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "508-81-4426"
+Successful Delete ✓
+
+
+#2304:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "876-51-2528"
+Successful Delete ✓
+
+
+#2305:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "693-65-5092"
+Successful Delete ✓
+
+
+#2306:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "956-93-3663"
+Successful Delete ✓
+
+
+#2307:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "106-39-3902"
+Successful Delete ✓
+
