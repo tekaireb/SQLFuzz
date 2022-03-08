@@ -19,7 +19,7 @@ generatedSSNs = set()
 numFailures = 0
 totalInsertFaults = 0
 numSwappedInsertFaults = 0
-numDoubleInsertFaults = 0
+numNoopInsertFaults = 0
 
 numSuccesses = 0
 dbInterface = Query()
@@ -258,16 +258,18 @@ def generate_target(selectSqlStatement, vals):
 
 def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
-    global numDoubleInsertFaults
+    global numNoopInsertFaults
     global numSwappedInsertFaults
     shouldGenerateFaultyInsert = 0 < random.uniform(0,1) < probablityOfFault
     if(shouldGenerateFaultyInsert):
         totalInsertFaults+=1
-        # selectedFailure = random.sample(['double_insert', 'swapped_values'], 1)[0]
-        selectedFailure = 'swapped_values'
+        selectedFailure = random.sample(['noop', 'swapped_values'], 1)[0]
         if(selectedFailure == 'swapped_values'):
             numSwappedInsertFaults+=1
-            insert = insert_from_swapped_values(keys, vals)            
+            insert = insert_from_swapped_values(keys, vals)   
+        elif(selectedFailure == 'noop'):
+            numNoopInsertFaults+=1
+            return 'noop'         
     else: 
         insert = insert_from_values(vals)
         
@@ -344,7 +346,7 @@ if(len(sys.argv) != 3):
 numTests = int(sys.argv[1])
 probablityOfFaults = float(sys.argv[2])
 print('\n')
-# block_print()
+block_print()
 tic = time.perf_counter()
 insert_runner(numTests, probablityOfFaults)
 toc = time.perf_counter()
@@ -355,7 +357,7 @@ print(f'Ran {numTests} tests in {toc - tic:0.4f} seconds')
 print(f'{numSuccesses} Successes\n{numFailures} Failures\n')
 print('\n--- INJECTED INSERT FAULTS RESULTS ---\n')
 print(f'Probablity of Failure: {probablityOfFaults}')
-print(f'Number of double inserts injected: {numDoubleInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
+print(f'Number of noop inserts injected: {numNoopInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
 try: 
     print('Caught {}/{} -- {:.2f}%'.format(numFailures,totalInsertFaults,numFailures/totalInsertFaults * 100))
 except ZeroDivisionError: 

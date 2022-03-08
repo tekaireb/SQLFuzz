@@ -49,6 +49,8 @@ class Query:
         return result
 
     def executeSqlStatement(self, sqlStatement):
+        if(sqlStatement == 'noop'):
+            return
         self.conn.cursor().execute(sqlStatement)
         
     def failure_executeInsertStatementTwice(self, sqlInsert):
