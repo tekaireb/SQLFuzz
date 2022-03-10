@@ -1,0 +1,19 @@
+{
+    "database": {
+        "name": "Users_DB",
+        "fields": ["name", "age", "email_address", "phone_number", "ssn"],
+        "types": ["<Name>", "<Age>", "<Email>", "<Phone>", "<SSN>"],
+        "comparators": [
+            "<StringComparator>",
+            "<Comparator>",
+            "<StringComparator>",
+            "<StringComparator>",
+            "<StringComparator>"
+        ]
+    },
+
+    "fault_probabilities": {
+        "insert": "0.05",
+        "delete": "0.05"
+    }
+}

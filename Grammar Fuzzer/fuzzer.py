@@ -7,9 +7,49 @@ import random
 import sys
 import os
 import time
+import json
 
 from random_utils import *
 
+
+CONFIG_PATH = 'config.json'
+
+
+class Config(object):
+    def __init__(self, config_path):
+        self.db = None
+
+        self.fields = None
+        self.types = None
+        self.comparators = None
+
+        self.insert_fault_probability = 0
+        self.delete_fault_probability = 0
+
+        # Load values from configuration file
+        with open(config_path, 'r') as f:
+            cfg = json.loads(f.read())
+
+            # Check validity
+            assert 'database' in cfg, 'Config file must specify database properties'
+            for prop in ['name', 'fields', 'types', 'comparators']:
+                assert prop in cfg['database'], f'Config file must specify database {prop}'
+
+            # Load database properties
+            self.db = cfg['database']['name']
+            self.fields = cfg['database']['fields']
+            self.types = cfg['database']['types']
+            self.comparators = cfg['database']['comparators']
+
+            # Load fault probabilities (if specified)
+            if 'fault_probabilities' in cfg:
+                if 'insert' in cfg['fault_probabilities']:
+                    self.insert_fault_probability = cfg['fault_probabilities']['insert']
+                if 'delete' in cfg['fault_probabilities']:
+                    self.delete_fault_probability = cfg['fault_probabilities']['delete']
+
+
+config = Config(CONFIG_PATH)
 
 # Specify database configuration
 
@@ -265,12 +305,13 @@ def generate_target(selectSqlStatement, vals):
 def generate_delete_from_ssn(ssnToDelete, probablityOfFault):
     global numNoopDeleteFaults
     global db
-    shouldGenerateFaultyDelete = 0 < random.uniform(0,1) < probablityOfFault
+    shouldGenerateFaultyDelete = 0 < random.uniform(0, 1) < probablityOfFault
     if(shouldGenerateFaultyDelete):
-        numNoopDeleteFaults+=1
-        return ''         
-    else: 
+        numNoopDeleteFaults += 1
+        return ''
+    else:
         return f'DELETE FROM "{db}" WHERE ssn = "{ssnToDelete}"'
+
 
 def generate_insert_from_values(keys, vals, probablityOfFault):
     global totalInsertFaults
@@ -278,15 +319,15 @@ def generate_insert_from_values(keys, vals, probablityOfFault):
     global numSwappedInsertFaults
     shouldGenerateFaultyInsert = 0 < random.uniform(0, 1) < probablityOfFault
     if(shouldGenerateFaultyInsert):
-        totalInsertFaults+=1
+        totalInsertFaults += 1
         selectedFailure = random.sample(['noop', 'swapped_values'], 1)[0]
         if(selectedFailure == 'swapped_values'):
-            numSwappedInsertFaults+=1
-            insert = insert_from_swapped_values(keys, vals)   
+            numSwappedInsertFaults += 1
+            insert = insert_from_swapped_values(keys, vals)
         elif(selectedFailure == 'noop'):
-            numNoopInsertFaults+=1
-            return ''         
-    else: 
+            numNoopInsertFaults += 1
+            return ''
+    else:
         insert = insert_from_values(vals)
 
     return insert
@@ -351,6 +392,7 @@ def consistency_checker_insert(testNum, select, insert, before, after, target):
         failureWriter.write(outputToFailureTxt)
         return False
 
+
 def consistency_checker_delete(testNum, selectAll, delete, before, after, target):
     global numFailuresDelete, numSuccessesDelete
     difference = list_diff(before, after)
@@ -374,6 +416,7 @@ def consistency_checker_delete(testNum, selectAll, delete, before, after, target
         failureWriter.write(outputToFailureTxt)
         numFailuresDelete += 1
         return False
+
 
 def insert_runner(testNum, probablityOfFaults):
     vals = None
@@ -407,7 +450,8 @@ def delete_runner(testNum, probablityOfFaults):
     dbInterface.executeSqlStatement(delete)
     after = dbInterface.executeSelectStatement(selectAll)
 
-    consistency_checker_delete(testNum, selectAll, delete, before, after, target)
+    consistency_checker_delete(
+        testNum, selectAll, delete, before, after, target)
 
 
 if(len(sys.argv) != 4):
@@ -432,10 +476,10 @@ for i in tqdm(range(numTests)):
         if(result == 'EMPTY_DB'):
             forceInsert = True
         else:
-            numDeletes+=1
+            numDeletes += 1
     if insertOrDelete == 'insert' or forceInsert:
         insert_runner(i+1, probablityOfFaultsInsert)
-        numInserts +=1
+        numInserts += 1
 toc = time.perf_counter()
 enable_print()
 
@@ -449,19 +493,21 @@ print(f'{numSuccessesDelete} Succeeded\n{numFailuresDelete} Failed\n')
 
 print('--- INJECTED INSERT FAULTS RESULTS ---\n')
 print(f'Probablity of insert fault: {probablityOfFaultsInsert}')
-print(f'Number of noop inserts injected: {numNoopInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
-try: 
-    print('Caught {}/{} -- {:.2f}%'.format(numFailuresInsert,totalInsertFaults,numFailuresInsert/totalInsertFaults * 100))
-except ZeroDivisionError: 
+print(
+    f'Number of noop inserts injected: {numNoopInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
+try:
+    print('Caught {}/{} -- {:.2f}%'.format(numFailuresInsert,
+          totalInsertFaults, numFailuresInsert/totalInsertFaults * 100))
+except ZeroDivisionError:
     print('No inserts faults injected, either increase number of tests or probablity of insert fault injected')
 
 print('\n--- INJECTED DELETE FAULTS RESULTS ---\n')
 print(f'Probablity of delete failure: {probablityOfFaultsDelete}')
-print(f'Number of noop deletes injected: {numNoopDeleteFaults}\nTotal: {numNoopDeleteFaults}')
-try: 
-    print('Caught {}/{} -- {:.2f}%'.format(numFailuresDelete,numNoopDeleteFaults,numFailuresDelete/numNoopDeleteFaults * 100))
-except ZeroDivisionError: 
+print(
+    f'Number of noop deletes injected: {numNoopDeleteFaults}\nTotal: {numNoopDeleteFaults}')
+try:
+    print('Caught {}/{} -- {:.2f}%'.format(numFailuresDelete,
+          numNoopDeleteFaults, numFailuresDelete/numNoopDeleteFaults * 100))
+except ZeroDivisionError:
     print('No delete faults injected, either increase number of tests or probablity of delete fault injected')
 print('\n----------------------------------------')
-
-
