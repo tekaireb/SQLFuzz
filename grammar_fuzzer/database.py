@@ -3,6 +3,7 @@ import apsw
 
 DB_NAME = "persons.db"
 
+generatedSSNs = set()
 
 # class Person():
 #     def __init__(self, ssn, name, age, email_address, phone_number):
@@ -55,7 +56,7 @@ class Query:
     def executeSqlStatement(self, sqlStatement):
         print(f'STATEMENT: {sqlStatement}')
         self.conn.cursor().execute(sqlStatement)
-        
+
     def failure_executeInsertStatementTwice(self, sqlInsert):
         self.executeSqlStatement(sqlInsert)
         self.executeSqlStatement(sqlInsert)

@@ -10,6 +10,7 @@ class Config(object):
 
         self.num_tests = 0
         self.db = None
+        self.seed = None
 
         self.fields = None
         self.types = None
@@ -23,6 +24,9 @@ class Config(object):
 
         # Load number of tests
         self.num_tests = int(self.cfg['num_tests'])
+
+        # Load random seed (if specified)
+        self.seed = int(self.cfg['seed']) if self.cfg['seed'] else None
 
         # Load database properties
         self.db = self.cfg['database']['name']

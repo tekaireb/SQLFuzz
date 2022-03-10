@@ -6,9 +6,11 @@ import os
 import sys
 
 # Generate random values
-now = datetime.now()
+
+# now = datetime.now()
 # random.seed(now)
-random.seed(42)
+
+# random.seed(42)
 
 
 def random_string(length):
@@ -64,6 +66,7 @@ def random_num_with_N_digits(n):
     range_end = (10**n)-1
     return random.randint(range_start, range_end)
 
+
 def random_flip_char(s):
     index = random.choice(range(len(s)))
     result = ''
@@ -72,14 +75,15 @@ def random_flip_char(s):
         digit = random.choice(string.digits)
         while(digit == s[index]):
             digit = random.choice(string.digits)
-        result = s[0:index] + digit + s[index+1: ]
+        result = s[0:index] + digit + s[index+1:]
     # flip a character
-    else: 
+    else:
         character = random.choice(string.ascii_letters)
         while(character == s[index]):
             character = random.choice(string.ascii_letters)
-        result = s[0:index] + character + s[index+1: ]
+        result = s[0:index] + character + s[index+1:]
     return result
+
 
 def list_diff(minuend, subtrahend):
     result = []

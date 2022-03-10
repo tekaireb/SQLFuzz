@@ -17,5 +17,6 @@
         "delete": "0.05"
     },
 
-    "num_tests": 100
+    "num_tests": 100,
+    "seed": 42
 }
