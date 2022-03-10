@@ -55,219 +55,240 @@ DELETE FROM "Users_DB" WHERE ssn = "742-92-1645"
 Successful Delete ✓
 
 
-#25:
+#21:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "561-23-6626"
+DELETE FROM "Users_DB" WHERE ssn = "679-94-7566"
 Successful Delete ✓
 
 
-#26:
+#24:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "627-27-6373"
+DELETE FROM "Users_DB" WHERE ssn = "726-21-2077"
 Successful Delete ✓
 
 
 #27:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "934-79-8756"
+DELETE FROM "Users_DB" WHERE ssn = "924-97-7653"
+Successful Delete ✓
+
+
+#32:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "734-77-5135"
 Successful Delete ✓
 
 
 #33:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "812-27-8685"
+DELETE FROM "Users_DB" WHERE ssn = "957-32-1595"
 Successful Delete ✓
 
 
-#34:
+#37:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "464-80-7150"
-Successful Delete ✓
-
-
-#36:
-
-SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "356-32-2801"
+DELETE FROM "Users_DB" WHERE ssn = "992-16-2129"
 Successful Delete ✓
 
 
 #39:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "774-89-6531"
+DELETE FROM "Users_DB" WHERE ssn = "668-31-9022"
+Successful Delete ✓
+
+
+#41:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "349-65-7560"
+Successful Delete ✓
+
+
+#42:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "564-26-4780"
+Successful Delete ✓
+
+
+#43:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "356-32-2801"
 Successful Delete ✓
 
 
 #46:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "604-58-6754"
+DELETE FROM "Users_DB" WHERE ssn = "442-65-3230"
 Successful Delete ✓
 
 
 #49:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "762-32-1138"
+DELETE FROM "Users_DB" WHERE ssn = "195-53-8909"
 Successful Delete ✓
 
 
 #50:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "601-46-3298"
+DELETE FROM "Users_DB" WHERE ssn = "875-18-3797"
 Successful Delete ✓
 
 
-#54:
+#51:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "519-82-8496"
+DELETE FROM "Users_DB" WHERE ssn = "108-99-6629"
 Successful Delete ✓
 
 
-#57:
+#52:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "162-59-9561"
+DELETE FROM "Users_DB" WHERE ssn = "251-21-5066"
 Successful Delete ✓
 
 
-#58:
+#53:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "833-94-6952"
+DELETE FROM "Users_DB" WHERE ssn = "424-26-7337"
 Successful Delete ✓
 
 
-#59:
+#60:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "147-70-6963"
+DELETE FROM "Users_DB" WHERE ssn = "948-80-9281"
 Successful Delete ✓
 
 
-#63:
+#61:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "116-10-9719"
+DELETE FROM "Users_DB" WHERE ssn = "831-47-6657"
 Successful Delete ✓
 
 
-#66:
+#65:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "956-73-9882"
-Successful Delete ✓
-
-
-#67:
-
-SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "629-57-9426"
-Successful Delete ✓
-
-
-#68:
-
-SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "615-79-6281"
+DELETE FROM "Users_DB" WHERE ssn = "595-41-6565"
 Successful Delete ✓
 
 
 #69:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "387-65-9392"
+DELETE FROM "Users_DB" WHERE ssn = "799-65-4308"
 Successful Delete ✓
 
 
 #70:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "999-94-5644"
+DELETE FROM "Users_DB" WHERE ssn = "805-58-6868"
 Successful Delete ✓
 
 
-#74:
+#71:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "482-63-9998"
+DELETE FROM "Users_DB" WHERE ssn = "963-94-5934"
 Successful Delete ✓
 
 
-#75:
+#72:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "635-27-6634"
+DELETE FROM "Users_DB" WHERE ssn = "536-24-2556"
 Successful Delete ✓
 
 
-#76:
+#73:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "703-74-3768"
-Successful Delete ✓
-
-
-#77:
-
-SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "516-74-2744"
+DELETE FROM "Users_DB" WHERE ssn = "473-61-5581"
 Successful Delete ✓
 
 
 #78:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "805-58-6868"
+DELETE FROM "Users_DB" WHERE ssn = "146-99-2189"
 Successful Delete ✓
 
 
-#83:
+#79:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "420-57-5902"
+DELETE FROM "Users_DB" WHERE ssn = "805-77-3215"
 Successful Delete ✓
 
 
-#84:
+#80:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "635-27-6634"
+Successful Delete ✓
+
+
+#85:
 
 SELECT * FROM Users_DB
 DELETE FROM "Users_DB" WHERE ssn = "886-98-6031"
 Successful Delete ✓
 
 
-#90:
+#89:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "650-80-2394"
+DELETE FROM "Users_DB" WHERE ssn = "129-70-1826"
 Successful Delete ✓
 
 
-#94:
+#91:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "112-68-9153"
+DELETE FROM "Users_DB" WHERE ssn = "477-69-9275"
+Successful Delete ✓
+
+
+#92:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "526-97-9870"
 Successful Delete ✓
 
 
 #96:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "557-86-1797"
+DELETE FROM "Users_DB" WHERE ssn = "304-33-7254"
 Successful Delete ✓
 
 
 #97:
 
 SELECT * FROM Users_DB
-DELETE FROM "Users_DB" WHERE ssn = "855-62-4276"
+DELETE FROM "Users_DB" WHERE ssn = "367-99-4869"
+Successful Delete ✓
+
+
+#100:
+
+SELECT * FROM Users_DB
+DELETE FROM "Users_DB" WHERE ssn = "983-85-1916"
 Successful Delete ✓
 
