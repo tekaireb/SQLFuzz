@@ -7,53 +7,24 @@ import random
 import sys
 import os
 import time
-import json
 
 from random_utils import *
+from config import Config
 
+DEFAULT_CONFIG = 'config.json'
 
-CONFIG_PATH = 'config.json'
-
-
-class Config(object):
-    def __init__(self, config_path):
-        self.db = None
-
-        self.fields = None
-        self.types = None
-        self.comparators = None
-
-        self.insert_fault_probability = 0
-        self.delete_fault_probability = 0
-
-        # Load values from configuration file
-        with open(config_path, 'r') as f:
-            cfg = json.loads(f.read())
-
-            # Check validity
-            assert 'database' in cfg, 'Config file must specify database properties'
-            for prop in ['name', 'fields', 'types', 'comparators']:
-                assert prop in cfg['database'], f'Config file must specify database {prop}'
-
-            # Load database properties
-            self.db = cfg['database']['name']
-            self.fields = cfg['database']['fields']
-            self.types = cfg['database']['types']
-            self.comparators = cfg['database']['comparators']
-
-            # Load fault probabilities (if specified)
-            if 'fault_probabilities' in cfg:
-                if 'insert' in cfg['fault_probabilities']:
-                    self.insert_fault_probability = cfg['fault_probabilities']['insert']
-                if 'delete' in cfg['fault_probabilities']:
-                    self.delete_fault_probability = cfg['fault_probabilities']['delete']
-
-
+# Use command argument as config file path if specified, otherwise use default
+if len(sys.argv) == 1:
+    print('Using default configuration file:', DEFAULT_CONFIG)
+    CONFIG_PATH = DEFAULT_CONFIG
+else:
+    print('Using specified configuration file:', sys.argv[1])
+    CONFIG_PATH = sys.argv[1]
 config = Config(CONFIG_PATH)
 
 # Specify database configuration
 
-db = 'Users_DB'
+db = config.db
 generatedSSNs = set()
 
 numInserts = 0
@@ -69,11 +40,10 @@ numFailuresDelete = 0
 numNoopDeleteFaults = 0
 
 dbInterface = Query()
-fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
-# TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
-types = ['<Name>', '<Age>', '<Email>', '<Phone>', '<SSN>']
-comparators = ['<StringComparator>', '<Comparator>',
-               '<StringComparator>', '<StringComparator>', '<StringComparator>']
+
+fields = config.fields
+types = config.types
+comparators = config.comparators
 
 # Specify SQL Grammar for grammar-based fuzzer to generate SQL queries
 
@@ -454,14 +424,10 @@ def delete_runner(testNum, probablityOfFaults):
         testNum, selectAll, delete, before, after, target)
 
 
-if(len(sys.argv) != 4):
-    print('USAGE: python3 fuzzer.py <number of tests> <probablity (0-1) of insert fault injected> <probablity (0-1) of delete fault injected>')
-    exit(0)
+numTests = config.num_tests
+probabilityOfFaultsInsert = config.insert_fault_probability
+probabilityOfFaultsDelete = config.delete_fault_probability
 
-
-numTests = int(sys.argv[1])
-probablityOfFaultsInsert = float(sys.argv[2])
-probablityOfFaultsDelete = float(sys.argv[3])
 print('\n')
 tic = time.perf_counter()
 
@@ -472,13 +438,13 @@ for i in tqdm(range(numTests)):
     forceInsert = False
 
     if insertOrDelete == 'delete':
-        result = delete_runner(i+1, probablityOfFaultsDelete)
+        result = delete_runner(i+1, probabilityOfFaultsDelete)
         if(result == 'EMPTY_DB'):
             forceInsert = True
         else:
             numDeletes += 1
     if insertOrDelete == 'insert' or forceInsert:
-        insert_runner(i+1, probablityOfFaultsInsert)
+        insert_runner(i+1, probabilityOfFaultsInsert)
         numInserts += 1
 toc = time.perf_counter()
 enable_print()
@@ -492,7 +458,7 @@ print(f'Generated {numDeletes} Delete Tests')
 print(f'{numSuccessesDelete} Succeeded\n{numFailuresDelete} Failed\n')
 
 print('--- INJECTED INSERT FAULTS RESULTS ---\n')
-print(f'Probablity of insert fault: {probablityOfFaultsInsert}')
+print(f'Probablity of insert fault: {probabilityOfFaultsInsert}')
 print(
     f'Number of noop inserts injected: {numNoopInsertFaults}\nNumber of swapped values inserts injected : {numSwappedInsertFaults}\nTotal: {totalInsertFaults}')
 try:
@@ -502,7 +468,7 @@ except ZeroDivisionError:
     print('No inserts faults injected, either increase number of tests or probablity of insert fault injected')
 
 print('\n--- INJECTED DELETE FAULTS RESULTS ---\n')
-print(f'Probablity of delete failure: {probablityOfFaultsDelete}')
+print(f'Probablity of delete failure: {probabilityOfFaultsDelete}')
 print(
     f'Number of noop deletes injected: {numNoopDeleteFaults}\nTotal: {numNoopDeleteFaults}')
 try:

@@ -1,0 +1,23 @@
+
+    #47:
+        Initial query result: [(100,)]
+        Final query result: [(100,)]
+        
+        SELECT age FROM Users_DB WHERE age > "94" OR email_address = "mm@rm.com"
+        
+        Failed Insert ❌
+        Actual difference: []
+        Expected difference: [(100,)]
+
+    
+    #87:
+        Initial query result: [(82, '(530)507-0534', 'yqlbqzfcjw@qmeyqsa.org'), (68, '(239)751-2405', 'k@j.org'), (61, '(781)924-6191', 'znszkrwhfvv@cxwspds.edu')]
+        Final query result: [(82, '(530)507-0534', 'yqlbqzfcjw@qmeyqsa.org'), (68, '(239)751-2405', 'k@j.org'), (61, '(781)924-6191', 'znszkrwhfvv@cxwspds.edu'), (105, '(973)380-6325', 'bbpxy@qbnqmpz.com')]
+        
+        SELECT age, phone_number, email_address FROM Users_DB WHERE age >= "61"
+        INSERT INTO Users_DB VALUES ("ke'isug", "105", "bbpxy@qbnqmpz.com", "(973)380-6325", "402-40-2486")
+        Failed Insert ❌
+        Actual difference: [(105, '(973)380-6325', 'bbpxy@qbnqmpz.com')]
+        Expected difference: [(97, '(973)380-6325', 'bbpxy@qbnqmpz.com')]
+
+    

@@ -1,0 +1,40 @@
+
+#8:
+[("yo'evle'ixki'od", 91, 'ikkrcee@hmwew.org', '(366)787-6036', '498-84-1320')]
+[("yo'evle'ixki'od", 91, 'ikkrcee@hmwew.org', '(366)787-6036', '498-84-1320')]
+
+SELECT * FROM Users_DB
+
+Failed Delete ❌
+actual difference: [] vs expected difference: [("yo'evle'ixki'od", 91, 'ikkrcee@hmwew.org', '(366)787-6036', '498-84-1320')]
+
+
+#28:
+[('ujye', 18, 'b@g.edu', '(535)490-4228', '356-32-2801'), ('oyuy', 55, 'cmxbnaocksn@smwunj.com', '(805)497-5161', '349-65-7560'), ("ruxhe'ugcop", 70, 'jcyfi@oqen.com', '(575)260-6853', '992-16-2129'), ('xeaf', 52, 'dvyearf@nuppugy.net', '(740)393-8026', '957-32-1595')]
+[('ujye', 18, 'b@g.edu', '(535)490-4228', '356-32-2801'), ('oyuy', 55, 'cmxbnaocksn@smwunj.com', '(805)497-5161', '349-65-7560'), ("ruxhe'ugcop", 70, 'jcyfi@oqen.com', '(575)260-6853', '992-16-2129'), ('xeaf', 52, 'dvyearf@nuppugy.net', '(740)393-8026', '957-32-1595')]
+
+SELECT * FROM Users_DB
+
+Failed Delete ❌
+actual difference: [] vs expected difference: [('ujye', 18, 'b@g.edu', '(535)490-4228', '356-32-2801')]
+
+
+#45:
+[("liafme'oxfip", 19, 'epeoxt@lnwrp.org', '(591)985-1910', '948-80-9281'), ('zunig', 84, 'njibrsxfu@vnrpb.net', '(885)862-4628', '875-18-3797'), ('y', 21, 'njpzclih@xupttg.edu', '(324)265-9657', '442-65-3230'), ("bo'eghidlap", 100, 'mujxwy@hnuc.com', '(237)329-3870', '108-99-6629'), ("po'igid", 31, 'ywavjgqtq@gxmjub.org', '(961)579-1805', '424-26-7337'), ('nolajuf', 54, 'ooknd@rlygo.net', '(941)324-9035', '251-21-5066')]
+[("liafme'oxfip", 19, 'epeoxt@lnwrp.org', '(591)985-1910', '948-80-9281'), ('zunig', 84, 'njibrsxfu@vnrpb.net', '(885)862-4628', '875-18-3797'), ('y', 21, 'njpzclih@xupttg.edu', '(324)265-9657', '442-65-3230'), ("bo'eghidlap", 100, 'mujxwy@hnuc.com', '(237)329-3870', '108-99-6629'), ("po'igid", 31, 'ywavjgqtq@gxmjub.org', '(961)579-1805', '424-26-7337'), ('nolajuf', 54, 'ooknd@rlygo.net', '(941)324-9035', '251-21-5066')]
+
+SELECT * FROM Users_DB
+
+Failed Delete ❌
+actual difference: [] vs expected difference: [("po'igid", 31, 'ywavjgqtq@gxmjub.org', '(961)579-1805', '424-26-7337')]
+
+
+#93:
+[('ispiztav', 6, 'pgqdvmqjnbe@egkn.edu', '(452)375-2500', '772-75-6154'), ("ta'anxizuz", 22, 'l@q.org', '(865)384-6386', '461-54-8976'), ('izeg', 22, 'njjxyojufde@gaty.net', '(527)834-8408', '112-68-9153'), ("va'evoytocziy", 68, 'k@j.org', '(239)751-2405', '484-90-9753'), ("ru'okuhra'ij", 61, 'znszkrwhfvv@cxwspds.edu', '(781)924-6191', '801-86-7208'), ('cozucbivgu', 9, 'ietiiiaxdtf@sxevol.org', '(490)538-9613', '367-99-4869'), ('cuufduoz', 23, 'ijovc@uoiyn.net', '(621)606-6504', '932-43-3915'), ('acmes', 32, 'bdxbrff@zapqdch.edu', '(763)731-5313', '855-62-4276'), ("ke'isug", 105, 'bbpxy@qbnqmpz.com', '(973)380-6325', '402-40-2486'), ('hosudem', 71, 'csymcanu@infrow.org', '(779)305-7560', '304-33-7254')]
+[('ispiztav', 6, 'pgqdvmqjnbe@egkn.edu', '(452)375-2500', '772-75-6154'), ("ta'anxizuz", 22, 'l@q.org', '(865)384-6386', '461-54-8976'), ('izeg', 22, 'njjxyojufde@gaty.net', '(527)834-8408', '112-68-9153'), ("va'evoytocziy", 68, 'k@j.org', '(239)751-2405', '484-90-9753'), ("ru'okuhra'ij", 61, 'znszkrwhfvv@cxwspds.edu', '(781)924-6191', '801-86-7208'), ('cozucbivgu', 9, 'ietiiiaxdtf@sxevol.org', '(490)538-9613', '367-99-4869'), ('cuufduoz', 23, 'ijovc@uoiyn.net', '(621)606-6504', '932-43-3915'), ('acmes', 32, 'bdxbrff@zapqdch.edu', '(763)731-5313', '855-62-4276'), ("ke'isug", 105, 'bbpxy@qbnqmpz.com', '(973)380-6325', '402-40-2486'), ('hosudem', 71, 'csymcanu@infrow.org', '(779)305-7560', '304-33-7254')]
+
+SELECT * FROM Users_DB
+
+Failed Delete ❌
+actual difference: [] vs expected difference: [("va'evoytocziy", 68, 'k@j.org', '(239)751-2405', '484-90-9753')]
+
