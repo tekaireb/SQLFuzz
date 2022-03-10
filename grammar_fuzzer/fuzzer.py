@@ -7,61 +7,23 @@ import random
 import sys
 import os
 import time
-import json
 
 from random_utils import *
+from config import Config
 
+DEFAULT_CONFIG = 'config.json'
 
-CONFIG_PATH = 'config.json'
-
-
-class Config(object):
-    def __init__(self, config_path):
-        self.num_tests = 0
-
-        self.db = None
-
-        self.fields = None
-        self.types = None
-        self.comparators = None
-
-        self.insert_fault_probability = 0
-        self.delete_fault_probability = 0
-
-        # Load values from configuration file
-        with open(config_path, 'r') as f:
-            cfg = json.loads(f.read())
-
-            # Check validity
-            assert 'database' in cfg, 'Config file must specify database properties'
-            assert 'num_tests' in cfg, 'Config file must specify number of tests ("num_tests": x)'
-            for prop in ['name', 'fields', 'types', 'comparators']:
-                assert prop in cfg['database'], f'Config file must specify database {prop}'
-
-            # Load number of tests
-            self.num_tests = int(cfg['num_tests'])
-
-            # Load database properties
-            self.db = cfg['database']['name']
-            self.fields = cfg['database']['fields']
-            self.types = cfg['database']['types']
-            self.comparators = cfg['database']['comparators']
-
-            # Load fault probabilities (if specified)
-            if 'fault_probabilities' in cfg:
-                if 'insert' in cfg['fault_probabilities']:
-                    self.insert_fault_probability = float(
-                        cfg['fault_probabilities']['insert'])
-                if 'delete' in cfg['fault_probabilities']:
-                    self.delete_fault_probability = float(
-                        cfg['fault_probabilities']['delete'])
-
-
+# Use command argument as config file path if specified, otherwise use default
+if len(sys.argv) == 1:
+    print('Using default configuration file:', DEFAULT_CONFIG)
+    CONFIG_PATH = DEFAULT_CONFIG
+else:
+    print('Using specified configuration file:', sys.argv[1])
+    CONFIG_PATH = sys.argv[1]
 config = Config(CONFIG_PATH)
 
 # Specify database configuration
 
-# db = 'Users_DB'
 db = config.db
 generatedSSNs = set()
 
@@ -78,11 +40,6 @@ numFailuresDelete = 0
 numNoopDeleteFaults = 0
 
 dbInterface = Query()
-# fields = ['name', 'age', 'email_address', 'phone_number', 'ssn']
-# # TODO: Allow passing of params to specify additional constraints (e.g., numerical ranges, age should be 1 to 100)
-# types = ['<Name>', '<Age>', '<Email>', '<Phone>', '<SSN>']
-# comparators = ['<StringComparator>', '<Comparator>',
-#                '<StringComparator>', '<StringComparator>', '<StringComparator>']
 
 fields = config.fields
 types = config.types
@@ -466,15 +423,6 @@ def delete_runner(testNum, probablityOfFaults):
     consistency_checker_delete(
         testNum, selectAll, delete, before, after, target)
 
-
-# if(len(sys.argv) != 4):
-#     print('USAGE: python3 fuzzer.py <number of tests> <probablity (0-1) of insert fault injected> <probablity (0-1) of delete fault injected>')
-#     exit(0)
-
-
-# numTests = int(sys.argv[1])
-# probabilityOfFaultsInsert = float(sys.argv[2])
-# probabilityOfFaultsDelete = float(sys.argv[3])
 
 numTests = config.num_tests
 probabilityOfFaultsInsert = config.insert_fault_probability
